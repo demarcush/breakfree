@@ -11,7 +11,7 @@
       "subscription": [
         "azadi",
         "eternity",
-        "soroush",
+        "0024",
         "tvc"
       ],
       "template": "breakfree"
@@ -27,7 +27,7 @@
   ],
   "subscriptions": [
     {
-      "name": "soroush",
+      "name": "0024",
       "process": [
         {
           "filter": [
@@ -51,7 +51,7 @@
           "remove": true
         }
       ],
-      "url": "https://cdn.jsdelivr.net/gh/soroushmirzaei/telegram-configs-collector@main/splitted/mixed"
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.txt"
     },
     {
       "name": "eternity",
