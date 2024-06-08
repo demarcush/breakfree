@@ -9,9 +9,10 @@
     {
       "name": "servers",
       "subscription": [
+        "0024",
         "azadi",
         "eternity",
-        "0024",
+        "mohebi",
         "tvc"
       ],
       "template": "breakfree"
@@ -26,6 +27,33 @@
     }
   ],
   "subscriptions": [
+    {
+      "name": "mohebi",
+      "process": [
+        {
+          "filter": [
+            "🇦🇪",
+            "🇧🇬",
+            "🇧🇭",
+            "🇧🇾",
+            "🇮🇱",
+            "🇰🇿",
+            "🇶🇦",
+            "🇷🇺",
+            "🇹🇷",
+            "🇻🇪",
+            "🇻🇳"
+          ],
+          "filter_type": [
+            "http",
+            "shadowsocksr",
+            "socks"
+          ],
+          "remove": true
+        }
+      ],
+      "url": "https://cdn.jsdelivr.net/gh/MrMohebi/xray-proxy-grabber-telegram@master/collected-proxies/clash-meta/all.yaml"
+    },
     {
       "name": "0024",
       "process": [
