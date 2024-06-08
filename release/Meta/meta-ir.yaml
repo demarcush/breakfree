@@ -76,7 +76,6 @@ dns:
     - "https://1.1.1.1/dns-query"
     - "https://8.8.4.4/dns-query"
     - "tls://9.9.9.11:8853"
-    - "https://snoke.meganerd.nl/dns-query"
   nameserver:
     - "https://1.1.1.1/dns-query#default"
     - "https://8.8.4.4/dns-query#default"
