@@ -9,37 +9,39 @@
     {
       "name": "servers",
       "subscription": [
-        "aggregator-lite",
-        "azadi"
+        "azadi",
+        "eternity",
+        "soroush",
+        "tvc"
       ],
       "template": "breakfree"
     },
     {
       "name": "servers-lite",
       "subscription": [
-        "aggregator-lite",
-        "azadi"
+        "azadi",
+        "eternity"
       ],
       "template": "breakfree"
     }
   ],
   "subscriptions": [
     {
-      "name": "aggregator",
+      "name": "soroush",
       "process": [
         {
           "filter": [
-            "AE",
-            "BG",
-            "BH",
-            "BY",
-            "IL",
-            "KZ",
-            "QA",
-            "RU",
-            "TR",
-            "VE",
-            "VN"
+            "🇦🇪",
+            "🇧🇬",
+            "🇧🇭",
+            "🇧🇾",
+            "🇮🇱",
+            "🇰🇿",
+            "🇶🇦",
+            "🇷🇺",
+            "🇹🇷",
+            "🇻🇪",
+            "🇻🇳"
           ],
           "filter_type": [
             "http",
@@ -49,10 +51,10 @@
           "remove": true
         }
       ],
-      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/sub/sub_merge_yaml.yml"
+      "url": "https://cdn.jsdelivr.net/gh/soroushmirzaei/telegram-configs-collector@main/splitted/mixed"
     },
     {
-      "name": "aggregator-lite",
+      "name": "eternity",
       "process": [
         {
           "filter": [
@@ -79,7 +81,7 @@
       "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
     },
     {
-      "name": "yebekhe",
+      "name": "tvc",
       "process": [
         {
           "filter": [
