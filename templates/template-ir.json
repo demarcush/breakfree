@@ -125,7 +125,7 @@
   },
   "ntp": {
     "detour": "direct",
-    "enabled": true,
+    "enabled": false,
     "server": "pool.ntp.org"
   },
   "outbounds": [
