@@ -35,7 +35,8 @@
     ],
     "servers": [
       {
-        "address": "https://8.8.4.4/dns-query",
+        "address": "https://dns.google/dns-query",
+        "address_resolver": "direct",
         "tag": "remote"
       },
       {
@@ -70,7 +71,6 @@
   "inbounds": [
     {
       "auto_route": true,
-      "domain_strategy": "prefer_ipv6",
       "exclude_package": [
         "com.android.captiveportallogin",
         "com.biglybt.android.client",
@@ -109,13 +109,11 @@
       "type": "tun"
     },
     {
-      "domain_strategy": "prefer_ipv6",
       "listen": "::",
       "listen_port": 7890,
       "sniff": true,
       "sniff_override_destination": true,
       "tcp_fast_open": true,
-      "tcp_multi_path": true,
       "type": "mixed",
       "udp_fragment": true
     }
