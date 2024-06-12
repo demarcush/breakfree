@@ -85,8 +85,8 @@
   },
   "ntp": {
     "detour": "direct",
-    "enabled": false,
-    "server": "pool.ntp.org"
+    "enabled": true,
+    "server": "time.apple.com"
   },
   "outbounds": [
     {
@@ -114,6 +114,7 @@
       "type": "selector"
     },
     {
+      "domain_strategy": "prefer_ipv6",
       "tag": "direct",
       "type": "direct"
     },
