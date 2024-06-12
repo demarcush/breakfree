@@ -125,7 +125,7 @@
   "ntp": {
     "detour": "direct",
     "enabled": true,
-    "server": "time.google.com"
+    "server": "time.euro.apple.com"
   },
   "outbounds": [
     {
