@@ -12,6 +12,7 @@
         "0024",
         "azadi",
         "eternity",
+        "ircp",
         "tvc"
       ],
       "template": "breakfree"
@@ -19,8 +20,9 @@
     {
       "name": "servers-lite",
       "subscription": [
+        "0024",
         "azadi",
-        "eternity"
+        "ircp"
       ],
       "template": "breakfree"
     }
@@ -106,6 +108,33 @@
         }
       ],
       "url": "https://cdn.jsdelivr.net/gh/yebekhe/TVC@main/subscriptions/singbox/mix.json"
+    },
+    {
+      "name": "ircp",
+      "process": [
+        {
+          "filter": [
+            "🇦🇪",
+            "🇧🇬",
+            "🇧🇭",
+            "🇧🇾",
+            "🇮🇱",
+            "🇰🇿",
+            "🇶🇦",
+            "🇷🇺",
+            "🇹🇷",
+            "🇻🇪",
+            "🇻🇳"
+          ],
+          "filter_type": [
+            "http",
+            "shadowsocksr",
+            "socks"
+          ],
+          "remove": true
+        }
+      ],
+      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
     },
     {
       "name": "azadi",
