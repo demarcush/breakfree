@@ -113,9 +113,7 @@
       "listen_port": 7890,
       "sniff": true,
       "sniff_override_destination": true,
-      "tcp_fast_open": true,
-      "type": "mixed",
-      "udp_fragment": true
+      "type": "mixed"
     }
   ],
   "log": {
@@ -124,8 +122,8 @@
   },
   "ntp": {
     "detour": "direct",
-    "enabled": true,
-    "server": "time.euro.apple.com"
+    "enabled": false,
+    "server": "time.windows.com"
   },
   "outbounds": [
     {
