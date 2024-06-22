@@ -31,7 +31,7 @@ profile:
 ntp:
   enable: false
   write-to-system: false
-  server: "pool.ntp.org"
+  server: "time.windows.com"
 
 tun:
   enable: false
