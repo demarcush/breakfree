@@ -11,7 +11,6 @@
         "server": "direct"
       },
       {
-        "disable_cache": true,
         "rule_set": [
           "geoip-malware",
           "geoip-phishing",
@@ -34,8 +33,9 @@
     ],
     "servers": [
       {
-        "address": "https://dns.google/dns-query",
+        "address": "https://9.9.9.11:5053/dns-query",
         "address_resolver": "direct",
+        "detour": "default",
         "tag": "remote"
       },
       {
