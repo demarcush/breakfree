@@ -1,0 +1,10 @@
+186a187,193
+>         "tag": "geosite-nsfw",
+>         "type": "remote",
+>         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
+>       },
+>       {
+>         "download_detour": "direct",
+>         "format": "binary",
+232a240
+>           "geosite-nsfw",

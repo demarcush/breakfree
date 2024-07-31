@@ -1,0 +1,93 @@
+{
+  "log": {
+    "level": "debug"
+  },
+  "listen": "127.0.0.1:8080",
+  "cache_file": "serenity.db",
+  "outbounds": [
+    {
+      "type": "direct"
+    },
+    {
+      "type": "dns"
+    }
+  ],
+  "subscriptions": [
+    {
+      "name": "azadi",
+      "url": "https://cdn.jsdelivr.net/gh/bamdad23/JavidnamanIran@main/singboxSub"
+    },
+    {
+      "name": "warp",
+      "url": "https://cdn.jsdelivr.net/gh/NiREvil/vless@main/sing-box.json"
+    },
+    {
+      "name": "collector",
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
+    },
+    {
+      "name": "tvc",
+      "url": "https://cdn.jsdelivr.net/gh/yebekhe/TVC@main/subscriptions/singbox/mix.json"
+    },
+    {
+      "name": "eternity",
+      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
+    },
+    {
+      "name": "final",
+      "url": "http://127.0.0.1:8080/servers",
+      "update_interval": "5m",
+      "process": {
+        "filter": [
+          "BG",
+          "BY",
+          "IL",
+          "KZ",
+          "RU",
+          "TR",
+          "VE",
+          "VN",
+          "🇧🇬",
+          "🇧🇾",
+          "🇮🇱",
+          "🇰🇿",
+          "🇷🇺",
+          "🇹🇷",
+          "🇻🇪",
+          "🇻🇳"
+        ],
+        "filter_type": [
+          "http",
+          "shadowsocks",
+          "shadowsocksr",
+          "socks"
+        ],
+        "remove": true
+      },
+      "deduplication": true
+    }
+  ],
+  "templates": [
+    {
+      "name": "breakfree"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "servers",
+      "template": "breakfree",
+      "subscription": [
+        "azadi",
+        "warp",
+        "collector",
+        "tvc",
+        "eternity"
+      ]
+    },
+    {
+      "name": "final",
+      "template": "breakfree",
+      "subscription": "final"
+    }
+  ]
+}
