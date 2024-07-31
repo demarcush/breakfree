@@ -79,6 +79,7 @@
       "subscription": [
         "azadi",
         "warp",
+        "collector",
         "tvc"
       ]
     },
