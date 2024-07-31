@@ -120,7 +120,7 @@
     {
       "interval": "30m",
       "outbounds": [],
-      "tag": "auto", "url": "https://www.youtube.com/generate_204",
+      "tag": "auto",
       "type": "urltest"
     },
     {
