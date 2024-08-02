@@ -58,7 +58,6 @@
         ],
         "filter_type": [
           "http",
-          "shadowsocks",
           "shadowsocksr",
           "socks"
         ],
@@ -78,9 +77,7 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
-        "warp",
-        "collector",
-        "tvc"
+        "collector"
       ]
     },
     {
