@@ -23,7 +23,7 @@
     },
     {
       "name": "collector",
-      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
+      "url": "https://raw.githubusercontent.com/demarcush/ProxyCollector/master/sub/singbox.json"
     },
     {
       "name": "tvc",
