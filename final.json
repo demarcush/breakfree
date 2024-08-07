@@ -846,6 +846,7 @@
         "🇺🇸 US 787",
         "🇺🇸 US 788",
         "🇺🇸 US 789",
+        "🇺🇸 US 790",
         "🇺🇸 US 791",
         "🇺🇸 US 792",
         "🇺🇸 US 793",
@@ -1026,7 +1027,6 @@
         "🇺🇸 US 974",
         "🇺🇸 US 975",
         "🇺🇸 US 976",
-        "🇺🇸 US 977",
         "🇺🇸 US 979",
         "🇺🇸 US 980",
         "🇺🇸 US 982",
@@ -8016,6 +8016,22 @@
       "password": "KixLvKzwjekG00rm"
     },
     {
+      "type": "vmess",
+      "tag": "🇺🇸 US 790",
+      "server": "capellare.com",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "capellare.com"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws"
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇺🇸 US 791",
       "server": "23.157.40.89",
@@ -9532,21 +9548,6 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 US 976",
-      "server": "jp1-july.88888802.xyz",
-      "server_port": 443,
-      "password": "f2191442-1436-3d79-801e-80d8de896c73",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp1-july.88888802.xyz"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/91838f3b905c42c7aa5b664b27d8193b"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 US 977",
       "server": "jp1-july.88888802.xyz",
       "server_port": 443,
       "password": "f2191442-1436-3d79-801e-80d8de896c73",
