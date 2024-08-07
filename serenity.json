@@ -18,20 +18,16 @@
       "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/SingBox@main/Sub"
     },
     {
-      "name": "warp",
-      "url": "https://cdn.jsdelivr.net/gh/NiREvil/vless@main/sing-box.json"
-    },
-    {
-      "name": "collector",
-      "url": "https://raw.githubusercontent.com/demarcush/ProxyCollector/master/sub/singbox.json"
-    },
-    {
       "name": "tvc",
       "url": "https://cdn.jsdelivr.net/gh/yebekhe/TVC@main/subscriptions/singbox/mix.json"
     },
     {
       "name": "eternity",
       "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
+    },
+    {
+      "name": "collector",
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
       "name": "final",
