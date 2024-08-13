@@ -466,7 +466,6 @@
         "🇺🇸 US 365",
         "🇺🇸 US 366",
         "🇺🇸 US 367",
-        "🇺🇸 US 368",
         "🇺🇸 US 369",
         "🇺🇸 US 370",
         "🇺🇸 US 371",
@@ -517,7 +516,6 @@
         "🇺🇸 US 416",
         "🇺🇸 US 417",
         "🇺🇸 US 418",
-        "🇺🇸 US 419",
         "🇺🇸 US 420",
         "🇺🇸 US 421",
         "🇺🇸 US 422",
@@ -850,6 +848,7 @@
         "🇺🇸 US 756",
         "🇺🇸 US 757",
         "🇺🇸 US 758",
+        "🇺🇸 US 759",
         "🇺🇸 US 760",
         "🇺🇸 US 762",
         "🇺🇸 US 763",
@@ -4655,22 +4654,6 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 US 368",
-      "server": "hms19.best-tizi.top",
-      "server_port": 443,
-      "uuid": "62aa5f80-0328-4004-a375-7f5a59df4022",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "hms19.best-tizi.top"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkws"
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇺🇸 US 369",
       "server": "108.181.23.41",
       "server_port": 2086,
@@ -5095,21 +5078,6 @@
       "server_port": 9101,
       "method": "aes-256-gcm",
       "password": "e4FCWrgpkji3QY"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US 419",
-      "server": "a.baradiha.com",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws"
-      }
     },
     {
       "type": "vmess",
@@ -7897,6 +7865,20 @@
       "server_port": 7002,
       "method": "aes-256-gcm",
       "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 US 759",
+      "server": "jp1-july.88888802.xyz",
+      "server_port": 443,
+      "password": "f2191442-1436-3d79-801e-80d8de896c73",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/91838f3b905c42c7aa5b664b27d8193b"
+      }
     },
     {
       "type": "shadowsocks",
