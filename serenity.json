@@ -32,7 +32,7 @@
     {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
-      "update_interval": "5m",
+      "update_interval": "5m0s",
       "process": {
         "filter": [
           "BG",
@@ -73,7 +73,8 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
-        "collector"
+        "tvc",
+        "eternity"
       ]
     },
     {
