@@ -118,7 +118,7 @@
       "type": "selector"
     },
     {
-      "interval": "30m", "tolerance": 1,
+      "interval": "30m",
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
