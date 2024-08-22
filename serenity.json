@@ -14,12 +14,12 @@
   ],
   "subscriptions": [
     {
-      "name": "ircp",
-      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
-    },
-    {
       "name": "azadi",
       "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub"
+    },
+    {
+      "name": "ircp",
+      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
     },
     {
       "name": "tvc",
@@ -76,8 +76,8 @@
       "name": "servers",
       "template": "breakfree",
       "subscription": [
-        "ircp",
         "azadi",
+        "ircp",
         "tvc",
         "eternity"
       ]
