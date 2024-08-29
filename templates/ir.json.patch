@@ -1,20 +1,20 @@
-153c153
+136c136
 <         "tag": "geosite-cn",
 ---
 >         "tag": "geosite-ir",
-155c155
+138c138
 <         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cn.srs"
 ---
 >         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs"
-160c160
+143c143
 <         "tag": "geoip-cn",
 ---
 >         "tag": "geoip-ir",
-162c162
+145c145
 <         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-cn.srs"
 ---
 >         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs"
-274,275c274,275
+257,258c257,258
 <           "geoip-cn",
 <           "geosite-cn"
 ---

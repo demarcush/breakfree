@@ -1,22 +1,9 @@
 {
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
         "server": "direct"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fakeip"
       }
     ],
     "servers": [
@@ -29,10 +16,6 @@
         "address": "local",
         "detour": "direct",
         "tag": "direct"
-      },
-      {
-        "address": "fakeip",
-        "tag": "fakeip"
       }
     ]
   },

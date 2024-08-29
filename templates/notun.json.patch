@@ -1,4 +1,4 @@
-53,91d52
+36,74d35
 <       "auto_route": true,
 <       "exclude_package": [
 <         "com.android.captiveportallogin",
@@ -38,5 +38,5 @@
 <       "type": "tun"
 <     },
 <     {
-93a55
+76a38
 >       "set_system_proxy": true,
