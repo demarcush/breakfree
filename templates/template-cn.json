@@ -86,7 +86,7 @@
       },
       "sniff": true,
       "strict_route": true,
-      "tag": "tun",
+      "tag": "tun", "stack": "gvisor",
       "type": "tun"
     },
     {
