@@ -26,7 +26,7 @@
         "tag": "remote"
       },
       {
-        "address": "https://223.5.5.5/dns-query",
+        "address": "local",
         "detour": "direct",
         "tag": "direct"
       },
@@ -74,7 +74,6 @@
       ],
       "gso": true,
       "inet4_address": "172.19.0.1/30",
-      "inet4_route_exclude_address": "192.168.0.0/16",
       "inet6_address": "fdfe:dcba:9876::1/126",
       "platform": {
         "http_proxy": {

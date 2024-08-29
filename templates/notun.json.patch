@@ -1,4 +1,4 @@
-53,92d52
+53,91d52
 <       "auto_route": true,
 <       "exclude_package": [
 <         "com.android.captiveportallogin",
@@ -23,7 +23,6 @@
 <       ],
 <       "gso": true,
 <       "inet4_address": "172.19.0.1/30",
-<       "inet4_route_exclude_address": "192.168.0.0/16",
 <       "inet6_address": "fdfe:dcba:9876::1/126",
 <       "platform": {
 <         "http_proxy": {
@@ -39,5 +38,5 @@
 <       "type": "tun"
 <     },
 <     {
-94a55
+93a55
 >       "set_system_proxy": true,
