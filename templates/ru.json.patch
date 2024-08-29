@@ -1,7 +1,7 @@
 29c29
 <         "address": "https://223.5.5.5/dns-query",
 ---
->         "address": "local",
+>         "address": "https://8.8.8.8/dns-query",
 153c153
 <         "tag": "geosite-cn",
 ---
