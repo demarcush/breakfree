@@ -61,7 +61,6 @@
         "com.psiphon3.subscription",
         "com.utorrent.client",
         "com.utorrent.client.pro",
-        "ie.equalit.ceno",
         "org.jitsi.meet",
         "org.onionshare.android",
         "org.onionshare.android.fdroid",
@@ -85,8 +84,9 @@
         }
       },
       "sniff": true,
+      "stack": "gvisor",
       "strict_route": true,
-      "tag": "tun", "stack": "gvisor",
+      "tag": "tun",
       "type": "tun"
     },
     {
@@ -222,6 +222,36 @@
       {
         "outbound": "dns",
         "protocol": "dns"
+      },
+      {
+        "outbound": "direct",
+        "port": [
+          123,
+          4460
+        ]
+      },
+      {
+        "outbound": "direct",
+        "process_name": [
+          "conjure-client",
+          "conjure-client.exe",
+          "i2p",
+          "i2p.exe",
+          "i2pd",
+          "i2pd.exe",
+          "lyrebird",
+          "lyrebird.exe",
+          "onionshare",
+          "onionshare-cli",
+          "onionshare-cli.exe",
+          "onionshare.exe",
+          "snowflake-client",
+          "snowflake-client.exe",
+          "tor",
+          "tor.exe",
+          "webtunnel-client",
+          "webtunnel-client.exe"
+        ]
       },
       {
         "outbound": "block",

@@ -18,11 +18,11 @@
 <         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-cn.srs"
 ---
 >         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs"
-240c240
+270c270
 <           "geoip-cn",
 ---
 >           "geoip-ir",
-242c242
+272c272
 <           "geosite-cn",
 ---
 >           "geosite-ir",

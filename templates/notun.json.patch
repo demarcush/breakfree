@@ -10,7 +10,6 @@
 <         "com.psiphon3.subscription",
 <         "com.utorrent.client",
 <         "com.utorrent.client.pro",
-<         "ie.equalit.ceno",
 <         "org.jitsi.meet",
 <         "org.onionshare.android",
 <         "org.onionshare.android.fdroid",
@@ -34,28 +33,11 @@
 <         }
 <       },
 <       "sniff": true,
+<       "stack": "gvisor",
 <       "strict_route": true,
-<       "tag": "tun", "stack": "gvisor",
+<       "tag": "tun",
 <       "type": "tun"
 <     },
 <     {
 94a55
 >       "set_system_proxy": true,
-113a75,76
->         "torbrowser",
->         "tor",
-131a95,108
->     },
->     {
->       "server": "127.0.0.1",
->       "server_port": 9150,
->       "tag": "torbrowser",
->       "type": "socks",
->       "udp_over_tcp": true
->     },
->     {
->       "server": "127.0.0.1",
->       "server_port": 9050,
->       "tag": "tor",
->       "type": "socks",
->       "udp_over_tcp": true
