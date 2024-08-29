@@ -193,7 +193,6 @@
         "🇺🇸US | 🔴 | vless | @vmessorg | 18",
         "🚩CF | 🔴 | vless | @v2rayNG_Matsuri | 3",
         "🚩CF | 🔴 | vless | @v2rayNG_Matsuri | 4",
-        "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 6",
         "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 8",
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 0",
         "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 1",
@@ -228,8 +227,6 @@
         "🚩CF | 🔴 | vless | @v2ray1_ng | 1",
         "🚩CF | 🔴 | vless | @MTConfig | 0",
         "🇸🇪SE | 🔴 | vless | @MTConfig | 1",
-        "🇺🇸US | 🔴 | vless | @MTConfig | 2",
-        "🇺🇸US | 🔴 | vless | @MTConfig | 3",
         "❔XX | 🔴 | vless | @MTConfig | 5",
         "🇺🇸US | 🔴 | vless | @MTConfig | 6",
         "🇺🇸US | 🔴 | vless | @MTConfig | 7",
@@ -319,7 +316,7 @@
         "❔XX | 🔴 | vless | @Capital_NET | 44",
         "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
         "🚩CF | 🟢 | vmess | @v2Line | 0",
-        "🇺🇸US | 🔴 | vless | @iP_CF | 4",
+        "🇺🇸US | 🔴 | vless | @iP_CF | 3",
         "❔XX | 🔴 | vless | @kiava | 5",
         "❔XX | 🔴 | vless | @kiava | 6",
         "🇮🇷IR | 🔴 | vless | @kiava | 7",
@@ -347,8 +344,6 @@
         "🇮🇷IR | 🔴 | vless | @kingofilter | 8",
         "🇺🇸US | 🔴 | vless | @GozargahVPN | 9",
         "🇺🇸US | 🔴 | vless | @GozargahVPN | 10",
-        "🇺🇸US | 🔴 | vless | @GozargahVPN | 11",
-        "🇺🇸US | 🔴 | vless | @GozargahVPN | 12",
         "❔XX | 🔴 | vless | @V2FETCH | 1",
         "❔XX | 🔴 | vless | @V2FETCH | 3",
         "❔XX | 🔴 | vless | @VpnSkyy | 0",
@@ -396,7 +391,6 @@
         "🇫🇷FR-51.15.27.48-0723 | 25.71MB",
         "🇳🇱NL-45.76.33.120-1035 | 25.619MB",
         "🇫🇷FR-51.159.111.208-0730 | 25.408MB",
-        "RELAY-172.67.146.10-0495 | 24.998MB",
         "BE-192.71.249.78-0726 | 24.755MB",
         "🇫🇷FR-195.154.185.174-0727 | 23.466MB",
         "🇫🇷FR-146.19.168.161-0515 | 21.897MB",
@@ -424,12 +418,14 @@
         "RELAY-104.21.52.103-0450 | 4.66MB",
         "🇫🇷FR-195.154.169.198-0732 | 3.809MB",
         "RELAY-104.27.53.144-1130 | 2.91MB",
+        "RELAY-104.18.97.50-1284 | 2.909MB",
         "🇰🇷KR-146.56.191.191-0755 | 2.695MB",
         "RELAY-66.235.200.0-0837 | 2.202MB",
         "🇸🇬SG-5.180.78.144-0766 | 2.089MB",
         "🇯🇵JP-152.69.197.74-2539 | 2.088MB",
         "RELAY-104.16.67.38-1362 | 2.084MB",
         "🇭🇰HK-103.30.76.172-0762 | 2.015MB",
+        "RELAY-104.21.24.170-0285 | 1.969MB",
         "🇸🇬SG-206.189.92.107-0764 | 1.888MB",
         "BA-185.164.35.9-0753 | 1.888MB",
         "🇪🇸ES-5.188.181.201-1691 | 1.82MB",
@@ -3242,18 +3238,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 6",
-      "server": "join.kiava.cloud.ohbah.com",
-      "server_port": 8880,
-      "uuid": "ff1ea66a-a918-4c52-8437-e7c816d28d87",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇷IR | 🔴 | vless | @v2rayNG_Matsuri | 8",
       "server": "ahanghfarsi.shop",
       "server_port": 1001,
@@ -3882,52 +3866,6 @@
         "path": "/",
         "headers": {
           "Host": "185.146.173.37"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @MTConfig | 2",
-      "server": "all.vipxali.cfd",
-      "server_port": 443,
-      "uuid": "0a4acf58-cc3c-4f99-89c1-70d7ca3fbd92",
-      "tls": {
-        "enabled": true,
-        "server_name": "mx.XsV2ray.cfd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "@XsV2ray,@XsV2ray",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @MTConfig | 3",
-      "server": "all.vipxali.cfd",
-      "server_port": 2095,
-      "uuid": "XsV2ray---XsV2ray---XsV2ray",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/XsV2ray,@XsV2ray,@XsV2ray",
-        "headers": {
-          "Host": "all.vipxali.cfd"
         }
       },
       "packet_encoding": "xudp"
@@ -5627,7 +5565,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @iP_CF | 4",
+      "tag": "🇺🇸US | 🔴 | vless | @iP_CF | 3",
       "server": "speedtest.org",
       "server_port": 80,
       "uuid": "8dbcaf09-aa30-4367-9d8e-2762e66141d1",
@@ -6368,53 +6306,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 11",
-      "server": "cpanel.com",
-      "server_port": 8080,
-      "uuid": "5b79794a-96b6-4051-f703-710d310ec46e",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/GozaegahVPN/ws/",
-        "headers": {
-          "Host": "cpanel.com"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 12",
-      "server": "cpanel.com",
-      "server_port": 443,
-      "uuid": "047002bf-b578-44d6-8bfb-a09900a3fb53",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.GozargahVPN.top",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,",
-        "headers": {
-          "Host": "www.GozargahVPN.top"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "❔XX | 🔴 | vless | @V2FETCH | 1",
       "server": "newochean.teslasolhtjet.ir",
       "server_port": 8888,
@@ -7131,25 +7022,6 @@
       "network": "tcp"
     },
     {
-      "type": "vmess",
-      "tag": "RELAY-172.67.146.10-0495 | 24.998MB",
-      "server": "sareikela.com",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "sareikela.com"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "BE-192.71.249.78-0726 | 24.755MB",
       "server": "192.71.249.78",
@@ -7462,6 +7334,22 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "RELAY-104.18.97.50-1284 | 2.909MB",
+      "server": "cfcdn3.sanfencdn9.com",
+      "server_port": 80,
+      "uuid": "9ebb09ef-ce69-4bbb-ba8f-3be6c52ef9c2",
+      "security": "auto",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "GWYp69Yujp2.yofnhkfc.xyz"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "🇰🇷KR-146.56.191.191-0755 | 2.695MB",
       "server": "146.56.191.191",
@@ -7545,6 +7433,25 @@
       "transport": {
         "type": "ws",
         "path": "/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "RELAY-104.21.24.170-0285 | 1.969MB",
+      "server": "104.21.24.170",
+      "server_port": 443,
+      "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "adenc36v.xtooltech.cfd"
+        }
       }
     },
     {
