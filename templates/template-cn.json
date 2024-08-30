@@ -67,7 +67,7 @@
       },
       "sniff": true,
       "stack": "gvisor",
-      "strict_route": true,
+      "strict_route": false,
       "tag": "tun",
       "type": "tun"
     },
@@ -105,7 +105,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://www.youtube.com/generate_204"
+      "url": "https://8.8.8.8/generate_204"
     },
     {
       "interrupt_exist_connections": true,
