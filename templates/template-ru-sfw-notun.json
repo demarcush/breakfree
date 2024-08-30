@@ -1,0 +1,250 @@
+{
+  "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "independent_cache": true,
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "direct"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
+      }
+    ],
+    "servers": [
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "direct",
+        "tag": "remote"
+      },
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "detour": "direct",
+        "tag": "direct"
+      },
+      {
+        "address": "fakeip",
+        "tag": "fakeip"
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true,
+      "store_rdrc": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "yacd",
+      "external_ui_download_detour": "direct"
+    }
+  },
+  "inbounds": [
+    {
+      "listen": "::",
+      "listen_port": 7890,
+      "set_system_proxy": true,
+      "sniff": true,
+      "tag": "mixed",
+      "type": "mixed"
+    }
+  ],
+  "log": {
+    "level": "fatal"
+  },
+  "ntp": {
+    "detour": "direct",
+    "enabled": false,
+    "server": "2.pool.ntp.org",
+    "server_port": 123
+  },
+  "outbounds": [
+    {
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "auto",
+        "manual",
+        "direct",
+        "block"
+      ],
+      "tag": "default",
+      "type": "selector"
+    },
+    {
+      "interval": "30m0s",
+      "outbounds": [],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.youtube.com/generate_204"
+    },
+    {
+      "interrupt_exist_connections": true,
+      "outbounds": [],
+      "tag": "manual",
+      "type": "selector"
+    },
+    {
+      "domain_strategy": "prefer_ipv6",
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rule_set": [
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-category-ru",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ru.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-ru",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ru.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-category-ads-all",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-cryptominers",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cryptominers.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-malware",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-malware.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-phishing",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-phishing.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-private",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-private.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-nsfw",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-malware",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-malware.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-phishing",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-phishing.srs"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "dns",
+        "protocol": "dns"
+      },
+      {
+        "mode": "or",
+        "outbound": "direct",
+        "rules": [
+          {
+            "ip_is_private": true
+          },
+          {
+            "port": [
+              123,
+              4460
+            ]
+          },
+          {
+            "rule_set": "geosite-private"
+          },
+          {
+            "process_name": [
+              "conjure-client",
+              "conjure-client.exe",
+              "i2p",
+              "i2p.exe",
+              "i2pd",
+              "i2pd.exe",
+              "lyrebird",
+              "lyrebird.exe",
+              "onionshare",
+              "onionshare-cli",
+              "onionshare-cli.exe",
+              "onionshare.exe",
+              "snowflake-client",
+              "snowflake-client.exe",
+              "tor",
+              "tor.exe",
+              "webtunnel-client",
+              "webtunnel-client.exe"
+            ]
+          }
+        ],
+        "type": "logical"
+      },
+      {
+        "outbound": "block",
+        "rule_set": [
+          "geoip-malware",
+          "geoip-phishing",
+          "geosite-category-ads-all",
+          "geosite-cryptominers",
+          "geosite-malware",
+          "geosite-nsfw",
+          "geosite-phishing"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "geoip-ru",
+          "geosite-category-ru"
+        ]
+      }
+    ]
+  }
+}
