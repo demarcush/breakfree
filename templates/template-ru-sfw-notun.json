@@ -1,22 +1,19 @@
 {
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
         "server": "direct"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
+        "rule_set": [
+          "direct",
+          "geoip-ru",
+          "geosite-category-ntp",
+          "geosite-category-ru",
+          "geosite-private"
         ],
-        "server": "fakeip"
+        "server": "direct"
       }
     ],
     "servers": [
@@ -26,13 +23,9 @@
         "tag": "remote"
       },
       {
-        "address": "local",
+        "address": "https://8.8.8.8/dns-query",
         "detour": "direct",
         "tag": "direct"
-      },
-      {
-        "address": "fakeip",
-        "tag": "fakeip"
       }
     ]
   },
@@ -83,6 +76,7 @@
       "interval": "30m0s",
       "outbounds": [],
       "tag": "auto",
+      "tolerance": 1000,
       "type": "urltest",
       "url": "https://www.youtube.com/generate_204"
     },
@@ -133,6 +127,13 @@
       {
         "download_detour": "direct",
         "format": "binary",
+        "tag": "geosite-category-ntp",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ntp.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
         "tag": "geosite-cryptominers",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cryptominers.srs"
@@ -161,13 +162,6 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-nsfw",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "geoip-malware",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-malware.srs"
@@ -178,6 +172,20 @@
         "tag": "geoip-phishing",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-phishing.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "direct",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/direct.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-nsfw",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
       }
     ],
     "rules": [
@@ -186,45 +194,8 @@
         "protocol": "dns"
       },
       {
-        "mode": "or",
-        "outbound": "direct",
-        "rules": [
-          {
-            "ip_is_private": true
-          },
-          {
-            "port": [
-              123,
-              4460
-            ]
-          },
-          {
-            "rule_set": "geosite-private"
-          },
-          {
-            "process_name": [
-              "conjure-client",
-              "conjure-client.exe",
-              "i2p",
-              "i2p.exe",
-              "i2pd",
-              "i2pd.exe",
-              "lyrebird",
-              "lyrebird.exe",
-              "onionshare",
-              "onionshare-cli",
-              "onionshare-cli.exe",
-              "onionshare.exe",
-              "snowflake-client",
-              "snowflake-client.exe",
-              "tor",
-              "tor.exe",
-              "webtunnel-client",
-              "webtunnel-client.exe"
-            ]
-          }
-        ],
-        "type": "logical"
+        "ip_is_private": true,
+        "outbound": "direct"
       },
       {
         "outbound": "block",
@@ -241,8 +212,11 @@
       {
         "outbound": "direct",
         "rule_set": [
+          "direct",
           "geoip-ru",
-          "geosite-category-ru"
+          "geosite-category-ntp",
+          "geosite-category-ru",
+          "geosite-private"
         ]
       }
     ]
