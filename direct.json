@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "process_name": [
+        "conjure-client",
+        "conjure-client.exe",
+        "i2p",
+        "i2p.exe",
+        "i2pd",
+        "i2pd.exe",
+        "lyrebird",
+        "lyrebird.exe",
+        "onionshare",
+        "onionshare-cli",
+        "onionshare-cli.exe",
+        "onionshare.exe",
+        "snowflake-client",
+        "snowflake-client.exe",
+        "tor",
+        "tor.exe",
+        "webtunnel-client",
+        "webtunnel-client.exe"
+      ]
+    }
+  ]
+}
