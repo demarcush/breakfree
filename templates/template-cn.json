@@ -73,6 +73,7 @@
         "pan.alexander.tordnscrypt.stable"
       ],
       "inet4_address": "172.19.0.1/30",
+      "inet4_route_exclude_address": "192.168.0.0/16",
       "inet6_address": "fdfe:dcba:9876::1/126",
       "platform": {
         "http_proxy": {
@@ -119,9 +120,7 @@
       "interval": "30m0s",
       "outbounds": [],
       "tag": "auto",
-      "tolerance": 1000,
-      "type": "urltest",
-      "url": "https://www.youtube.com/generate_204"
+      "type": "urltest"
     },
     {
       "interrupt_exist_connections": true,
