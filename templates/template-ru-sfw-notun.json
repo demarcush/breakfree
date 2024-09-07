@@ -83,7 +83,9 @@
       "interval": "30m0s",
       "outbounds": [],
       "tag": "auto",
-      "type": "urltest"
+      "tolerance": 1000,
+      "type": "urltest",
+      "url": "https://www.youtube.com/generate_204"
     },
     {
       "interrupt_exist_connections": true,
