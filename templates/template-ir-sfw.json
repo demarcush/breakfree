@@ -26,9 +26,15 @@
         "tag": "remote"
       },
       {
-        "address": "8.8.8.8",
+        "address": "https://wikimedia-dns.org/dns-query",
+        "address_resolver": "bootstrap",
         "detour": "direct",
         "tag": "direct"
+      },
+      {
+        "address": "8.8.8.8",
+        "detour": "direct",
+        "tag": "bootstrap"
       },
       {
         "address": "fakeip",
