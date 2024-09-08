@@ -2,25 +2,35 @@
   "version": 1,
   "rules": [
     {
-      "process_name": [
-        "conjure-client",
-        "conjure-client.exe",
-        "i2p",
-        "i2p.exe",
-        "i2pd",
-        "i2pd.exe",
-        "lyrebird",
-        "lyrebird.exe",
-        "onionshare",
-        "onionshare-cli",
-        "onionshare-cli.exe",
-        "onionshare.exe",
-        "snowflake-client",
-        "snowflake-client.exe",
-        "tor",
-        "tor.exe",
-        "webtunnel-client",
-        "webtunnel-client.exe"
+      "type": "logical",
+      "mode": "or",
+      "rules": [
+        {
+          "process_name": [
+            "conjure-client",
+            "dnscrypt-proxy",
+            "i2pd",
+            "lyrebird",
+            "onionshare",
+            "onionshare-cli",
+            "snowflake-client",
+            "tor",
+            "webtunnel-client",
+
+            "conjure-client.exe",
+            "dnscrypt-proxy.exe",
+            "i2pd.exe",
+            "lyrebird.exe",
+            "onionshare-cli.exe",
+            "onionshare.exe",
+            "snowflake-client.exe",
+            "tor.exe",
+            "webtunnel-client.exe"
+          ]
+        },
+        {
+          "port": 123
+        }
       ]
     }
   ]
