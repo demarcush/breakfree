@@ -132,9 +132,9 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-category-ntp",
+        "tag": "geosite-connectivity-check",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ntp.srs"
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-connectivity-check.srs"
       },
       {
         "download_detour": "direct",
@@ -211,8 +211,8 @@
         "rule_set": [
           "direct",
           "geoip-ru",
-          "geosite-category-ntp",
           "geosite-category-ru",
+          "geosite-connectivity-check",
           "geosite-private"
         ]
       }
