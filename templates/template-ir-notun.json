@@ -89,7 +89,6 @@
       "interval": "30m0s",
       "outbounds": [],
       "tag": "auto",
-      "tolerance": 1000,
       "type": "urltest",
       "url": "https://www.youtube.com/generate_204"
     },
@@ -100,7 +99,6 @@
       "type": "selector"
     },
     {
-      "domain_strategy": "prefer_ipv6",
       "tag": "direct",
       "type": "direct"
     },
