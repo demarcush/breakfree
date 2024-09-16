@@ -81,6 +81,10 @@
       "inet4_address": "172.19.0.1/30",
       "inet4_route_exclude_address": "192.168.0.0/16",
       "inet6_address": "fdfe:dcba:9876::1/126",
+      "inet6_route_exclude_address": [
+        "fc00::/7",
+        "fe80::/10"
+      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -231,8 +235,17 @@
     ],
     "rules": [
       {
+        "mode": "or",
         "outbound": "dns",
-        "protocol": "dns"
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
+        "type": "logical"
       },
       {
         "ip_is_private": true,

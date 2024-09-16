@@ -194,8 +194,17 @@
     ],
     "rules": [
       {
+        "mode": "or",
         "outbound": "dns",
-        "protocol": "dns"
+        "rules": [
+          {
+            "protocol": "dns"
+          },
+          {
+            "port": 53
+          }
+        ],
+        "type": "logical"
       },
       {
         "ip_is_private": true,
