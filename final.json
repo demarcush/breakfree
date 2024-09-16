@@ -97,6 +97,8 @@
         "❔XX | 🔴 | vless | @Parsashonam | 0",
         "🇺🇸US | 🔴 | vless | @Parsashonam | 1",
         "🇸🇪SE | 🔴 | vless | @Parsashonam | 3",
+        "🇺🇸US | 🔴 | vless | @Parsashonam | 5",
+        "🇺🇸US | 🔴 | vless | @Parsashonam | 10",
         "🇨🇦CA | 🔴 | vless | @XsV2ray | 0",
         "🇩🇪DE | 🔴 | vless | @VlessConfig | 0",
         "🇩🇪DE | 🔴 | vless | @VlessConfig | 1",
@@ -116,8 +118,10 @@
         "🇮🇪IE | 🔴 | vless | @VlessConfig | 15",
         "🇬🇧GB | 🔴 | vless | @VlessConfig | 16",
         "🇨🇦CA | 🔴 | vless | @ipV2Ray | 0",
+        "🇨🇦CA | 🔴 | vless | @ipV2Ray | 1",
         "🚩CF | 🔴 | vless | @melov2ray | 0",
         "❔XX | 🔴 | vless | @V2pedia | 1",
+        "🇨🇦CA | 🔴 | vless | @V2pedia | 4",
         "❔XX | 🔴 | vless | @V2pedia | 6",
         "❔XX | 🔴 | vless | @V2pedia | 10",
         "🚩CF | 🔴 | vless | @frev2ray | 0",
@@ -152,7 +156,6 @@
         "🚩CF | 🔴 | vless | @ProxyForOpeta | 3",
         "🚩CF | 🔴 | vless | @ProxyForOpeta | 6",
         "🚩CF | 🔴 | vless | @ProxyForOpeta | 7",
-        "🚩CF | 🔴 | vless | @ProxyForOpeta | 8",
         "🇩🇪DE | 🔴 | vless | @ProxyForOpeta | 10",
         "🚩CF | 🔴 | vless | @ProxyForOpeta | 11",
         "🇩🇪DE | 🟢 | trojan | @PrivateVPNs | 0",
@@ -219,6 +222,7 @@
         "🚩CF | 🔴 | vless | @vmessorg | 16",
         "🇺🇸US | 🔴 | vless | @vmessorg | 18",
         "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 1",
+        "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 2",
         "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 3",
         "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 4",
         "🚩CF | 🔴 | vless | @v2rayNG_Matsuri | 5",
@@ -241,9 +245,9 @@
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 13",
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 14",
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 15",
+        "🚩CF | 🟢 | vmess | @ShadowProxy66 | 16",
         "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 17",
         "🇫🇷FR | 🟢 | vmess | @ShadowProxy66 | 18",
-        "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 19",
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 20",
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 21",
         "🚩CF | 🟢 | vmess | @ShadowProxy66 | 22",
@@ -261,7 +265,6 @@
         "🇺🇸US | 🔴 | vless | @proxyymeliii | 0",
         "🇩🇪DE | 🔴 | vless | @proxyymeliii | 1",
         "❔XX | 🔴 | vless | @proxyymeliii | 2",
-        "🇺🇸US | 🔴 | vless | @proxyymeliii | 3",
         "❔XX | 🔴 | vless | @proxyymeliii | 7",
         "🇺🇸US | 🔴 | vless | @proxyymeliii | 8",
         "🇺🇸US | 🔴 | vless | @proxyymeliii | 9",
@@ -271,8 +274,6 @@
         "🚩CF | 🔴 | vless | @v2ray1_ng | 4",
         "🚩CF | 🔴 | vless | @MTConfig | 0",
         "🇸🇪SE | 🔴 | vless | @MTConfig | 1",
-        "🇺🇸US | 🔴 | vless | @MTConfig | 2",
-        "🇺🇸US | 🔴 | vless | @MTConfig | 3",
         "❔XX | 🔴 | vless | @MTConfig | 5",
         "🇺🇸US | 🔴 | vless | @MTConfig | 6",
         "🇺🇸US | 🔴 | vless | @MTConfig | 7",
@@ -281,9 +282,7 @@
         "🚩CF | 🔴 | vless | @vmess_vless_v2rayng | 6",
         "🚩CF | 🔴 | vless | @vmess_vless_v2rayng | 7",
         "🚩CF | 🔴 | vless | @V2RayTz | 0",
-        "🚩CF | 🔴 | vless | @V2RayTz | 3",
         "🚩CF | 🔴 | vless | @V2RayTz | 4",
-        "🚩CF | 🔴 | vless | @V2RayTz | 9",
         "🇬🇧GB | 🔴 | vless | @V2RayTz | 12",
         "🚩CF | 🔴 | vless | @V2RayTz | 13",
         "🇬🇧GB | 🔴 | vless | @V2RayTz | 14",
@@ -368,6 +367,7 @@
         "❔XX | 🔴 | vless | @Capital_NET | 44",
         "🇩🇪DE | 🔴 | vless | @Capital_NET | 45",
         "🇮🇷IR | 🔴 | vless | @mehrosaboran | 0",
+        "🇺🇸US | 🔴 | vless | @mehrosaboran | 6",
         "🇺🇸US | 🔴 | vless | @kiava | 3",
         "🇺🇸US | 🔴 | vless | @kiava | 4",
         "🇺🇸US | 🔴 | vless | @kiava | 5",
@@ -404,6 +404,7 @@
         "🇮🇷IR | 🔴 | vless | @kingofilter | 8",
         "🇺🇸US | 🔴 | vless | @GozargahVPN | 9",
         "🇺🇸US | 🔴 | vless | @GozargahVPN | 10",
+        "🇺🇸US | 🔴 | vless | @GozargahVPN | 12",
         "❔XX | 🔴 | vless | @V2FETCH | 1",
         "❔XX | 🔴 | vless | @V2FETCH | 3",
         "❔XX | 🔴 | vless | @VpnSkyy | 0",
@@ -416,7 +417,6 @@
         "❔XX | 🔴 | vless | @VpnSkyy | 7",
         "🇰🇭KH | 🔴 | vless | @ROMAX_VPN | 1",
         "RELAY-104.21.55.234-2613 | 259.526MB",
-        "RELAY-172.67.174.42-2712 | 157.16MB",
         "RELAY-104.18.206.97-2724 | 152.301MB",
         "🇬🇧GB-212.102.47.130-0490 | 131.982MB",
         "RELAY-104.16.60.8-0436 | 106.094MB",
@@ -432,14 +432,15 @@
         "RELAY-172.67.138.69-2777 | 71.56MB",
         "RELAY-104.21.24.170-2744 | 70.449MB",
         "RELAY-104.16.67.38-0409 | 70.428MB",
+        "RELAY-172.67.219.194-2732 | 48.839MB",
         "RELAY-104.16.61.8-0321 | 40.85MB",
         "RELAY-188.114.97.21-2709 | 40.592MB",
         "RELAY-104.16.68.38-0361 | 40.358MB",
-        "RELAY-172.67.219.194-2775 | 38.602MB",
         "RELAY-104.21.83.208-2788 | 37.314MB",
         "RELAY-104.21.46.121-2715 | 36.641MB",
         "RELAY-104.16.68.38-0954 | 35.343MB",
         "RELAY-104.16.68.38-0445 | 34.028MB",
+        "RELAY-104.21.46.121-2714 | 32.878MB",
         "RELAY-188.114.96.2-2651 | 24.865MB",
         "🇬🇧GB-212.102.47.132-0674 | 20.496MB",
         "🇺🇸US-184.170.241.194-0547 | 20.337MB",
@@ -463,7 +464,6 @@
         "🇺🇸US-107.175.37.186-0541 | 19.287MB",
         "🇺🇸US-92.118.112.111-0586 | 19.219MB",
         "🇯🇵JP-149.22.87.241-0614 | 19.091MB",
-        "RELAY-104.21.69.44-2700 | 18.96MB",
         "RELAY-172.67.70.167-2669 | 18.932MB",
         "RELAY-172.67.146.10-2711 | 18.892MB",
         "🇨🇦CA-142.4.216.225-0613 | 18.738MB",
@@ -477,6 +477,7 @@
         "RELAY-162.159.1.94-2779 | 18.008MB",
         "RELAY-104.21.4.6-2746 | 17.965MB",
         "🇬🇧GB-172.99.190.50-2653 | 17.924MB",
+        "RELAY-172.67.131.108-2722 | 17.917MB",
         "🇬🇧GB-68.168.31.242-2654 | 17.613MB",
         "RELAY-104.16.67.38-1035 | 17.565MB",
         "RELAY-185.146.173.59-1666 | 17.428MB",
@@ -551,7 +552,6 @@
         "🇪🇸ES-5.188.181.201-0666 | 1.08MB",
         "🇪🇸ES-5.188.181.201-0649 | 1.08MB",
         "🇯🇵JP-185.172.113.182-0662 | 1.079MB",
-        "🇺🇸US-52.45.18.211-2776 | 1.079MB",
         "🇩🇰DK-192.36.27.94-0664 | 1.079MB",
         "🇪🇸ES-5.188.181.201-0665 | 1.079MB",
         "🇯🇵JP-185.172.113.182-0658 | 1.079MB",
@@ -812,6 +812,62 @@
       "multiplex": {
         "protocol": "smux",
         "max_streams": 32
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 5",
+      "server": "speedtest.net",
+      "server_port": 443,
+      "uuid": "Parsashonam-51",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Parsashonam/ws?ed=2560",
+        "headers": {
+          "Host": "speedtest.net"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @Parsashonam | 10",
+      "server": "speedtest.net",
+      "server_port": 443,
+      "uuid": "Parsashonam-50",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.net",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Parsashonam/ws?ed=2560",
+        "headers": {
+          "Host": "speedtest.net"
+        }
       },
       "packet_encoding": "xudp"
     },
@@ -1332,6 +1388,18 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇦CA | 🔴 | vless | @ipV2Ray | 1",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "Telegram-ipV2Ray-how",
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🚩CF | 🔴 | vless | @melov2ray | 0",
       "server": "104.21.19.124",
       "server_port": 8880,
@@ -1372,6 +1440,25 @@
         "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-BIA-ZEDMODEON",
         "idle_timeout": "15s",
         "ping_timeout": "15s"
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦CA | 🔴 | vless | @V2pedia | 4",
+      "server": "www.speedtest.net",
+      "server_port": 2095,
+      "uuid": "biain--ZEDMODEON",
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-@ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-@ZEDMODEON",
+        "headers": {
+          "Host": "www.speedtest.net"
+        }
       },
       "packet_encoding": "xudp"
     },
@@ -2157,25 +2244,6 @@
         "path": "/Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder",
         "headers": {
           "Host": "108.162.195.205"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🚩CF | 🔴 | vless | @ProxyForOpeta | 8",
-      "server": "104.17.147.22",
-      "server_port": 80,
-      "uuid": "d7e47374-af6f-4daa-8bba-7322a157107d",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/telegram-@Shh_Proxy-@Shh_Proxy,telegram-@Shh_Proxy,telegram-@Shh_Proxy,telegram-@Shh_Proxy?ed=2560",
-        "headers": {
-          "Host": "104.17.147.22"
         }
       },
       "packet_encoding": "xudp"
@@ -3471,6 +3539,25 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 2",
+      "server": "join.kiava.cloud.ohbah.com",
+      "server_port": 8880,
+      "uuid": "83c4cb63-c8af-4234-9e9d-6d9ac7361b17",
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "join.kiava.cloud.ohbah.com"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸US | 🔴 | vless | @v2rayNG_Matsuri | 3",
       "server": "start.siteg52770.workers.dev",
       "server_port": 80,
@@ -3994,6 +4081,35 @@
     },
     {
       "type": "vmess",
+      "tag": "🚩CF | 🟢 | vmess | @ShadowProxy66 | 16",
+      "server": "172.67.204.84",
+      "server_port": 443,
+      "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "jahfkjha.cfd",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "jahfkjha.cfd"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 17",
       "server": "pandor.boats",
       "server_port": 443,
@@ -4047,26 +4163,6 @@
         "path": "/linkws",
         "headers": {
           "Host": "indiavideo.sbs"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 19",
-      "server": "deji.kcapsys.com",
-      "server_port": 80,
-      "uuid": "f0273043-d637-4fdf-971c-eb486efa9c4b",
-      "security": "auto",
-      "authenticated_length": true,
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": ""
         }
       }
     },
@@ -4360,18 +4456,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @proxyymeliii | 3",
-      "server": "www.canva.com",
-      "server_port": 8880,
-      "uuid": "4fca2ae2-e6c3-437d-8cdb-39563e601334",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "❔XX | 🔴 | vless | @proxyymeliii | 7",
       "server": "all.shhproxy.cfd",
       "server_port": 443,
@@ -4504,52 +4588,6 @@
         "path": "/",
         "headers": {
           "Host": "185.146.173.37"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @MTConfig | 2",
-      "server": "all.vipxali.cfd",
-      "server_port": 443,
-      "uuid": "0a4acf58-cc3c-4f99-89c1-70d7ca3fbd92",
-      "tls": {
-        "enabled": true,
-        "server_name": "mx.XsV2ray.cfd",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "@XsV2ray,@XsV2ray",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @MTConfig | 3",
-      "server": "all.vipxali.cfd",
-      "server_port": 2095,
-      "uuid": "XsV2ray---XsV2ray---XsV2ray",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/XsV2ray,@XsV2ray,@XsV2ray",
-        "headers": {
-          "Host": "all.vipxali.cfd"
         }
       },
       "packet_encoding": "xudp"
@@ -4753,25 +4791,6 @@
     },
     {
       "type": "vless",
-      "tag": "🚩CF | 🔴 | vless | @V2RayTz | 3",
-      "server": "104.17.147.22",
-      "server_port": 8880,
-      "uuid": "02e16ef3-1d96-42cc-ab27-44c798b1a67e",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2056",
-        "headers": {
-          "Host": "104.17.147.22"
-        }
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
       "tag": "🚩CF | 🔴 | vless | @V2RayTz | 4",
       "server": "172.67.193.36",
       "server_port": 8880,
@@ -4779,25 +4798,6 @@
       "multiplex": {
         "protocol": "smux",
         "max_streams": 32
-      },
-      "packet_encoding": "xudp"
-    },
-    {
-      "type": "vless",
-      "tag": "🚩CF | 🔴 | vless | @V2RayTz | 9",
-      "server": "104.17.147.22",
-      "server_port": 8080,
-      "uuid": "telegram-id-PcV2ray",
-      "multiplex": {
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/telegram-PcV2ry,telegram-PcV2ry,telegram-PcV2ry,telegram-PcV2ry,telegram-PcV2ry,telegram-PcV2ry,telegram-PcV2ry,telegram-PcV2ry?ed=8080",
-        "headers": {
-          "Host": "104.17.147.22"
-        }
       },
       "packet_encoding": "xudp"
     },
@@ -6333,6 +6333,18 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @mehrosaboran | 6",
+      "server": "Www.speedtest.net",
+      "server_port": 2052,
+      "uuid": "TELEGRAM-NUFiLTER",
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸US | 🔴 | vless | @kiava | 3",
       "server": "join.2.kiava.cloud.nevao.ir",
       "server_port": 8880,
@@ -7259,6 +7271,34 @@
     },
     {
       "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 12",
+      "server": "cpanel.com",
+      "server_port": 443,
+      "uuid": "047002bf-b578-44d6-8bfb-a09900a3fb53",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.GozargahVPN.top",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "multiplex": {
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram:,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,@GozargahVPN,",
+        "headers": {
+          "Host": "www.GozargahVPN.top"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
       "tag": "❔XX | 🔴 | vless | @V2FETCH | 1",
       "server": "newochean.teslasolhtjet.ir",
       "server_port": 8888,
@@ -7535,25 +7575,6 @@
     },
     {
       "type": "vmess",
-      "tag": "RELAY-172.67.174.42-2712 | 157.16MB",
-      "server": "172.67.174.42",
-      "server_port": 443,
-      "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "gwdef.sbs"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "RELAY-104.18.206.97-2724 | 152.301MB",
       "server": "104.18.206.97",
       "server_port": 443,
@@ -7804,6 +7825,25 @@
     },
     {
       "type": "vmess",
+      "tag": "RELAY-172.67.219.194-2732 | 48.839MB",
+      "server": "denc36.xtooltech.cfd",
+      "server_port": 443,
+      "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "adenc36v.xtooltech.cfd"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "RELAY-104.16.61.8-0321 | 40.85MB",
       "server": "104.16.61.8",
       "server_port": 8080,
@@ -7850,25 +7890,6 @@
         "path": "/",
         "headers": {
           "Host": "snowy-river-f497.turkeys-radford.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "RELAY-172.67.219.194-2775 | 38.602MB",
-      "server": "172.67.219.194",
-      "server_port": 443,
-      "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "adenc36v.xtooltech.cfd"
         }
       }
     },
@@ -7939,6 +7960,25 @@
         "path": "/",
         "headers": {
           "Host": "worker-divine-hat-02d6.savofir317.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "RELAY-104.21.46.121-2714 | 32.878MB",
+      "server": "104.21.46.121",
+      "server_port": 443,
+      "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ivideos.sbs"
         }
       }
     },
@@ -8286,25 +8326,6 @@
     },
     {
       "type": "vmess",
-      "tag": "RELAY-104.21.69.44-2700 | 18.96MB",
-      "server": "104.21.69.44",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.khilei.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "RELAY-172.67.70.167-2669 | 18.932MB",
       "server": "capellare.com",
       "server_port": 443,
@@ -8500,6 +8521,25 @@
         "path": "/",
         "headers": {
           "Host": "172.99.190.50"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "RELAY-172.67.131.108-2722 | 17.917MB",
+      "server": "172.67.131.108",
+      "server_port": 443,
+      "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "glweidf.cfd"
         }
       }
     },
@@ -9461,25 +9501,6 @@
       "method": "chacha20-ietf-poly1305",
       "password": "G!yBwPWH3Vao",
       "network": "tcp"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸US-52.45.18.211-2776 | 1.079MB",
-      "server": "bolder-metal-comma.glitch.me",
-      "server_port": 443,
-      "uuid": "dac61bb8-461c-4a4a-b14b-5a5ff6991fee",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "bolder-metal-comma.glitch.me"
-        }
-      }
     },
     {
       "type": "shadowsocks",
