@@ -8,26 +8,38 @@
         {
           "process_name": [
             "conjure-client",
+            "conjure-client.exe",
             "dnscrypt-proxy",
+            "dnscrypt-proxy.exe",
             "i2pd",
+            "i2pd.exe",
             "lyrebird",
+            "lyrebird.exe",
             "onionshare",
             "onionshare-cli",
-            "snowflake-client",
-            "tor",
-            "webtunnel-client",
-            "conjure-client.exe",
-            "dnscrypt-proxy.exe",
-            "i2pd.exe",
-            "lyrebird.exe",
             "onionshare-cli.exe",
             "onionshare.exe",
+            "qbittorrent",
+            "qbittorrent-nox",
+            "qbittorrent-nox.exe",
+            "qbittorrent.exe",
+            "snowflake-client",
             "snowflake-client.exe",
+            "tor",
             "tor.exe",
+            "transmission-daemon",
+            "transmission-daemon.exe",
+            "uTorrent",
+            "uTorrent.exe",
+            "webtunnel-client",
             "webtunnel-client.exe"
           ]
         },
         {
+          "domain_suffix": "location.services.mozilla.com"
+        },
+        {
+          "network": "udp",
           "port": 123
         }
       ]
