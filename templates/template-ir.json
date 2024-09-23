@@ -26,15 +26,9 @@
         "tag": "remote"
       },
       {
-        "address": "https://wikimedia-dns.org/dns-query",
-        "address_resolver": "bootstrap",
-        "detour": "direct",
-        "tag": "direct"
-      },
-      {
         "address": "8.8.8.8",
         "detour": "direct",
-        "tag": "bootstrap"
+        "tag": "direct"
       },
       {
         "address": "fakeip",
@@ -140,6 +134,7 @@
       "type": "selector"
     },
     {
+      "domain_strategy": "prefer_ipv6",
       "tag": "direct",
       "type": "direct"
     },
@@ -235,17 +230,8 @@
     ],
     "rules": [
       {
-        "mode": "or",
         "outbound": "dns",
-        "rules": [
-          {
-            "protocol": "dns"
-          },
-          {
-            "port": 53
-          }
-        ],
-        "type": "logical"
+        "protocol": "dns"
       },
       {
         "ip_is_private": true,

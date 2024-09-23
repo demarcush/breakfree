@@ -93,6 +93,7 @@
       "type": "selector"
     },
     {
+      "domain_strategy": "prefer_ipv6",
       "tag": "direct",
       "type": "direct"
     },
@@ -195,17 +196,8 @@
     ],
     "rules": [
       {
-        "mode": "or",
         "outbound": "dns",
-        "rules": [
-          {
-            "protocol": "dns"
-          },
-          {
-            "port": 53
-          }
-        ],
-        "type": "logical"
+        "protocol": "dns"
       },
       {
         "ip_is_private": true,
