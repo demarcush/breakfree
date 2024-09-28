@@ -27,7 +27,7 @@
     },
     {
       "name": "eternity",
-      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
+      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/sub/sub_merge_yaml.yml"
     },
     {
       "name": "collector",
@@ -38,30 +38,9 @@
       "url": "http://127.0.0.1:8080/servers",
       "update_interval": "5m0s",
       "process": {
-        "filter": [
-          "AE",
-          "BG",
-          "BH",
-          "BY",
-          "IL",
-          "KZ",
-          "RU",
-          "TR",
-          "VE",
-          "VN",
-          "🇦🇪",
-          "🇧🇬",
-          "🇧🇭",
-          "🇧🇾",
-          "🇮🇱",
-          "🇰🇿",
-          "🇷🇺",
-          "🇹🇷",
-          "🇻🇪",
-          "🇻🇳"
-        ],
         "filter_type": [
           "http",
+          "shadowsocks",
           "shadowsocksr",
           "socks"
         ],
