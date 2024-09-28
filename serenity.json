@@ -22,12 +22,12 @@
       "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
     },
     {
-      "name": "tvc",
+      "name": "hin",
       "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix"
     },
     {
-      "name": "aggregator",
-      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/sub/sub_merge_yaml.yml"
+      "name": "eternity",
+      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
     },
     {
       "name": "collector",
@@ -61,9 +61,8 @@
       "subscription": [
         "azadi",
         "ircp",
-        "tvc",
-        "aggregator",
-        "collector"
+        "hin",
+        "eternity"
       ]
     },
     {
