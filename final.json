@@ -89,7 +89,7 @@
         "🇨🇭 Azadi 1",
         "🇺🇲 Azadi",
         "𝐈𝐑𝐂𝐏\n@Ln2Ray § hy2+ech",
-        "ozzuupnouq",
+        "dzvszlrqwv",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms 2",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇬🇧 GB 80ms",
@@ -139,6 +139,7 @@
         "🇩🇪 prrofile_purple 🔓 VM-HTTPUPGRADE-N/A 🇨🇦 CA 8ms",
         "🇩🇪 prrofile_purple 🔓 VM-HTTPUPGRADE-N/A 🇨🇦 CA 8ms 2",
         "prrofile_purple 🔓 VM-TCP-N/A 🇮🇷 IR 400ms",
+        "vmessprotocol 🔓 VM-WS-N/A ❔ XX 219ms",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 7",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 8",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 9",
@@ -150,7 +151,6 @@
         "RELAY-104.21.24.170-2720 | 125.134MB",
         "RELAY-172.67.170.11-2716 | 124.394MB",
         "RELAY-104.21.46.121-2690 | 113.702MB",
-        "RELAY-104.21.46.121-2691 | 106.289MB",
         "RELAY-188.114.96.2-2627 | 102.432MB",
         "RELAY-172.67.181.241-2637 | 99.44MB",
         "RELAY-188.114.97.21-2685 | 96.699MB",
@@ -226,8 +226,8 @@
         "🇪🇸ES-5.188.181.201-0514 | 4.669MB",
         "🇺🇸US-154.21.82.134-0527 | 4.557MB",
         "BA-185.164.35.9-0511 | 4.367MB",
-        "🇺🇸US-54.211.144.142-2741 | 4.262MB",
         "🇺🇸US-54.81.34.32-2752 | 4.24MB",
+        "🇺🇸US-54.81.34.32-2747 | 4.097MB",
         "🇬🇧GB-77.72.5.150-0526 | 3.859MB",
         "🇪🇸ES-5.188.181.201-0534 | 3.432MB",
         "🇪🇸ES-5.188.181.201-0536 | 3.431MB",
@@ -366,7 +366,6 @@
         "🇺🇸 US 32",
         "🇺🇸 US 33",
         "🇺🇸 US 34",
-        "🇺🇸 US 35",
         "🇺🇸 US 36",
         "🇺🇸 US 37",
         "🇺🇸 US 38",
@@ -1027,7 +1026,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "ozzuupnouq",
+      "tag": "dzvszlrqwv",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:883d:8027:ed5a:aae0:f7a2/128"
@@ -1595,6 +1594,21 @@
     },
     {
       "type": "vmess",
+      "tag": "vmessprotocol 🔓 VM-WS-N/A ❔ XX 219ms",
+      "server": "cfcdn1.sanfencdn9.com",
+      "server_port": 2052,
+      "uuid": "cd47cb10-d851-489b-86cd-ffaf659ed943",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/video/WNMicnDh",
+        "headers": {
+          "Host": "tw1eskJpKcA.inivtrak.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 7",
       "server": "172.67.71.160",
       "server_port": 443,
@@ -1783,25 +1797,6 @@
       "type": "vmess",
       "tag": "RELAY-104.21.46.121-2690 | 113.702MB",
       "server": "104.21.46.121",
-      "server_port": 443,
-      "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ivideos.sbs"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "RELAY-104.21.46.121-2691 | 106.289MB",
-      "server": "hms24.ivideos.sbs",
       "server_port": 443,
       "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
       "security": "auto",
@@ -2782,22 +2777,6 @@
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸US-54.211.144.142-2741 | 4.262MB",
-      "server": "slime-rhinestone-spy.glitch.me",
-      "server_port": 80,
-      "uuid": "1d5fb496-19fb-48fb-9880-a147326dee62",
-      "security": "auto",
-      "network": "tcp",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "best-charm-pediatrician.glitch.me"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇺🇸US-54.81.34.32-2752 | 4.24MB",
       "server": "bolder-metal-comma.glitch.me",
       "server_port": 443,
@@ -2812,6 +2791,25 @@
         "path": "/",
         "headers": {
           "Host": "bolder-metal-comma.glitch.me"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸US-54.81.34.32-2747 | 4.097MB",
+      "server": "best-charm-pediatrician.glitch.me",
+      "server_port": 443,
+      "uuid": "1d5fb496-19fb-48fb-9880-a147326dee62",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "best-charm-pediatrician.glitch.me"
         }
       }
     },
@@ -4061,21 +4059,6 @@
       "server_port": 5004,
       "method": "aes-256-gcm",
       "password": "g5MeD6Ft3CWlJId"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 US 35",
-      "server": "bolder-metal-comma.glitch.me",
-      "server_port": 443,
-      "uuid": "dac61bb8-461c-4a4a-b14b-5a5ff6991fee",
-      "security": "",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/dac61bb8-461c-4a4a-b14b-5a5ff6991fee-vmess"
-      }
     },
     {
       "type": "shadowsocks",
