@@ -89,7 +89,7 @@
         "🇨🇭 Azadi 1",
         "🇺🇲 Azadi",
         "𝐈𝐑𝐂𝐏\n@Ln2Ray § hy2+ech",
-        "dzvszlrqwv",
+        "qasrygcwqz",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms 2",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇬🇧 GB 80ms",
@@ -226,8 +226,8 @@
         "🇪🇸ES-5.188.181.201-0514 | 4.669MB",
         "🇺🇸US-154.21.82.134-0527 | 4.557MB",
         "BA-185.164.35.9-0511 | 4.367MB",
+        "🇺🇸US-54.211.144.142-2741 | 4.262MB",
         "🇺🇸US-54.81.34.32-2752 | 4.24MB",
-        "🇺🇸US-54.81.34.32-2747 | 4.097MB",
         "🇬🇧GB-77.72.5.150-0526 | 3.859MB",
         "🇪🇸ES-5.188.181.201-0534 | 3.432MB",
         "🇪🇸ES-5.188.181.201-0536 | 3.431MB",
@@ -1026,7 +1026,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "dzvszlrqwv",
+      "tag": "qasrygcwqz",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:883d:8027:ed5a:aae0:f7a2/128"
@@ -2777,6 +2777,22 @@
     },
     {
       "type": "vmess",
+      "tag": "🇺🇸US-54.211.144.142-2741 | 4.262MB",
+      "server": "slime-rhinestone-spy.glitch.me",
+      "server_port": 80,
+      "uuid": "1d5fb496-19fb-48fb-9880-a147326dee62",
+      "security": "auto",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "best-charm-pediatrician.glitch.me"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇺🇸US-54.81.34.32-2752 | 4.24MB",
       "server": "bolder-metal-comma.glitch.me",
       "server_port": 443,
@@ -2791,25 +2807,6 @@
         "path": "/",
         "headers": {
           "Host": "bolder-metal-comma.glitch.me"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸US-54.81.34.32-2747 | 4.097MB",
-      "server": "best-charm-pediatrician.glitch.me",
-      "server_port": 443,
-      "uuid": "1d5fb496-19fb-48fb-9880-a147326dee62",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "best-charm-pediatrician.glitch.me"
         }
       }
     },
