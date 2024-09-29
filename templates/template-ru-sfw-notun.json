@@ -1,22 +1,9 @@
 {
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
-        "server": "direct"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fakeip"
+        "server": "local"
       }
     ],
     "servers": [
@@ -28,11 +15,7 @@
       {
         "address": "8.8.8.8",
         "detour": "direct",
-        "tag": "direct"
-      },
-      {
-        "address": "fakeip",
-        "tag": "fakeip"
+        "tag": "local"
       }
     ]
   },
@@ -54,18 +37,11 @@
       "listen_port": 7890,
       "set_system_proxy": true,
       "sniff": true,
-      "tag": "mixed",
       "type": "mixed"
     }
   ],
   "log": {
     "level": "fatal"
-  },
-  "ntp": {
-    "detour": "direct",
-    "enabled": true,
-    "server": "2.pool.ntp.org",
-    "server_port": 123
   },
   "outbounds": [
     {
@@ -80,7 +56,7 @@
       "type": "selector"
     },
     {
-      "interval": "30m0s",
+      "interval": "30m",
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
@@ -93,7 +69,6 @@
       "type": "selector"
     },
     {
-      "domain_strategy": "prefer_ipv6",
       "tag": "direct",
       "type": "direct"
     },
@@ -189,13 +164,6 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geoip-private",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-private.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "direct",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/direct.srs"
@@ -205,6 +173,10 @@
       {
         "outbound": "dns",
         "protocol": "dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
       },
       {
         "outbound": "block",
@@ -223,7 +195,6 @@
         "rule_set": [
           "direct",
           "geoip-ru",
-          "geoip-private",
           "geosite-category-ru",
           "geosite-connectivity-check",
           "geosite-private"
