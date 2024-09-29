@@ -8,7 +8,7 @@
     ],
     "servers": [
       {
-        "address": "https://1.1.1.1/dns-query",
+        "address": "https://8.8.8.8/dns-query",
         "address_resolver": "direct",
         "tag": "remote"
       },
@@ -46,7 +46,7 @@
   },
   "ntp": {
     "detour": "direct",
-    "enabled": false,
+    "enabled": true,
     "server": "2.pool.ntp.org",
     "server_port": 123
   },

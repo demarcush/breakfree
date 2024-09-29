@@ -8,7 +8,7 @@
     ],
     "servers": [
       {
-        "address": "https://1.1.1.1/dns-query",
+        "address": "https://8.8.8.8/dns-query",
         "address_resolver": "direct",
         "tag": "remote"
       },
@@ -36,23 +36,16 @@
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
-        "com.biglybt.android.client",
-        "com.bittorrent.client",
-        "com.bittorrent.client.pro",
-        "com.infomaniak.meet",
-        "com.psiphon3",
-        "com.psiphon3.subscription",
-        "com.utorrent.client",
-        "com.utorrent.client.pro",
-        "org.jitsi.meet",
+        "net.i2p.android.router",
         "org.onionshare.android",
         "org.onionshare.android.fdroid",
         "org.openobservatory.ooniprobe",
-        "org.proninyaroslav.libretorrent",
+        "org.purplei2p.i2pd",
         "org.torproject.android",
         "org.torproject.torbrowser",
         "org.torproject.torbrowser_alpha",
         "pan.alexander.tordnscrypt",
+        "pan.alexander.tordnscrypt.gp",
         "pan.alexander.tordnscrypt.stable"
       ],
       "inet4_address": "172.19.0.1/30",
@@ -80,7 +73,7 @@
   },
   "ntp": {
     "detour": "direct",
-    "enabled": false,
+    "enabled": true,
     "server": "2.pool.ntp.org",
     "server_port": 123
   },
