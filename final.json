@@ -89,6 +89,7 @@
         "🇨🇭 Azadi 1",
         "🇺🇲 Azadi",
         "𝐈𝐑𝐂𝐏\n@Ln2Ray § hy2+ech",
+        "ktieijeqpg",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms 2",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇬🇧 GB 80ms",
@@ -167,6 +168,7 @@
         "RELAY-172.67.175.56-2692 | 114.15MB",
         "RELAY-104.16.60.8-0259 | 112.486MB",
         "RELAY-172.67.170.11-2776 | 109.61MB",
+        "RELAY-172.67.174.42-2748 | 104.325MB",
         "RELAY-172.67.170.13-2775 | 103.903MB",
         "🇺🇸US-205.134.180.145-0466 | 101.046MB",
         "RELAY-188.114.97.21-2745 | 100.476MB",
@@ -218,6 +220,7 @@
         "RELAY-104.24.197.20-2798 | 35.305MB",
         "RELAY-104.16.68.38-0280 | 34.985MB",
         "RELAY-104.16.61.8-0247 | 34.9MB",
+        "RELAY-172.67.138.140-2751 | 34.811MB",
         "🇬🇧GB-212.102.53.80-0486 | 34.749MB",
         "RELAY-172.67.207.26-2800 | 34.521MB",
         "🇬🇧GB-18.135.154.115-0499 | 34.464MB",
@@ -417,6 +420,20 @@
           ]
         }
       }
+    },
+    {
+      "type": "wireguard",
+      "tag": "ktieijeqpg",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:883d:8027:ed5a:aae0:f7a2/128"
+      ],
+      "private_key": "wF4MIEolgwPyXrxK8Wr04lm2r2nsawfv+cwtP0I9SHY=",
+      "server": "188.114.98.224",
+      "server_port": 908,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "SkcG",
+      "mtu": 1280
     },
     {
       "type": "trojan",
@@ -1502,6 +1519,25 @@
     },
     {
       "type": "vmess",
+      "tag": "RELAY-172.67.174.42-2748 | 104.325MB",
+      "server": "172.67.174.42",
+      "server_port": 443,
+      "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "gwdef.sbs"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "RELAY-172.67.170.13-2775 | 103.903MB",
       "server": "172.67.170.13",
       "server_port": 443,
@@ -2209,6 +2245,25 @@
         "path": "/",
         "headers": {
           "Host": "vmess.taxar71054.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "RELAY-172.67.138.140-2751 | 34.811MB",
+      "server": "hms24.ivideos.sbs",
+      "server_port": 443,
+      "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ivideos.sbs"
         }
       }
     },
