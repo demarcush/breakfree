@@ -86,6 +86,7 @@
       "type": "selector",
       "tag": "default",
       "outbounds": [
+        "feotricsei",
         "🇨🇭 Azadi 1",
         "🇺🇲 Azadi",
         "𝐈𝐑𝐂𝐏\n@Ln2Ray § hy2+ech",
@@ -166,7 +167,6 @@
         "RELAY-172.67.175.56-2692 | 114.15MB",
         "RELAY-104.16.60.8-0259 | 112.486MB",
         "RELAY-172.67.170.11-2776 | 109.61MB",
-        "RELAY-172.67.174.42-2748 | 104.325MB",
         "RELAY-172.67.170.13-2775 | 103.903MB",
         "🇺🇸US-205.134.180.145-0466 | 101.046MB",
         "RELAY-188.114.97.21-2745 | 100.476MB",
@@ -253,7 +253,6 @@
         "🇩🇪DE-80.92.204.106-0517 | 5.29MB",
         "🇺🇸US-54.81.34.32-2812 | 5.044MB",
         "VN-103.163.218.2-9183 | 4.974MB",
-        "🇺🇸US-54.211.144.142-2807 | 4.958MB",
         "🇩🇪DE-80.92.204.106-0515 | 4.561MB",
         "TR-45.89.52.66-8338 | 4.542MB",
         "🇨🇦CA-146.19.106.89-0972 | 4.271MB",
@@ -334,6 +333,20 @@
         "🇺🇸US-38.121.43.71-1590 | 1.076MB",
         "🇺🇸US-38.121.43.71-0666 | 1.076MB"
       ]
+    },
+    {
+      "type": "wireguard",
+      "tag": "feotricsei",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:883d:8027:ed5a:aae0:f7a2/128"
+      ],
+      "private_key": "wF4MIEolgwPyXrxK8Wr04lm2r2nsawfv+cwtP0I9SHY=",
+      "server": "188.114.98.224",
+      "server_port": 908,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "SkcG",
+      "mtu": 1280
     },
     {
       "type": "hysteria2",
@@ -1487,25 +1500,6 @@
     },
     {
       "type": "vmess",
-      "tag": "RELAY-172.67.174.42-2748 | 104.325MB",
-      "server": "172.67.174.42",
-      "server_port": 443,
-      "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "gwdef.sbs"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "RELAY-172.67.170.13-2775 | 103.903MB",
       "server": "172.67.170.13",
       "server_port": 443,
@@ -2636,25 +2630,6 @@
       "method": "aes-256-cfb",
       "password": "f8f7aCzcPKbsF8p3",
       "network": "tcp"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸US-54.211.144.142-2807 | 4.958MB",
-      "server": "best-charm-pediatrician.glitch.me",
-      "server_port": 443,
-      "uuid": "1d5fb496-19fb-48fb-9880-a147326dee62",
-      "security": "auto",
-      "network": "tcp",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "best-charm-pediatrician.glitch.me"
-        }
-      }
     },
     {
       "type": "shadowsocks",
