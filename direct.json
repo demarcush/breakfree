@@ -19,18 +19,10 @@
             "onionshare-cli",
             "onionshare-cli.exe",
             "onionshare.exe",
-            "qbittorrent",
-            "qbittorrent-nox",
-            "qbittorrent-nox.exe",
-            "qbittorrent.exe",
             "snowflake-client",
             "snowflake-client.exe",
             "tor",
             "tor.exe",
-            "transmission-daemon",
-            "transmission-daemon.exe",
-            "uTorrent",
-            "uTorrent.exe",
             "webtunnel-client",
             "webtunnel-client.exe"
           ]

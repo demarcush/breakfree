@@ -14,6 +14,10 @@
   ],
   "subscriptions": [
     {
+      "name": "warp",
+      "url": "https://itshin.serv00.net/api/warpinator/"
+    },
+    {
       "name": "azadi",
       "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub"
     },
@@ -58,6 +62,7 @@
       "name": "servers",
       "template": "breakfree",
       "subscription": [
+        "warp",
         "azadi",
         "ircp",
         "hin",
