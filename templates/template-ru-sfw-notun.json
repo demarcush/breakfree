@@ -60,7 +60,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://torrentgalaxy.to/robots.txt"
+      "url": "https://yts.mx/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
