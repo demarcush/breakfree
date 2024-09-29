@@ -14,16 +14,16 @@
   ],
   "subscriptions": [
     {
-      "name": "warp",
-      "url": "https://itshin.serv00.net/api/warpinator/"
-    },
-    {
       "name": "azadi",
       "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub"
     },
     {
       "name": "ircp",
       "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
+    },
+    {
+      "name": "warp",
+      "url": "https://itshin.serv00.net/api/warpinator/"
     },
     {
       "name": "hin",
@@ -62,11 +62,12 @@
       "name": "servers",
       "template": "breakfree",
       "subscription": [
-        "warp",
         "azadi",
         "ircp",
+        "warp",
         "hin",
-        "eternity"
+        "eternity",
+        "collector"
       ]
     },
     {
