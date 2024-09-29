@@ -22,6 +22,10 @@
       "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
     },
     {
+      "name": "warp",
+      "url": "https://itshin.serv00.net/api/warpinator/"
+    },
+    {
       "name": "hin",
       "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix"
     },
@@ -60,8 +64,10 @@
       "subscription": [
         "azadi",
         "ircp",
+        "warp",
         "hin",
-        "eternity"      ]
+        "eternity"
+      ]
     },
     {
       "name": "final",
