@@ -89,7 +89,7 @@
         "🇨🇭 Azadi 1",
         "🇺🇲 Azadi",
         "𝐈𝐑𝐂𝐏\n@Ln2Ray § hy2+ech",
-        "rlgtmzsban",
+        "uqrawtkouc",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇮🇪 IE 71ms 2",
         "🇹🇷 directvpn 🔒 TR-TCP-N/A 🇬🇧 GB 80ms",
@@ -139,6 +139,7 @@
         "🇩🇪 prrofile_purple 🔓 VM-HTTPUPGRADE-N/A 🇨🇦 CA 8ms",
         "🇩🇪 prrofile_purple 🔓 VM-HTTPUPGRADE-N/A 🇨🇦 CA 8ms 2",
         "prrofile_purple 🔓 VM-TCP-N/A 🇮🇷 IR 400ms",
+        "vmessprotocol 🔓 VM-WS-N/A ❔ XX 219ms",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 7",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 8",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 9",
@@ -197,6 +198,7 @@
         "🇨🇳TW-36.228.214.87-0552 | 11.068MB",
         "🇫🇷FR-51.159.111.208-0512 | 10.432MB",
         "RELAY-104.21.46.121-2697 | 9.415MB",
+        "RELAY-172.67.138.140-2698 | 8.879MB",
         "🇬🇧GB-149.7.16.188-2737 | 8.068MB",
         "PA-138.186.142.4-8873 | 7.816MB",
         "🇪🇸ES-5.188.181.201-8248 | 7.49MB",
@@ -426,7 +428,7 @@
     },
     {
       "type": "wireguard",
-      "tag": "rlgtmzsban",
+      "tag": "uqrawtkouc",
       "local_address": [
         "172.16.0.2/32",
         "2606:4700:110:883d:8027:ed5a:aae0:f7a2/128"
@@ -991,6 +993,21 @@
       "server_port": 80,
       "uuid": "99950228-b709-4eea-b186-d2712e3af45a",
       "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "vmessprotocol 🔓 VM-WS-N/A ❔ XX 219ms",
+      "server": "cfcdn1.sanfencdn9.com",
+      "server_port": 2052,
+      "uuid": "cd47cb10-d851-489b-86cd-ffaf659ed943",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/video/WNMicnDh",
+        "headers": {
+          "Host": "tw1eskJpKcA.inivtrak.xyz"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -1726,6 +1743,25 @@
       "type": "vmess",
       "tag": "RELAY-104.21.46.121-2697 | 9.415MB",
       "server": "104.21.46.121",
+      "server_port": 443,
+      "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+      "security": "auto",
+      "network": "tcp",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ivideos.sbs"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "RELAY-172.67.138.140-2698 | 8.879MB",
+      "server": "hms24.ivideos.sbs",
       "server_port": 443,
       "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
       "security": "auto",
