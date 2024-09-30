@@ -211,8 +211,12 @@
         "outbound": "direct"
       },
       {
-        "outbound": "block",
-        "protocol": "stun"
+        "outbound": "direct",
+        "rule_set": [
+          "direct",
+          "geosite-connectivity-check",
+          "geosite-private"
+        ]
       },
       {
         "outbound": "block",
@@ -228,13 +232,14 @@
         ]
       },
       {
+        "outbound": "block",
+        "protocol": "stun"
+      },
+      {
         "outbound": "direct",
         "rule_set": [
-          "direct",
           "geoip-cn",
-          "geosite-cn",
-          "geosite-connectivity-check",
-          "geosite-private"
+          "geosite-cn"
         ]
       }
     ]
