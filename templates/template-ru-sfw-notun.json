@@ -27,8 +27,8 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "xd",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
+      "external_ui": "yacd",
+      "external_ui_download_detour": "direct"
     }
   },
   "inbounds": [
@@ -60,7 +60,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://nyaa.si/robots.txt"
+      "url": "https://torrentgalaxy.to/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
@@ -71,7 +71,6 @@
     {
       "domain_strategy": "prefer_ipv6",
       "tag": "direct",
-      "tcp_fast_open": true,
       "tcp_multi_path": true,
       "type": "direct"
     },
@@ -87,6 +86,13 @@
   "route": {
     "auto_detect_interface": true,
     "rule_set": [
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "block",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/block.srs"
+      },
       {
         "download_detour": "direct",
         "format": "binary",
@@ -183,7 +189,12 @@
       },
       {
         "outbound": "block",
+        "protocol": "stun"
+      },
+      {
+        "outbound": "block",
         "rule_set": [
+          "block",
           "geoip-malware",
           "geoip-phishing",
           "geosite-category-ads-all",
