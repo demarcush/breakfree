@@ -27,8 +27,9 @@ exp ir && echo "IR files exported!"
 exp ru && echo "RU files exported!"
 
 for i in release/Sing-Box/*.json; do sing-box check -c "$i" && echo "'$i' is OK!"; done
-
+rm ${SRV}.json
 echo "SUCCESS!"
 
 ## Updating direct rule-set
 sing-box rule-set format -w direct.json && sing-box rule-set compile direct.json && echo "Direct rule-set updated!"
+sing-box rule-set format -w block.json && sing-box rule-set compile block.json && echo "Block rule-set updated!"
