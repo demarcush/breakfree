@@ -1,194 +1,23 @@
 {
-  "log": {
-    "level": "fatal"
-  },
   "dns": {
-    "servers": [
-      {
-        "tag": "remote",
-        "address": "https://8.8.8.8/dns-query",
-        "address_resolver": "local"
-      },
-      {
-        "tag": "local",
-        "address": "8.8.8.8",
-        "detour": "direct"
-      }
-    ],
     "rules": [
       {
         "outbound": "any",
         "server": "local"
       }
+    ],
+    "servers": [
+      {
+        "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "local",
+        "tag": "remote"
+      },
+      {
+        "address": "8.8.8.8",
+        "detour": "direct",
+        "tag": "local"
+      }
     ]
-  },
-  "inbounds": [
-    {
-      "type": "mixed",
-      "listen": "::",
-      "listen_port": 7890,
-      "sniff": true,
-      "set_system_proxy": true
-    }
-  ],
-  "outbounds": [
-    {
-      "type": "selector",
-      "tag": "default",
-      "outbounds": [
-        "auto",
-        "manual",
-        "direct",
-        "block"
-      ],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "urltest",
-      "tag": "auto",
-      "outbounds": [],
-      "url": "https://nyaa.si/robots.txt",
-      "interval": "30m0s"
-    },
-    {
-      "type": "selector",
-      "tag": "manual",
-      "outbounds": [],
-      "interrupt_exist_connections": true
-    },
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
-    },
-    {
-      "type": "dns",
-      "tag": "dns"
-    }
-  ],
-  "route": {
-    "rules": [
-      {
-        "protocol": "dns",
-        "outbound": "dns"
-      },
-      {
-        "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
-        "rule_set": [
-          "geoip-malware",
-          "geoip-phishing",
-          "geosite-category-ads-all",
-          "geosite-cryptominers",
-          "geosite-malware",
-          "geosite-nsfw",
-          "geosite-phishing"
-        ],
-        "outbound": "block"
-      },
-      {
-        "rule_set": [
-          "direct",
-          "geoip-ru",
-          "geosite-category-ru",
-          "geosite-connectivity-check",
-          "geosite-private"
-        ],
-        "outbound": "direct"
-      }
-    ],
-    "rule_set": [
-      {
-        "type": "remote",
-        "tag": "geoip-malware",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-malware.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-phishing",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-phishing.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-category-ads-all",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ads-all.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-cryptominers",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cryptominers.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-malware",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-malware.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-nsfw",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-phishing",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-phishing.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "direct",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/direct.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-ru",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ru.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-category-ru",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ru.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-connectivity-check",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-connectivity-check.srs",
-        "download_detour": "direct"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-private",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-private.srs",
-        "download_detour": "direct"
-      }
-    ],
-    "auto_detect_interface": true
   },
   "experimental": {
     "cache_file": {
@@ -201,5 +30,179 @@
       "external_ui": "xd",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
     }
+  },
+  "inbounds": [
+    {
+      "listen": "::",
+      "listen_port": 7890,
+      "set_system_proxy": true,
+      "sniff": true,
+      "type": "mixed"
+    }
+  ],
+  "log": {
+    "level": "fatal"
+  },
+  "outbounds": [
+    {
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "auto",
+        "manual",
+        "direct",
+        "block"
+      ],
+      "tag": "default",
+      "type": "selector"
+    },
+    {
+      "interval": "30m",
+      "outbounds": [],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://nyaa.si/robots.txt"
+    },
+    {
+      "interrupt_exist_connections": true,
+      "outbounds": [],
+      "tag": "manual",
+      "type": "selector"
+    },
+    {
+      "domain_strategy": "prefer_ipv6",
+      "tag": "direct",
+      "tcp_fast_open": true,
+      "tcp_multi_path": true,
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns",
+      "type": "dns"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rule_set": [
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-malware",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-malware.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-phishing",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-phishing.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-category-ads-all",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ads-all.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-cryptominers",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cryptominers.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-malware",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-malware.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-nsfw",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-phishing",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-phishing.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "direct",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/direct.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geoip-ru",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ru.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-category-ru",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ru.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-connectivity-check",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-connectivity-check.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
+        "tag": "geosite-private",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-private.srs"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "dns",
+        "protocol": "dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "outbound": "block",
+        "rule_set": [
+          "geoip-malware",
+          "geoip-phishing",
+          "geosite-category-ads-all",
+          "geosite-cryptominers",
+          "geosite-malware",
+          "geosite-nsfw",
+          "geosite-phishing"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "direct",
+          "geoip-ru",
+          "geosite-category-ru",
+          "geosite-connectivity-check",
+          "geosite-private"
+        ]
+      }
+    ]
   }
 }
