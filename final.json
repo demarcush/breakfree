@@ -137,6 +137,7 @@
         "🇩🇪 prrofile_purple 🔓 VM-HTTPUPGRADE-N/A 🇨🇦 CA 8ms",
         "🇩🇪 prrofile_purple 🔓 VM-HTTPUPGRADE-N/A 🇨🇦 CA 8ms 2",
         "prrofile_purple 🔓 VM-TCP-N/A 🇮🇷 IR 400ms",
+        "vmessprotocol 🔓 VM-WS-N/A ❔ XX 219ms",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 7",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 8",
         "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 9",
@@ -173,6 +174,7 @@
         "🇫🇷FR-51.77.20.132-2711 | 64.538MB",
         "CH-156.146.62.161-0401 | 62.516MB",
         "🇫🇷FR-163.5.159.231-2756 | 61.194MB",
+        "RELAY-104.21.238.67-2516 | 59.803MB",
         "🇬🇧GB-18.175.69.136-0520 | 59.679MB",
         "CH-156.146.62.162-0402 | 57.932MB",
         "IE-13.79.174.197-0488 | 43.86MB",
@@ -187,6 +189,7 @@
         "🇫🇷FR-51.15.27.48-0491 | 33.924MB",
         "🇷🇺RU-45.130.147.162-1496 | 33.864MB",
         "CH-156.146.62.163-0396 | 33.482MB",
+        "🇬🇧GB-18.175.69.136-0524 | 33.395MB",
         "🇬🇧GB-212.102.47.132-0485 | 33.251MB",
         "🇬🇧GB-141.98.101.178-0538 | 32.715MB",
         "BH-15.184.189.130-0548 | 32.619MB",
@@ -953,6 +956,21 @@
     },
     {
       "type": "vmess",
+      "tag": "vmessprotocol 🔓 VM-WS-N/A ❔ XX 219ms",
+      "server": "cfcdn1.sanfencdn9.com",
+      "server_port": 2052,
+      "uuid": "cd47cb10-d851-489b-86cd-ffaf659ed943",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/video/WNMicnDh",
+        "headers": {
+          "Host": "tw1eskJpKcA.inivtrak.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "vmessprotocol 🔒 VM-WS-TLS 🇨🇦 CA 5ms 7",
       "server": "172.67.71.160",
       "server_port": 443,
@@ -1431,6 +1449,22 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "RELAY-104.21.238.67-2516 | 59.803MB",
+      "server": "cfcdn1.sanfencdn9.com",
+      "server_port": 2052,
+      "uuid": "423caa0c-0542-4326-92e1-18769b6608e7",
+      "security": "auto",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "tw1eskJpKcA.inivtrak.xyz"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇬🇧GB-18.175.69.136-0520 | 59.679MB",
       "server": "series-a2.varzesh360.co",
@@ -1605,6 +1639,15 @@
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks",
+      "network": "tcp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧GB-18.175.69.136-0524 | 33.395MB",
+      "server": "series-a2.samanehha.co",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mps3FwmDjLrWaOVg",
       "network": "tcp"
     },
     {
