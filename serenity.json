@@ -22,20 +22,16 @@
       "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
     },
     {
-      "name": "warp",
-      "url": "https://itshin.serv00.net/api/warpinator/"
+      "name": "collector",
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
-      "name": "sub-web",
-      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix|https://cdn.jsdelivr.net/gh/rango-cfs/Collector@main/sub/IP_CF_(mix)base64|https://cdn.jsdelivr.net/gh/rango-cfs/Min@main/Miner/base64&append_type=true&list=true&tfo=true&fdn=true&sort=true"
+      "name": "hin",
+      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix&append_type=true&list=true&tfo=true&fdn=true&sort=true"
     },
     {
       "name": "eternity",
       "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
-    },
-    {
-      "name": "collector",
-      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
       "name": "final",
@@ -64,10 +60,9 @@
       "subscription": [
         "azadi",
         "ircp",
-        "warp",
-        "sub-web",
-        "eternity",
-        "collector"
+        "collector",
+        "hin",
+        "eternity"
       ]
     },
     {
