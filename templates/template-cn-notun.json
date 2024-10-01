@@ -1,9 +1,22 @@
 {
   "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
         "server": "local"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
       }
     ],
     "servers": [
@@ -16,6 +29,10 @@
         "address": "https://223.5.5.5/dns-query",
         "detour": "direct",
         "tag": "local"
+      },
+      {
+        "address": "fakeip",
+        "tag": "fakeip"
       }
     ]
   },
@@ -27,8 +44,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "yacd",
-      "external_ui_download_detour": "direct"
+      "external_ui": "yacd"
     }
   },
   "inbounds": [
@@ -60,7 +76,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://torrentgalaxy.to/robots.txt"
+      "url": "https://nyaa.si/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
@@ -206,10 +222,6 @@
           "geosite-malware",
           "geosite-phishing"
         ]
-      },
-      {
-        "outbound": "block",
-        "protocol": "stun"
       },
       {
         "outbound": "direct",

@@ -1,9 +1,22 @@
 {
   "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
         "server": "local"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
       }
     ],
     "servers": [
@@ -16,6 +29,10 @@
         "address": "https://223.5.5.5/dns-query",
         "detour": "direct",
         "tag": "local"
+      },
+      {
+        "address": "fakeip",
+        "tag": "fakeip"
       }
     ]
   },
@@ -27,8 +44,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "yacd",
-      "external_ui_download_detour": "direct"
+      "external_ui": "yacd"
     }
   },
   "inbounds": [
@@ -52,6 +68,13 @@
       "inet4_address": "172.19.0.1/30",
       "inet4_route_exclude_address": "192.168.0.0/16",
       "inet6_address": "fdfe:dcba:9876::1/126",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      },
       "sniff": true,
       "strict_route": true,
       "type": "tun"
@@ -83,7 +106,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://torrentgalaxy.to/robots.txt"
+      "url": "https://nyaa.si/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
@@ -230,10 +253,6 @@
           "geosite-nsfw",
           "geosite-phishing"
         ]
-      },
-      {
-        "outbound": "block",
-        "protocol": "stun"
       },
       {
         "outbound": "direct",
