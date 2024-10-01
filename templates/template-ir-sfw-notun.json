@@ -72,15 +72,19 @@
       "type": "selector"
     },
     {
-      "interval": "30m",
-      "outbounds": [],
+      "interval": "30m0s",
+      "outbounds": [
+        "💙 Telegram: @BreakRealFree"
+      ],
       "tag": "auto",
       "type": "urltest",
       "url": "https://nyaa.si/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
-      "outbounds": [],
+      "outbounds": [
+        "💙 Telegram: @BreakRealFree"
+      ],
       "tag": "manual",
       "type": "selector"
     },
@@ -97,6 +101,12 @@
     {
       "tag": "dns",
       "type": "dns"
+    },
+    {
+      "server": "127.0.0.1",
+      "server_port": 987,
+      "tag": "💙 Telegram: @BreakRealFree",
+      "type": "http"
     }
   ],
   "route": {
