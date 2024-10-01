@@ -26,8 +26,8 @@
       "url": "https://itshin.serv00.net/api/warpinator/"
     },
     {
-      "name": "hin",
-      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix"
+      "name": "sub-web",
+      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix|https://cdn.jsdelivr.net/gh/rango-cfs/Collector@main/sub/IP_CF_(mix)base64|https://cdn.jsdelivr.net/gh/rango-cfs/Min@main/Miner/base64&append_type=true&list=true&tfo=true&fdn=true&sort=true"
     },
     {
       "name": "eternity",
@@ -40,10 +40,10 @@
     {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
-      "update_interval": "5m0s",
       "process": {
         "filter_type": [
           "http",
+          "shadowsocks",
           "shadowsocksr",
           "socks"
         ],
@@ -63,8 +63,11 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
-        "hin",
-        "eternity"
+        "ircp",
+        "warp",
+        "sub-web",
+        "eternity",
+        "collector"
       ]
     },
     {
