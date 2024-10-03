@@ -28,7 +28,11 @@
           ]
         },
         {
-          "domain_suffix": "location.services.mozilla.com"
+          "domain_suffix": [
+            "location.services.mozilla.com",
+            "push.apple.com",
+            "push.services.mozilla.com"
+          ]
         },
         {
           "network": "udp",
