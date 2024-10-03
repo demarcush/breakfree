@@ -43,7 +43,7 @@
       "store_rdrc": true
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:9090",
+      "external_controller": "localhost:9090",
       "external_ui": "yacd",
       "external_ui_download_detour": "direct"
     }
@@ -72,7 +72,7 @@
       "platform": {
         "http_proxy": {
           "enabled": true,
-          "server": "127.0.0.1",
+          "server": "localhost",
           "server_port": 7890
         }
       },
@@ -134,7 +134,7 @@
       "type": "dns"
     },
     {
-      "server": "127.0.0.1",
+      "server": "localhost",
       "server_port": 987,
       "tag": "💙 Telegram: @BreakRealFree",
       "type": "http"
