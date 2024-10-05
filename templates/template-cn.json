@@ -109,7 +109,7 @@
       ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://nyaa.si/robots.txt"
+      "url": "https://annas-archive.org/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
