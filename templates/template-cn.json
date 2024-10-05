@@ -109,7 +109,7 @@
       ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://annas-archive.org/robots.txt"
+      "url": "https://www.naughtyblog.org/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
@@ -122,6 +122,7 @@
     {
       "domain_strategy": "prefer_ipv6",
       "tag": "direct",
+      "tcp_fast_open": true,
       "tcp_multi_path": true,
       "type": "direct"
     },
