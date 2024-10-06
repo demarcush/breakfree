@@ -49,7 +49,7 @@
           "shadowsocksr",
           "socks"
         ],
-        "remove": true
+        "remove": true,
         "rewrite_multiplex": {
           "enabled": true,
           "padding": true
