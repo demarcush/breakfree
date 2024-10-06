@@ -30,8 +30,8 @@
       "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix&append_type=true&list=true&tfo=true&fdn=true&sort=true"
     },
     {
-      "name": "eternity",
-      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
+      "name": "aggregator",
+      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/sub/sub_merge_yaml.yml"
     },
     {
       "name": "final",
@@ -59,9 +59,10 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
+	//"ircp",
         "collector",
         "hin",
-        "eternity"
+        "aggregator"
       ]
     },
     {
