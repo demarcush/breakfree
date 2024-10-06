@@ -15,35 +15,44 @@
   "subscriptions": [
     {
       "name": "azadi",
-      "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub"
+      "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub",
+      "update_interval": "5m0s"
     },
     {
       "name": "ircp",
-      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
+      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub",
+      "update_interval": "5m0s"
     },
     {
       "name": "collector",
-      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json",
+      "update_interval": "5m0s"
     },
     {
       "name": "hin",
-      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix&append_type=true&list=true&tfo=true&fdn=true&sort=true"
+      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix&append_type=true&list=true&tfo=true&fdn=true&sort=true",
+      "update_interval": "5m0s"
     },
     {
       "name": "aggregator",
-      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/sub/sub_merge_yaml.yml"
+      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/sub/sub_merge_yaml.yml",
+      "update_interval": "5m0s"
     },
     {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
+      "update_interval": "5m0s",
       "process": {
-        "filter_type": [
+        "exclude_type": [
           "http",
           "shadowsocks",
           "shadowsocksr",
           "socks"
         ],
-        "remove": true
+        "rewrite_multiplex": {
+          "enabled": true,
+          "padding": true
+        }
       },
       "deduplication": true
     }
