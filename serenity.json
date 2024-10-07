@@ -26,6 +26,10 @@
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
+      "name": "tvc",
+      "url": "https://cdn.jsdelivr.net/gh/yebekhe/TVC@main/subscriptions/singbox/mix.json"
+    },
+    {
       "name": "hin",
       "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix&append_type=true&list=true&tfo=true&fdn=true&sort=true"
     },
@@ -66,7 +70,8 @@
         "azadi",
         //"ircp",
         "collector",
-        "hin",
+        "tvc",
+        //"hin",
         "aggregator"
       ]
     },
