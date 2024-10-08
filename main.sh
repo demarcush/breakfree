@@ -10,11 +10,11 @@ function exp() {
 }
 
 git clone https://github.com/SagerNet/serenity
-cd serenity && make install > /dev/null && cd ..
+cd serenity && make install 2> /dev/null && cd ..
 serenity -c serenity.json run &
 
 git clone https://github.com/SagerNet/sing-box
-cd sing-box && git checkout main-next && make install > /dev/null && cd ..
+cd sing-box && git checkout main-next && make install 2> /dev/null && cd ..
 
 curl -fsSL -o "${SRV}.json" http://localhost:8080/${SRV}
 
