@@ -18,6 +18,10 @@
       "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub"
     },
     {
+      "name": "ircp",
+      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
+    },
+    {
       "name": "collector",
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
@@ -32,10 +36,6 @@
     {
       "name": "eternity",
       "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
-    },
-    {
-      "name": "ircp",
-      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
     },
     {
       "name": "final",
@@ -67,11 +67,11 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
+        //"ircp"
         "collector",
         "tvc",
         "hin",
-        "eternity",
-        "ircp"
+        "eternity"
       ]
     },
     {
