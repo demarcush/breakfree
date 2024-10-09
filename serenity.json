@@ -26,12 +26,12 @@
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
-      "name": "tvc",
-      "url": "https://cdn.jsdelivr.net/gh/yebekhe/TVC@main/subscriptions/singbox/mix.json"
-    },
-    {
       "name": "hin",
       "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix&append_type=true&list=true&tfo=true&fdn=true&sort=true"
+    },
+    {
+      "name": "rooster",
+      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/roosterkid/openproxylist@main/V2RAY_BASE64.txt&append_type=true&list=true&tfo=true&fdn=true&sort=true"
     },
     {
       "name": "eternity",
@@ -69,8 +69,8 @@
         "azadi",
         //"ircp"
         "collector",
-        "tvc",
         "hin",
+        "rooster",
         "eternity"
       ]
     },
