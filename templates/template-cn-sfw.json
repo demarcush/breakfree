@@ -115,7 +115,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://torrentgalaxy.to/robots.txt"
+      "url": "https://ipv6.google.com/generate_204"
     },
     {
       "interrupt_exist_connections": true,
