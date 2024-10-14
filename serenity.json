@@ -27,7 +27,7 @@
     },
     {
       "name": "sub-web",
-      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix|https://cdn.jsdelivr.net/gh/roosterkid/openproxylist@main/V2RAY_BASE64.txt&append_type=true&list=true&tfo=true&fdn=true&sort=true"
+      "url": "https://sub.xeton.dev/sub?target=singbox&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix|https://cdn.jsdelivr.net/gh/roosterkid/openproxylist@main/V2RAY_BASE64.txt&list=true&tfo=true&fdn=true&sort=true"
     },
     {
       "name": "eternity",
@@ -63,7 +63,7 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
-        //"ircp"
+        //"ircp",
         "collector",
         "sub-web",
         "eternity"
