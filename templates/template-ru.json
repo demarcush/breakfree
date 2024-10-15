@@ -113,9 +113,7 @@
     },
     {
       "interval": "30m0s",
-      "outbounds": [
-        "💙 Telegram: @BreakRealFree"
-      ],
+      "outbounds": [],
       "tag": "auto",
       "type": "urltest",
       "url": "https://nyaa.si/robots.txt"
