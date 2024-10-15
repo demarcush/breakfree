@@ -56,12 +56,7 @@
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
-        "com.biglybt.android.client",
-        "com.bittorrent.client",
-        "com.bittorrent.client.pro",
         "com.infomaniak.meet",
-        "com.utorrent.client",
-        "com.utorrent.client.pro",
         "net.i2p.android.router",
         "org.jitsi.meet",
         "org.onionshare.android",
