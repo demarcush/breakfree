@@ -24,6 +24,11 @@
       "update_interval": "1m0s"
     },
     {
+      "name": "warp",
+      "url": "https://itshin.serv00.net/api/warpinator/",
+      "update_interval": "1m0s"
+    },
+    {
       "name": "collector",
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json",
       "update_interval": "1m0s"
@@ -69,6 +74,7 @@
       "subscription": [
         "azadi",
         //"ircp",
+        "warp",
         "collector",
         "sub-web",
         "eternity"
