@@ -34,7 +34,8 @@
         "address": "fakeip",
         "tag": "fakeip"
       }
-    ]
+    ],
+    "strategy": "prefer_ipv6"
   },
   "experimental": {
     "cache_file": {
@@ -112,10 +113,12 @@
     },
     {
       "interval": "30m0s",
-      "outbounds": [],
+      "outbounds": [
+        "💙 Telegram: @BreakRealFree"
+      ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://torrentgalaxy.to/robots.txt"
+      "url": "https://nyaa.si/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
@@ -128,8 +131,6 @@
     {
       "domain_strategy": "prefer_ipv6",
       "tag": "direct",
-      "tcp_fast_open": true,
-      "tcp_multi_path": true,
       "type": "direct"
     },
     {
