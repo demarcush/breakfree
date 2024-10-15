@@ -22,7 +22,6 @@
     "servers": [
       {
         "address": "https://8.8.8.8/dns-query",
-        "address_resolver": "local",
         "tag": "remote"
       },
       {
@@ -34,8 +33,7 @@
         "address": "fakeip",
         "tag": "fakeip"
       }
-    ],
-    "strategy": "prefer_ipv6"
+    ]
   },
   "experimental": {
     "cache_file": {
@@ -116,7 +114,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://nyaa.si/robots.txt"
+      "url": "https://torrentgalaxy.to/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
@@ -222,6 +220,13 @@
       {
         "download_detour": "direct",
         "format": "binary",
+        "tag": "geoip-private",
+        "type": "remote",
+        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-private.srs"
+      },
+      {
+        "download_detour": "direct",
+        "format": "binary",
         "tag": "geosite-category-ru",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ru.srs"
@@ -247,13 +252,10 @@
         "protocol": "dns"
       },
       {
-        "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
         "outbound": "direct",
         "rule_set": [
           "direct",
+          "geoip-private",
           "geosite-connectivity-check",
           "geosite-private"
         ]
