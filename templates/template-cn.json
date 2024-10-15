@@ -42,6 +42,16 @@
       "store_rdrc": true
     },
     "clash_api": {
+      "access_control_allow_origin": [
+        "http://127.0.0.1",
+        "http://localhost",
+        "https://d.metacubex.one",
+        "https://metacubex.github.io",
+        "https://metacubexd.pages.dev",
+        "https://metacubexd.pages.dev",
+        "https://yacd.haishan.me"
+      ],
+      "access_control_allow_private_network": true,
       "external_controller": "localhost:9090",
       "external_ui": "yacd",
       "external_ui_download_detour": "direct"
@@ -49,6 +59,11 @@
   },
   "inbounds": [
     {
+      "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_redirect": true,
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
@@ -73,9 +88,6 @@
         "pan.alexander.tordnscrypt.stable"
       ],
       "gso": true,
-      "inet4_address": "172.19.0.1/30",
-      "inet4_route_exclude_address": "192.168.0.0/16",
-      "inet6_address": "fdfe:dcba:9876::1/126",
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -83,6 +95,13 @@
           "server_port": 7890
         }
       },
+      "route_exclude_address": [
+        "192.168.0.0/16",
+        "fc00::/7"
+      ],
+      "route_exclude_address_set": [
+        "geoip-cn"
+      ],
       "sniff": true,
       "strict_route": true,
       "type": "tun"
@@ -220,13 +239,6 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geoip-private",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-private.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "geosite-cn",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cn.srs"
@@ -253,9 +265,16 @@
       },
       {
         "outbound": "direct",
+        "protocol": "bittorrent"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "outbound": "direct",
         "rule_set": [
           "direct",
-          "geoip-private",
           "geosite-connectivity-check",
           "geosite-private"
         ]
