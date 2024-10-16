@@ -22,6 +22,7 @@
     "servers": [
       {
         "address": "https://8.8.8.8/dns-query",
+        "address_resolver": "direct",
         "tag": "remote"
       },
       {
@@ -123,7 +124,6 @@
       "type": "selector"
     },
     {
-      "domain_strategy": "prefer_ipv6",
       "tag": "direct",
       "type": "direct"
     },
@@ -239,12 +239,25 @@
     ],
     "rules": [
       {
+        "mode": "or",
         "outbound": "dns",
-        "protocol": "dns"
+        "rules": [
+          {
+            "port": 53
+          },
+          {
+            "protocol": "dns"
+          }
+        ],
+        "type": "logical"
       },
       {
         "ip_is_private": true,
         "outbound": "direct"
+      },
+      {
+        "outbound": "direct",
+        "protocol": "bittorrent"
       },
       {
         "outbound": "direct",
@@ -253,10 +266,6 @@
           "geosite-connectivity-check",
           "geosite-private"
         ]
-      },
-      {
-        "outbound": "direct",
-        "protocol": "bittorrent"
       },
       {
         "outbound": "block",
