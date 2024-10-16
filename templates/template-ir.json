@@ -56,20 +56,15 @@
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
-        "com.infomaniak.meet",
+        "com.biglybt.android.client",
+        "com.bittorrent.client",
+        "com.utorrent.client",
         "net.i2p.android.router",
-        "org.jitsi.meet",
-        "org.onionshare.android",
-        "org.onionshare.android.fdroid",
         "org.openobservatory.ooniprobe",
         "org.proninyaroslav.libretorrent",
         "org.purplei2p.i2pd",
         "org.torproject.android",
-        "org.torproject.torbrowser",
-        "org.torproject.torbrowser_alpha",
-        "pan.alexander.tordnscrypt",
-        "pan.alexander.tordnscrypt.gp",
-        "pan.alexander.tordnscrypt.stable"
+        "org.torproject.torbrowser"
       ],
       "gso": true,
       "platform": {
@@ -248,10 +243,6 @@
         "protocol": "dns"
       },
       {
-        "outbound": "direct",
-        "protocol": "bittorrent"
-      },
-      {
         "ip_is_private": true,
         "outbound": "direct"
       },
@@ -262,6 +253,10 @@
           "geosite-connectivity-check",
           "geosite-private"
         ]
+      },
+      {
+        "outbound": "direct",
+        "protocol": "bittorrent"
       },
       {
         "outbound": "block",
