@@ -76,8 +76,7 @@
         }
       },
       "route_exclude_address": [
-        "192.168.0.0/16",
-        "fc00::/7"
+        "192.168.0.0/16"
       ],
       "route_exclude_address_set": [
         "geoip-ir"
@@ -113,7 +112,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://torrentgalaxy.to/robots.txt"
+      "url": "https://dns.google/generate_204"
     },
     {
       "interrupt_exist_connections": true,
