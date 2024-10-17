@@ -77,7 +77,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://dns.google/generate_204"
+      "url": "https://www.fosshub.com/robots.txt"
     },
     {
       "interrupt_exist_connections": true,
