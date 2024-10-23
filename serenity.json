@@ -30,14 +30,6 @@
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
-      "name": "sub-web",
-      "url": "https://sub.xeton.dev/sub?target=singbox&list=true&fdn=true&sort=true&url=https://cdn.jsdelivr.net/gh/itsyebekhe/HiN-VPN@main/subscription/base64/mix|https://cdn.jsdelivr.net/gh/roosterkid/openproxylist@main/V2RAY_BASE64.txt|https://cdn.jsdelivr.net/gh/Kwinshadow/TelegramV2rayCollector@main/sublinks/b64mix.txt"
-    },
-    {
-      "name": "eternity",
-      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
-    },
-    {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
       "update_interval": "5m0s",
@@ -68,11 +60,9 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
-        //"ircp",
+        "ircp",
         "warp",
-        "collector",
-        "sub-web",
-        "eternity"
+        "collector"
       ]
     },
     {
