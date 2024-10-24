@@ -36,7 +36,6 @@
       "process": {
         "filter_type": [
           "http",
-          "shadowsocks",
           "shadowsocksr",
           "socks"
         ],
