@@ -36,6 +36,7 @@
       "process": {
         "filter_type": [
           "http",
+          "shadowsocks",
           "shadowsocksr",
           "socks"
         ],
@@ -59,7 +60,7 @@
       "template": "breakfree",
       "subscription": [
         "azadi",
-        "ircp",
+        //"ircp",
         "warp",
         "collector"
       ]
