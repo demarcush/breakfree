@@ -13,7 +13,7 @@ p: &p
     enable: true
     interval: 1800
     lazy: true
-    url: "https://dns.google/generate_204"
+    url: "https://yts.mx/robots.txt"
   override:
     skip-cert-verify: false
     udp: true
@@ -95,7 +95,7 @@ proxy-groups:
     interval: 1800
     lazy: true
     type: url-test
-    url: "https://dns.google/generate_204"
+    url: "https://yts.mx/robots.txt"
     include-all-providers: true
 proxy-providers:
   aggregator:
