@@ -1,0 +1,79 @@
+{
+  "log": {
+    "level": "debug"
+  },
+  "listen": "127.0.0.1:6789",
+  "cache_file": ".github/serenity.db",
+  "outbounds": [
+    {
+      "type": "direct"
+    },
+    {
+      "type": "dns"
+    }
+  ],
+  "subscriptions": [
+    {
+      "name": "azadi",
+      "url": "https://cdn.jsdelivr.net/gh/azadiazinjamigzare/Service@main/Sub"
+    },
+    {
+      "name": "jnir",
+      "url": "https://cdn.jsdelivr.net/gh/bamdad23/JavidnamanIran@main/JNIR"
+    },
+    {
+      "name": "ircp",
+      "url": "https://cdn.jsdelivr.net/gh/IranianCypherpunks/SingBox@main/Sub"
+    },
+    {
+      "name": "warp",
+      "url": "https://itshin.serv00.net/api/warpinator/"
+    },
+    {
+      "name": "collector",
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
+    },
+    {
+      "name": "final",
+      "url": "http://127.0.0.1:6789/servers",
+      "update_interval": "5m0s",
+      "process": {
+        "filter_type": [
+          "http",
+          "shadowsocks",
+          "shadowsocksr",
+          "socks"
+        ],
+        "remove": true,
+        "rewrite_multiplex": {
+          "enabled": true,
+          "padding": true
+        }
+      },
+      "deduplication": false
+    }
+  ],
+  "templates": [
+    {
+      "name": "breakfree"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "servers.json",
+      "template": "breakfree",
+      "subscription": [
+        "azadi",
+        "jnir",
+        "ircp",
+        "warp",
+        "collector"
+      ]
+    },
+    {
+      "name": "final.json",
+      "template": "breakfree",
+      "subscription": "final"
+    }
+  ]
+}
