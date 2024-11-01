@@ -1,0 +1,32 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: ${{ github.ref }}
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  collect_sing-box:
+    name: "Running main.sh"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: collect and reformat sing-box nodes
+        run: bash .github/sing-box.sh
+
+      - name: Commit
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git commit -m "Updated on: `date`" || echo "No changes to commit"
+          git push
