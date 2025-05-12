@@ -6,8 +6,7 @@
       "mode": "or",
       "rules": [
         {
-          "network": "udp",
-          "port": 443
+          "domain": "example.org"
         }
       ]
     }
