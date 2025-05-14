@@ -16,8 +16,7 @@ import subprocess
 from typing import Optional, Dict, Set, Tuple, Any, List
 
 # Configuration
-CONFIG_PATH = "final.json"
-BACKUP_CONFIG = "final_backup.json"
+CONFIG_PATH = ".github/final.json"
 GEOIP_DB_PATH = ".github/geoip.db"
 SING_BOX_PATH = "sing-box"  # or full path if not in PATH
 TIMEOUT = 10
@@ -258,11 +257,9 @@ def main() -> None:  # Added return type hint
     
     # Save config
     try:
-        with open(BACKUP_CONFIG, "w", encoding='utf-8') as f:
-            json.dump(config, f, separators=(',', ':'), ensure_ascii=False)
         with open(CONFIG_PATH, "w", encoding='utf-8') as f:
             json.dump(config, f, separators=(',', ':'), ensure_ascii=False)
-        print(f"\n💾 Config saved! Backup: {BACKUP_CONFIG}")
+        print(f"\n💾 Config saved!")
     except Exception as e:
         print(f"❌ Failed to save config: {e}")
 

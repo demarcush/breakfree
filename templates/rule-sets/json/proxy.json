@@ -1,13 +1,12 @@
 {
-  "version": 2,
+  "version": 3,
   "rules": [
     {
       "type": "logical",
       "mode": "or",
       "rules": [
         {
-          "network": "udp",
-          "port": 443
+          "domain": "example.org"
         }
       ]
     }

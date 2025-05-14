@@ -1,38 +1,24 @@
 {
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
         "server": "local"
       },
       {
-        "query_type": [
-          "AAAA",
-          "A"
-        ],
-        "server": "fakeip"
+        "outbound": "direct",
+        "server": "local"
       }
     ],
     "servers": [
       {
         "address": "https://1.1.1.2/dns-query",
-        "address_resolver": "local",
         "tag": "remote"
       },
       {
         "address": "local",
         "detour": "direct",
         "tag": "local"
-      },
-      {
-        "address": "fakeip",
-        "tag": "fakeip"
       }
     ],
     "strategy": "prefer_ipv6"
@@ -119,84 +105,42 @@
         "format": "binary",
         "tag": "block",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/block.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/rule-sets/block.srs"
       },
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geoip-malware",
+        "tag": "block-nsfw",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-malware.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/rule-sets/block-nsfw.srs"
       },
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geoip-phishing",
+        "tag": "proxy",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-phishing.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/rule-sets/proxy.srs"
       },
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-category-ads-all",
+        "tag": "proxy-un",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ads-all.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-cryptominers",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cryptominers.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-malware",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-malware.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-nsfw",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-phishing",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-phishing.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/rule-sets/proxy-un.srs"
       },
       {
         "download_detour": "direct",
         "format": "binary",
         "tag": "direct",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/direct.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/rule-sets/direct.srs"
       },
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-connectivity-check",
+        "tag": "direct-un",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-connectivity-check.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-googlefcm",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-googlefcm.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-private",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-private.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/rule-sets/direct-un.srs"
       }
     ],
     "rules": [
@@ -216,24 +160,23 @@
         "protocol": "bittorrent"
       },
       {
-        "outbound": "direct",
+        "action": "reject",
         "rule_set": [
-          "direct",
-          "geosite-connectivity-check",
-          "geosite-googlefcm",
-          "geosite-private"
+          "block"
         ]
       },
       {
-        "action": "reject",
+        "outbound": "default",
         "rule_set": [
-          "block",
-          "geoip-malware",
-          "geoip-phishing",
-          "geosite-category-ads-all",
-          "geosite-cryptominers",
-          "geosite-malware",
-          "geosite-phishing"
+          "proxy",
+          "proxy-un"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "direct",
+          "direct-un"
         ]
       }
     ]

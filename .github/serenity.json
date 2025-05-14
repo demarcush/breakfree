@@ -3,7 +3,7 @@
     "level": "debug"
   },
   "listen": "127.0.0.1:8080",
-  "cache_file": "serenity.db",
+  "cache_file": ".github/serenity.db",
   "subscriptions": [
     {
       "name": "azadi",

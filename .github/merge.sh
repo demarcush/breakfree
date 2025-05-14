@@ -4,7 +4,7 @@ process_json() {
 local input_file="$1"
 local output_file="$2"
 
-    jq -Sc --slurpfile final final.json '
+    jq -Sc --slurpfile final .github/final.json '
         ($final[0].outbounds) as $final_outbounds |
         $final_outbounds[1].outbounds as $to_append |
         ($final_outbounds | del(.[0, 1])) as $filtered_final_outbounds |
@@ -15,7 +15,7 @@ local output_file="$2"
     ' "$input_file" > "$output_file"
 }
 
-if [ ! -f "final.json" ]; then
+if [ ! -f ".github/final.json" ]; then
     echo "Error: final.json not found"
     exit 1
 fi
@@ -43,7 +43,7 @@ success_count=0
 total_pairs=${#base_configs[@]}
 
 for i in "${base_configs[@]}"; do
-    input_file="templates/template-${i}.json"
+    input_file="templates/sing-box/template-${i}.json"
     mkdir -p release/sing-box
     output_file="release/sing-box/${i}.json"
 
