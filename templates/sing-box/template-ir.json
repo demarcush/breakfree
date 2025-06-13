@@ -25,7 +25,7 @@
         "tag": "remote"
       },
       {
-        "address": "tls://pro.shecan.ir",
+        "address": "https://free.shecan.ir/dns-query",
         "address_resolver": "bootstrap",
         "detour": "direct",
         "tag": "local"
