@@ -6,7 +6,7 @@
       "mode": "or",
       "rules": [
         {
-          "domain_suffix": "example.org"
+          "domain": "example.org"
         }
       ]
     }

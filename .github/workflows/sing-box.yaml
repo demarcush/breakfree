@@ -50,14 +50,14 @@ jobs:
       #- name: Testing Outputs using Sing-box
         #run: for i in release/sing-box/*.json; do sing-box check -c ${i} && echo "${i} is OK!"; done
 
-      - name: Update Rule-Sets
-        run: bash .github/rule-sets.sh
+      #- name: Update Rule-Sets
+        #run: bash .github/rule-sets.sh
+        run: for i in release/rule-sets/*.json; do sing-box rule-set format -w ${i} && sing-box rule-set compile ${i} || echo "Failed formating/compiling ${i}..."; done
 
       - name: Commit
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          rm -rvf release/rule-sets/*.new
           git add -A
           git commit -m "actions: aggregate on $(date -I)" || echo "no changes to commit..."
           git push
