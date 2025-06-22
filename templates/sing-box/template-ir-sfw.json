@@ -25,15 +25,9 @@
         "tag": "remote"
       },
       {
-        "address": "https://free.shecan.ir/dns-query",
-        "address_resolver": "bootstrap",
+        "address": "local",
         "detour": "direct",
         "tag": "local"
-      },
-      {
-        "address": "8.8.8.8",
-        "detour": "direct",
-        "tag": "bootstrap"
       },
       {
         "address": "fakeip",
@@ -62,6 +56,14 @@
         "172.19.0.1/30"
       ],
       "auto_route": true,
+      "exclude_package": [
+        "com.android.captiveportallogin",
+        "net.i2p.android.router",
+        "org.purplei2p.i2pd",
+        "org.torproject.android",
+        "org.torproject.torbrowser",
+        "pan.alexander.tordnscrypt.stable"
+      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -88,13 +90,16 @@
       "outbounds": [
         "auto",
         "manual",
+        "tor",
         "direct"
       ],
       "tag": "default",
       "type": "selector"
     },
     {
-      "outbounds": [],
+      "outbounds": [
+        "tor"
+      ],
       "tag": "auto",
       "type": "urltest",
       "url": "https://www.google.com/generate_204"
@@ -113,6 +118,12 @@
     },
     {
       "tag": "💋 Telegram: @BreakRealFree",
+      "type": "socks"
+    },
+    {
+      "server": "127.0.0.1",
+      "server_port": 9050,
+      "tag": "tor",
       "type": "socks"
     }
   ],
@@ -185,20 +196,6 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-youtube",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-youtube.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-meta",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-meta.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "direct",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/direct.srs"
@@ -216,20 +213,6 @@
         "tag": "geoip-private",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-private.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-category-ntp",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ntp.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-category-shecan",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ir.srs"
       },
       {
         "download_detour": "direct",
@@ -269,6 +252,13 @@
         "protocol": "dns"
       },
       {
+        "domain_suffix": [
+          ".exit",
+          ".onion"
+        ],
+        "outbound": "tor"
+      },
+      {
         "outbound": "direct",
         "protocol": "bittorrent"
       },
@@ -287,11 +277,7 @@
       },
       {
         "outbound": "default",
-        "rule_set": [
-          "proxy",
-          "geosite-meta",
-          "geosite-youtube"
-        ]
+        "rule_set": "proxy"
       },
       {
         "outbound": "direct",
@@ -299,8 +285,6 @@
           "direct",
           "geoip-ir",
           "geoip-private",
-          "geosite-category-ntp",
-          "geosite-category-shecan",
           "geosite-category-speedtest",
           "geosite-connectivity-check",
           "geosite-ir",

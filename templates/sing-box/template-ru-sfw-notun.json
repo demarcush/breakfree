@@ -66,13 +66,16 @@
       "outbounds": [
         "auto",
         "manual",
+        "tor",
         "direct"
       ],
       "tag": "default",
       "type": "selector"
     },
     {
-      "outbounds": [],
+      "outbounds": [
+        "tor"
+      ],
       "tag": "auto",
       "type": "urltest",
       "url": "https://www.google.com/generate_204"
@@ -91,6 +94,12 @@
     },
     {
       "tag": "💋 Telegram: @BreakRealFree",
+      "type": "socks"
+    },
+    {
+      "server": "127.0.0.1",
+      "server_port": 9050,
+      "tag": "tor",
       "type": "socks"
     }
   ],
@@ -184,13 +193,6 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-category-ntp",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ntp.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "geosite-category-speedtest",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-speedtest.srs"
@@ -226,6 +228,13 @@
         "protocol": "dns"
       },
       {
+        "domain_suffix": [
+          ".exit",
+          ".onion"
+        ],
+        "outbound": "tor"
+      },
+      {
         "outbound": "direct",
         "protocol": "bittorrent"
       },
@@ -252,7 +261,6 @@
           "direct",
           "geoip-ru",
           "geoip-private",
-          "geosite-category-ntp",
           "geosite-category-speedtest",
           "geosite-connectivity-check",
           "geosite-category-ru",

@@ -56,6 +56,14 @@
         "172.19.0.1/30"
       ],
       "auto_route": true,
+      "exclude_package": [
+        "com.android.captiveportallogin",
+        "net.i2p.android.router",
+        "org.purplei2p.i2pd",
+        "org.torproject.android",
+        "org.torproject.torbrowser",
+        "pan.alexander.tordnscrypt.stable"
+      ],
       "platform": {
         "http_proxy": {
           "enabled": true,
@@ -82,13 +90,16 @@
       "outbounds": [
         "auto",
         "manual",
+        "tor",
         "direct"
       ],
       "tag": "default",
       "type": "selector"
     },
     {
-      "outbounds": [],
+      "outbounds": [
+        "tor"
+      ],
       "tag": "auto",
       "type": "urltest",
       "url": "https://www.google.com/generate_204"
@@ -107,6 +118,12 @@
     },
     {
       "tag": "💋 Telegram: @BreakRealFree",
+      "type": "socks"
+    },
+    {
+      "server": "127.0.0.1",
+      "server_port": 9050,
+      "tag": "tor",
       "type": "socks"
     }
   ],
@@ -200,13 +217,6 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geosite-category-ntp",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ntp.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "geosite-category-speedtest",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-speedtest.srs"
@@ -242,6 +252,13 @@
         "protocol": "dns"
       },
       {
+        "domain_suffix": [
+          ".exit",
+          ".onion"
+        ],
+        "outbound": "tor"
+      },
+      {
         "outbound": "direct",
         "protocol": "bittorrent"
       },
@@ -267,7 +284,6 @@
           "direct",
           "geoip-cn",
           "geoip-private",
-          "geosite-category-ntp",
           "geosite-category-speedtest",
           "geosite-connectivity-check",
           "geosite-cn",
