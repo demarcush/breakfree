@@ -1,10 +1,8 @@
 {
+  "certificate": {
+    "store": "mozilla"
+  },
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
     "independent_cache": true,
     "rules": [
       {
@@ -21,17 +19,20 @@
     ],
     "servers": [
       {
-        "address": "https://1.1.1.2/dns-query",
-        "tag": "remote"
+        "server": "1.1.1.2",
+        "tag": "remote",
+        "type": "https"
       },
       {
-        "address": "local",
         "detour": "direct",
-        "tag": "local"
+        "tag": "local",
+        "type": "local"
       },
       {
-        "address": "fakeip",
-        "tag": "fakeip"
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18",
+        "tag": "fakeip",
+        "type": "fakeip"
       }
     ],
     "strategy": "prefer_ipv6"
@@ -59,6 +60,7 @@
       "exclude_package": [
         "com.android.captiveportallogin",
         "net.i2p.android.router",
+        "org.proninyaroslav.libretorrent",
         "org.purplei2p.i2pd",
         "org.torproject.android",
         "org.torproject.torbrowser",
@@ -260,7 +262,10 @@
       },
       {
         "outbound": "direct",
-        "protocol": "bittorrent"
+        "protocol": [
+          "bittorrent",
+          "ntp"
+        ]
       },
       {
         "action": "reject",

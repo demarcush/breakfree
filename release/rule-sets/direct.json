@@ -38,10 +38,6 @@
             "sjdcbjddbcsjhbsbjhcjbsdjshcdcjbsdsj.buzz",
             "unifiedpush.kde.org"
           ]
-        },
-        {
-          "network": "udp",
-          "port": 123
         }
       ]
     }
