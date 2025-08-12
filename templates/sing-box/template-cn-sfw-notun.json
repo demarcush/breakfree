@@ -6,10 +6,6 @@
     "independent_cache": true,
     "rules": [
       {
-        "outbound": "any",
-        "server": "local"
-      },
-      {
         "query_type": [
           "AAAA",
           "A"
@@ -106,6 +102,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
+    "default_domain_resolver": "local",
     "rule_set": [
       {
         "download_detour": "direct",
