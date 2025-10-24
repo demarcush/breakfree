@@ -69,9 +69,6 @@
       "name": "servers",
       "template": "breakfree",
       "subscription": [
-        "azadi",
-        "jnir",
-        "ircp",
         "eternity",
         "collector"
       ]
