@@ -39,7 +39,7 @@ jobs:
         run: nohup serenity run -c .github/serenity.json &
 
       - name: Collect final.json
-        run: sleep 10s; curl -fsSL http://127.0.0.1:8080/final | jq -S > .github/final.json || echo "CURL FAILED!"
+        run: sleep 20s; curl -fsSL http://127.0.0.1:8080/final | jq -S > .github/final.json || echo "CURL FAILED!"
 
       - name: Proxy tagging
         run: python .github/tagging.py
