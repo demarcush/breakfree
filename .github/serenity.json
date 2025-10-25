@@ -26,10 +26,6 @@
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
-      "name": "soroush",
-      "url": "https://api.wcc.best/sub?target=singbox&list=true&scv=false&sort=true&url=https://cdn.jsdelivr.net/gh/soroushmirzaei/telegram-configs-collector@main/splitted/mixed"
-    },
-    {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
       "process": {
@@ -56,7 +52,7 @@
         ],
         "remove": true
       },
-      "deduplication": true
+      "deduplication": false
     }
   ],
   "templates": [
@@ -69,6 +65,9 @@
       "name": "servers",
       "template": "breakfree",
       "subscription": [
+        "azadi",
+        "jnir",
+        "ircp",
         "eternity",
         "collector"
       ]
