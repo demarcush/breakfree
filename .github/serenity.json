@@ -40,7 +40,7 @@
         ],
         "remove": true
       },
-      "deduplication": false
+      "deduplication": true
     }
   ],
   "templates": [
