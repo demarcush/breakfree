@@ -51,7 +51,9 @@ jobs:
         #run: for i in release/sing-box/*.json; do sing-box check -c ${i} && echo "${i} is OK!"; done
 
       - name: Update Rule-Sets
-        run: for i in release/rule-sets/*.json; do sing-box rule-set format -w ${i} && sing-box rule-set compile ${i} || echo "Failed formating/compiling ${i}..."; done
+        run: |
+          cd release/rule-sets; bash ../../.github/rule-sets-merger.sh; cd -
+          for i in release/rule-sets/*.json; do sing-box rule-set upgrade -w ${i} && sing-box rule-set format -w ${i} && sing-box rule-set compile ${i} || echo "Failed formating/compiling ${i}..."; done
         #run: bash .github/rule-sets.sh
 
       - name: Remove duplicate tags

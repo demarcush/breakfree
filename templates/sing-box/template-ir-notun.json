@@ -3,46 +3,27 @@
     "store": "mozilla"
   },
   "dns": {
-    "independent_cache": true,
-    "rules": [
-      {
-        "query_type": [
-          "AAAA",
-          "A"
-        ],
-        "server": "fakeip"
-      }
-    ],
     "servers": [
       {
-        "server": "1.1.1.2",
+        "server": "8.8.8.8",
         "tag": "remote",
         "type": "https"
       },
       {
         "tag": "local",
         "type": "local"
-      },
-      {
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18",
-        "tag": "fakeip",
-        "type": "fakeip"
       }
     ],
     "strategy": "prefer_ipv6"
   },
   "experimental": {
     "cache_file": {
-      "enabled": true,
-      "store_fakeip": true,
-      "store_rdrc": true
+      "enabled": true
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "xd",
-      "external_ui_download_detour": "direct",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
+      "external_ui": "yacd",
+      "external_ui_download_detour": "direct"
     }
   },
   "inbounds": [
@@ -62,19 +43,16 @@
       "outbounds": [
         "auto",
         "manual",
-        "tor",
         "direct"
       ],
       "tag": "default",
       "type": "selector"
     },
     {
-      "outbounds": [
-        "tor"
-      ],
+      "interval": "15m",
+      "outbounds": [],
       "tag": "auto",
-      "type": "urltest",
-      "url": "https://www.google.com/generate_204"
+      "type": "urltest"
     },
     {
       "interrupt_exist_connections": true,
@@ -91,12 +69,6 @@
     {
       "tag": "💋 Telegram: @BreakRealFree",
       "type": "socks"
-    },
-    {
-      "server": "127.0.0.1",
-      "server_port": 9050,
-      "tag": "tor",
-      "type": "socks"
     }
   ],
   "route": {
@@ -106,44 +78,9 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "block",
+        "tag": "reject",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/block.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geoip-malware",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-malware.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geoip-phishing",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-phishing.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-category-ads-all",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ads-all.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-cryptominers",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-cryptominers.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-malware",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-malware.srs"
+        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/reject.srs"
       },
       {
         "download_detour": "direct",
@@ -151,13 +88,6 @@
         "tag": "geosite-nsfw",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-phishing",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-phishing.srs"
       },
       {
         "download_detour": "direct",
@@ -183,37 +113,9 @@
       {
         "download_detour": "direct",
         "format": "binary",
-        "tag": "geoip-private",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-private.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-category-speedtest",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-speedtest.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-connectivity-check",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-connectivity-check.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
         "tag": "geosite-ir",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs"
-      },
-      {
-        "download_detour": "direct",
-        "format": "binary",
-        "tag": "geosite-private",
-        "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-private.srs"
       }
     ],
     "rules": [
@@ -225,13 +127,6 @@
         "protocol": "dns"
       },
       {
-        "domain_suffix": [
-          ".exit",
-          ".onion"
-        ],
-        "outbound": "tor"
-      },
-      {
         "outbound": "direct",
         "protocol": [
           "bittorrent",
@@ -241,13 +136,7 @@
       {
         "action": "reject",
         "rule_set": [
-          "block",
-          "geoip-malware",
-          "geoip-phishing",
-          "geosite-category-ads-all",
-          "geosite-cryptominers",
-          "geosite-malware",
-          "geosite-phishing"
+          "reject"
         ]
       },
       {
@@ -259,11 +148,7 @@
         "rule_set": [
           "direct",
           "geoip-ir",
-          "geoip-private",
-          "geosite-category-speedtest",
-          "geosite-connectivity-check",
-          "geosite-ir",
-          "geosite-private"
+          "geosite-ir"
         ]
       }
     ]
