@@ -3,6 +3,16 @@
     "store": "mozilla"
   },
   "dns": {
+    "independent_cache": true,
+    "rules": [
+      {
+        "query_type": [
+          "AAAA",
+          "A"
+        ],
+        "server": "fakeip"
+      }
+    ],
     "servers": [
       {
         "server": "8.8.8.8",
@@ -12,6 +22,12 @@
       {
         "tag": "local",
         "type": "local"
+      },
+      {
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18",
+        "tag": "fakeip",
+        "type": "fakeip"
       }
     ],
     "strategy": "prefer_ipv6"
