@@ -18,12 +18,15 @@
   },
   "experimental": {
     "cache_file": {
-      "enabled": true
+      "enabled": true,
+      "store_fakeip": true,
+      "store_rdrc": true
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "yacd",
-      "external_ui_download_detour": "direct"
+      "external_ui": "xd",
+      "external_ui_download_detour": "direct",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
     }
   },
   "inbounds": [
@@ -77,7 +80,7 @@
       "outbounds": [],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://web.dev"
+      "url": "https://www.youtube.com/generate_204"
     },
     {
       "interrupt_exist_connections": true,
