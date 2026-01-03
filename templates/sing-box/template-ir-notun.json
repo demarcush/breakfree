@@ -1,39 +1,23 @@
 {
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
-    "independent_cache": true,
     "rules": [
       {
         "outbound": "any",
         "server": "local"
-      },
-      {
-        "query_type": [
-          "AAAA",
-          "A"
-        ],
-        "server": "fakeip"
       }
     ],
     "servers": [
       {
-        "address": "https://8.8.8.8/dns-query",
+        "address": "https://1.1.1.2/dns-query",
+        "detour": "default",
         "tag": "remote"
       },
       {
         "address": "local",
         "tag": "local"
-      },
-      {
-        "address": "fakeip",
-        "tag": "fakeip"
       }
     ],
-    "strategy": "prefer_ipv6"
+    "strategy": "ipv4_only"
   },
   "experimental": {
     "cache_file": {
@@ -72,7 +56,9 @@
     },
     {
       "interval": "15m",
-      "outbounds": [],
+      "outbounds": [
+        "💙 Telegram: @BreakRealFree"
+      ],
       "tag": "auto",
       "type": "urltest",
       "url": "https://www.youtube.com/generate_204"
@@ -99,42 +85,36 @@
     "rule_set": [
       {
         "download_detour": "direct",
-        "format": "binary",
         "tag": "reject",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/reject.srs"
       },
       {
         "download_detour": "direct",
-        "format": "binary",
         "tag": "geosite-nsfw",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
       },
       {
         "download_detour": "direct",
-        "format": "binary",
         "tag": "proxy",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/proxy.srs"
       },
       {
         "download_detour": "direct",
-        "format": "binary",
         "tag": "direct",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/direct.srs"
       },
       {
         "download_detour": "direct",
-        "format": "binary",
         "tag": "geoip-ir",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ir.srs"
       },
       {
         "download_detour": "direct",
-        "format": "binary",
         "tag": "geosite-ir",
         "type": "remote",
         "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-ir.srs"
