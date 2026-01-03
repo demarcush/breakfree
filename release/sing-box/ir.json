@@ -316,6 +316,7 @@
         "🏴 - lv4.789900.xyz:2087",
         "🏴 - mfyousheng.nl.eu.org:443",
         "🏴 - sy4.620720.xyz:443",
+        "🏴 - t1.620720.xyz:8443",
         "🏴 - www.calmlunch.com:443",
         "💙 Telegram: @BreakRealFree"
       ],
@@ -561,6 +562,7 @@
         "🏴 - lv4.789900.xyz:2087",
         "🏴 - mfyousheng.nl.eu.org:443",
         "🏴 - sy4.620720.xyz:443",
+        "🏴 - t1.620720.xyz:8443",
         "🏴 - www.calmlunch.com:443",
         "💙 Telegram: @BreakRealFree"
       ],
@@ -2765,21 +2767,6 @@
       "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7"
     },
     {
-      "password": "da943f80-91e6-46df-b7ba-c6ecf28e0171",
-      "server": "blueivy.qzz.io",
-      "server_port": 443,
-      "tag": "🇺🇸 US 3",
-      "tls": {
-        "enabled": true,
-        "server_name": "blueivy.qzz.io"
-      },
-      "transport": {
-        "path": "/192.252.182.52:7602",
-        "type": "ws"
-      },
-      "type": "trojan"
-    },
-    {
       "method": "chacha20-ietf-poly1305",
       "network": "tcp",
       "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=",
@@ -2996,6 +2983,25 @@
       "transport": {
         "headers": {
           "Host": "sy4.620720.xyz"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "516d8a7a-3f0b-41d3-bad0-246116381516"
+    },
+    {
+      "network": "tcp",
+      "security": "auto",
+      "server": "t1.620720.xyz",
+      "server_port": 8443,
+      "tag": "🏴 - t1.620720.xyz:8443",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "headers": {
+          "Host": "t1.620720.xyz"
         },
         "path": "/",
         "type": "ws"
