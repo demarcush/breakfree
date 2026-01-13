@@ -4,8 +4,11 @@
     {
       "domain": [
         "connect.rom.miui.com",
+        "connectivity-check.ubuntu.com",
         "connectivitycheck.platform.hicloud.com",
-        "connectivitycheck.platform.hihonorcloud.com"
+        "connectivitycheck.platform.hihonorcloud.com",
+        "ping.archlinux.org",
+        "redirect.archlinux.org"
       ],
       "domain_suffix": [
         "captive.apple.com",
@@ -15,8 +18,7 @@
         "msftconnecttest.com",
         "msftncsi.com",
         "network-test.debian.org",
-        "networkcheck.kde.org",
-        "ping.archlinux.org"
+        "networkcheck.kde.org"
       ]
     }
   ]
