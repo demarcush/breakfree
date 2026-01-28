@@ -57,10 +57,10 @@
     {
       "interval": "15m",
       "outbounds": [
+        "🇦🇷 - 190.103.176.32:989",
         "🇦🇹 - 185.126.236.226:36606",
         "🇦🇺 - oplg1.zhujicn2.com:443",
         "🇧🇷 - 209.209.112.27:443",
-        "🇨🇦 - 15.235.41.200:80",
         "🇨🇦 - 51.161.32.44:13026",
         "🇨🇦 - 51.79.102.253:80",
         "🇨🇦 - knd.balouliangzhimao.xyz:10151",
@@ -76,8 +76,20 @@
         "🇨🇳 - 14.29.124.174:11043",
         "🇨🇳 - 14.29.124.174:11044",
         "🇨🇳 - 14.29.124.174:11047",
+        "🇩🇪 - 141.95.104.145:11201",
+        "🇩🇪 - 57.129.53.181:23576",
+        "🇩🇪 - 57.129.95.78:11201",
+        "🇩🇪 - 82.198.246.97:180",
+        "🇩🇪 - 89.144.35.25:33550",
         "🇩🇪 - cvywfavasdc.cymlr.xyz:443",
-        "🇫🇷 - node-fr-1.v2sv.top:2083",
+        "🇩🇪 - free-de-3.undef.network:443",
+        "🇩🇪 - mv71.multipubg.com:80",
+        "🇩🇪 - xcel999z.pet0er23mh21qq.com:1080",
+        "🇪🇪 - 185.193.49.88:989",
+        "🇫🇮 - 78.153.139.68:8443",
+        "🇫🇷 - 135.125.245.131:19700",
+        "🇫🇷 - 141.95.102.29:11201",
+        "🇫🇷 - mv7.multipubg.com:80",
         "🇬🇧 - 212.102.53.194:443",
         "🇬🇧 - 45.66.134.176:801",
         "🇬🇧 - 45.66.134.176:802",
@@ -90,21 +102,30 @@
         "🇬🇧 - 45.66.134.176:811",
         "🇬🇧 - 83.229.68.201:443",
         "🇬🇧 - 88.150.137.177:443",
-        "🇭🇰 - 203.198.122.227:443",
+        "🇭🇰 - 43.161.253.78:9527",
         "🇭🇰 - 58.152.110.210:443",
-        "🇭🇰 - hkt.gotochinatown.net:80",
-        "🇭🇰 - n1747624267.4u9ma.icu:443",
-        "🇯🇵 - 153.121.51.29:4006",
+        "🇭🇰 - 58.152.25.236:443",
+        "🇭🇰 - 65f41879-t70f40-t7n4ch-1rfon.hkt.gotochinatown.net:80",
+        "🇭🇰 - n1761214911.74qxv.top:443",
+        "🇭🇰 - tuntro000.instconn.com:443",
+        "🇭🇰 - v10.hdacd.com:30807",
+        "🇮🇩 - node-id-1.v2sv.top:2083",
+        "🇯🇵 - 153.121.51.29:1933",
+        "🇯🇵 - 160.16.105.192:1933",
+        "🇯🇵 - 160.16.106.99:544",
         "🇯🇵 - 160.16.124.17:3076",
         "🇯🇵 - 160.16.130.21:4006",
         "🇯🇵 - 160.16.130.21:5076",
+        "🇯🇵 - 160.16.132.38:3423",
         "🇯🇵 - 160.16.132.38:4006",
         "🇯🇵 - 160.16.132.38:5076",
         "🇯🇵 - 160.16.150.76:3901",
+        "🇯🇵 - 160.16.70.180:3901",
         "🇯🇵 - 160.16.72.205:544",
         "🇯🇵 - 160.16.72.33:3901",
         "🇯🇵 - 160.16.72.33:544",
         "🇯🇵 - 160.16.81.84:5076",
+        "🇯🇵 - 160.16.85.33:5076",
         "🇯🇵 - 160.16.89.176:1933",
         "🇯🇵 - 160.16.89.176:3076",
         "🇯🇵 - 160.16.89.176:5076",
@@ -115,17 +136,34 @@
         "🇯🇵 - 185.160.24.217:811",
         "🇯🇵 - 185.160.24.217:812",
         "🇯🇵 - 45.76.49.237:443",
+        "🇯🇵 - 5.253.41.52:8443",
         "🇯🇵 - 89.31.126.150:802",
         "🇯🇵 - 89.31.126.150:812",
         "🇯🇵 - 89.31.126.171:800",
+        "🇯🇵 - n1753598448.74qxv.top:443",
+        "🇳🇱 - 136.244.100.113:443",
+        "🇳🇱 - 193.29.139.199:8080",
+        "🇳🇱 - 45.87.175.188:8080",
         "🇳🇱 - 45.87.175.192:8080",
+        "🇳🇱 - 79.127.227.53:989",
         "🇳🇱 - 79.132.133.38:54458",
+        "🇳🇱 - 82.38.31.217:8080",
+        "🇳🇱 - 82.38.31.82:8080",
         "🇳🇱 - beesyar.org:8080",
+        "🇳🇴 - 107.174.114.71:443",
+        "🇳🇴 - 80.173.230.196:26279",
         "🇳🇴 - 80.173.231.254:12420",
+        "🇳🇿 - 45.15.140.107:19106",
+        "🇵🇰 - 154.205.145.37:11201",
+        "🇵🇱 - 217.30.10.18:9018",
+        "🇵🇹 - 45.83.142.237:443",
         "🇷🇴 - 146.70.157.5:8880",
+        "🇸🇦 - 163.171.207.11:19688",
+        "🇸🇨 - 156.244.19.94:11201",
         "🇸🇬 - 103.253.26.134:443",
         "🇸🇬 - 103.253.26.20:443",
         "🇸🇬 - 15.235.147.186:80",
+        "🇸🇬 - 154.26.132.38:16922",
         "🇸🇬 - 180.215.130.123:11584",
         "🇸🇬 - 180.215.130.123:46452",
         "🇸🇬 - 202.61.141.130:443",
@@ -183,15 +221,23 @@
         "🇸🇬 - 81.90.189.18:810",
         "🇸🇬 - 81.90.189.18:811",
         "🇸🇬 - 81.90.189.18:812",
+        "🇹🇼 - 223.165.4.173:989",
+        "🇹🇼 - green2.cdntencentmusic.com:31101",
+        "🇹🇼 - green2.cdntencentmusic.com:31102",
+        "🇹🇼 - green2.cdntencentmusic.com:31103",
         "🇺🇸 - 136.175.178.176mgmg.xhtk.cc:443",
         "🇺🇸 - 156.146.38.163:443",
         "🇺🇸 - 169.197.141.14:7002",
         "🇺🇸 - 169.197.143.232:7307",
         "🇺🇸 - 192.96.204.250:443",
+        "🇺🇸 - 199.241.32.132:26978",
+        "🇺🇸 - 209.126.84.189:443",
         "🇺🇸 - 38.75.136.34:8080",
+        "🇺🇸 - 47.251.91.241:42899",
+        "🇺🇸 - 75.127.13.83:47974",
+        "🇺🇸 - dmitmalibu.szxcn.net:18829",
         "🇺🇸 - hohm.microsoft.com:443",
-        "🇺🇸 - lim1.svhamrah.shop:4471",
-        "🇺🇸 - v2ray.codefyinc.com:443",
+        "🇺🇸 - node-de-1.v2sv.top:990",
         "🇺🇸 - v2ray.online:443",
         "🏴 - 138.2.35.81:80",
         "🏴 - 138.2.39.67:80",
@@ -201,12 +247,12 @@
         "🏴 - 141.101.114.134:443",
         "🏴 - 141.101.115.32:443",
         "🏴 - 141.193.213.10:443",
+        "🏴 - 141.193.213.21:443",
         "🏴 - 146.190.202.9:57711",
         "🏴 - 159.223.32.230:8080",
         "🏴 - 162.159.128.7:443",
         "🏴 - 162.159.135.42:443",
         "🏴 - 172.233.229.91:14102",
-        "🏴 - 172.64.152.23:443",
         "🏴 - 172.66.44.197:443",
         "🏴 - 172.67.164.123:443",
         "🏴 - 172.67.164.125:443",
@@ -237,16 +283,23 @@
         "🏴 - 203.30.189.190:443",
         "🏴 - 203.30.191.193:443",
         "🏴 - 23.227.38.100:443",
+        "🏴 - 4D41-b510-Fc35f2D7ECd7.664.qzz.io:443",
+        "🏴 - 5.188.4.103:11205",
+        "🏴 - 52.195.170.6:491",
         "🏴 - 68.183.129.197:8080",
-        "🏴 - c7.620720.xyz:8443",
+        "🏴 - 92.223.62.214:11201",
         "🏴 - get.tech:80",
+        "🏴 - hgtrojan.zabc.net:2083",
+        "🏴 - mianfeijiedianscp.buzz:443",
         "🏴 - news.microsoft.com:443",
         "🏴 - node1.nanonet.host:22539",
-        "🏴 - tuntro003.instconn.com:443",
+        "🏴 - seoul03.zgjok.com:443",
+        "🏴 - sy4.620720.xyz:443",
+        "🏴 - t1.620720.xyz:8443",
         "🏴 - uicdn.cf:80",
         "🏴 - vjp1.0bad.com:443",
-        "🏴 - vsg1.0bad.com:443",
         "🏴 - www.calmlunch.com:443",
+        "🏴 - www.gossipglove.com:443",
         "🏴 - www.multiplydose.com:443",
         "💙 Telegram: @BreakRealFree"
       ],
@@ -257,10 +310,10 @@
     {
       "interrupt_exist_connections": true,
       "outbounds": [
+        "🇦🇷 - 190.103.176.32:989",
         "🇦🇹 - 185.126.236.226:36606",
         "🇦🇺 - oplg1.zhujicn2.com:443",
         "🇧🇷 - 209.209.112.27:443",
-        "🇨🇦 - 15.235.41.200:80",
         "🇨🇦 - 51.161.32.44:13026",
         "🇨🇦 - 51.79.102.253:80",
         "🇨🇦 - knd.balouliangzhimao.xyz:10151",
@@ -276,8 +329,20 @@
         "🇨🇳 - 14.29.124.174:11043",
         "🇨🇳 - 14.29.124.174:11044",
         "🇨🇳 - 14.29.124.174:11047",
+        "🇩🇪 - 141.95.104.145:11201",
+        "🇩🇪 - 57.129.53.181:23576",
+        "🇩🇪 - 57.129.95.78:11201",
+        "🇩🇪 - 82.198.246.97:180",
+        "🇩🇪 - 89.144.35.25:33550",
         "🇩🇪 - cvywfavasdc.cymlr.xyz:443",
-        "🇫🇷 - node-fr-1.v2sv.top:2083",
+        "🇩🇪 - free-de-3.undef.network:443",
+        "🇩🇪 - mv71.multipubg.com:80",
+        "🇩🇪 - xcel999z.pet0er23mh21qq.com:1080",
+        "🇪🇪 - 185.193.49.88:989",
+        "🇫🇮 - 78.153.139.68:8443",
+        "🇫🇷 - 135.125.245.131:19700",
+        "🇫🇷 - 141.95.102.29:11201",
+        "🇫🇷 - mv7.multipubg.com:80",
         "🇬🇧 - 212.102.53.194:443",
         "🇬🇧 - 45.66.134.176:801",
         "🇬🇧 - 45.66.134.176:802",
@@ -290,21 +355,30 @@
         "🇬🇧 - 45.66.134.176:811",
         "🇬🇧 - 83.229.68.201:443",
         "🇬🇧 - 88.150.137.177:443",
-        "🇭🇰 - 203.198.122.227:443",
+        "🇭🇰 - 43.161.253.78:9527",
         "🇭🇰 - 58.152.110.210:443",
-        "🇭🇰 - hkt.gotochinatown.net:80",
-        "🇭🇰 - n1747624267.4u9ma.icu:443",
-        "🇯🇵 - 153.121.51.29:4006",
+        "🇭🇰 - 58.152.25.236:443",
+        "🇭🇰 - 65f41879-t70f40-t7n4ch-1rfon.hkt.gotochinatown.net:80",
+        "🇭🇰 - n1761214911.74qxv.top:443",
+        "🇭🇰 - tuntro000.instconn.com:443",
+        "🇭🇰 - v10.hdacd.com:30807",
+        "🇮🇩 - node-id-1.v2sv.top:2083",
+        "🇯🇵 - 153.121.51.29:1933",
+        "🇯🇵 - 160.16.105.192:1933",
+        "🇯🇵 - 160.16.106.99:544",
         "🇯🇵 - 160.16.124.17:3076",
         "🇯🇵 - 160.16.130.21:4006",
         "🇯🇵 - 160.16.130.21:5076",
+        "🇯🇵 - 160.16.132.38:3423",
         "🇯🇵 - 160.16.132.38:4006",
         "🇯🇵 - 160.16.132.38:5076",
         "🇯🇵 - 160.16.150.76:3901",
+        "🇯🇵 - 160.16.70.180:3901",
         "🇯🇵 - 160.16.72.205:544",
         "🇯🇵 - 160.16.72.33:3901",
         "🇯🇵 - 160.16.72.33:544",
         "🇯🇵 - 160.16.81.84:5076",
+        "🇯🇵 - 160.16.85.33:5076",
         "🇯🇵 - 160.16.89.176:1933",
         "🇯🇵 - 160.16.89.176:3076",
         "🇯🇵 - 160.16.89.176:5076",
@@ -315,17 +389,34 @@
         "🇯🇵 - 185.160.24.217:811",
         "🇯🇵 - 185.160.24.217:812",
         "🇯🇵 - 45.76.49.237:443",
+        "🇯🇵 - 5.253.41.52:8443",
         "🇯🇵 - 89.31.126.150:802",
         "🇯🇵 - 89.31.126.150:812",
         "🇯🇵 - 89.31.126.171:800",
+        "🇯🇵 - n1753598448.74qxv.top:443",
+        "🇳🇱 - 136.244.100.113:443",
+        "🇳🇱 - 193.29.139.199:8080",
+        "🇳🇱 - 45.87.175.188:8080",
         "🇳🇱 - 45.87.175.192:8080",
+        "🇳🇱 - 79.127.227.53:989",
         "🇳🇱 - 79.132.133.38:54458",
+        "🇳🇱 - 82.38.31.217:8080",
+        "🇳🇱 - 82.38.31.82:8080",
         "🇳🇱 - beesyar.org:8080",
+        "🇳🇴 - 107.174.114.71:443",
+        "🇳🇴 - 80.173.230.196:26279",
         "🇳🇴 - 80.173.231.254:12420",
+        "🇳🇿 - 45.15.140.107:19106",
+        "🇵🇰 - 154.205.145.37:11201",
+        "🇵🇱 - 217.30.10.18:9018",
+        "🇵🇹 - 45.83.142.237:443",
         "🇷🇴 - 146.70.157.5:8880",
+        "🇸🇦 - 163.171.207.11:19688",
+        "🇸🇨 - 156.244.19.94:11201",
         "🇸🇬 - 103.253.26.134:443",
         "🇸🇬 - 103.253.26.20:443",
         "🇸🇬 - 15.235.147.186:80",
+        "🇸🇬 - 154.26.132.38:16922",
         "🇸🇬 - 180.215.130.123:11584",
         "🇸🇬 - 180.215.130.123:46452",
         "🇸🇬 - 202.61.141.130:443",
@@ -383,15 +474,23 @@
         "🇸🇬 - 81.90.189.18:810",
         "🇸🇬 - 81.90.189.18:811",
         "🇸🇬 - 81.90.189.18:812",
+        "🇹🇼 - 223.165.4.173:989",
+        "🇹🇼 - green2.cdntencentmusic.com:31101",
+        "🇹🇼 - green2.cdntencentmusic.com:31102",
+        "🇹🇼 - green2.cdntencentmusic.com:31103",
         "🇺🇸 - 136.175.178.176mgmg.xhtk.cc:443",
         "🇺🇸 - 156.146.38.163:443",
         "🇺🇸 - 169.197.141.14:7002",
         "🇺🇸 - 169.197.143.232:7307",
         "🇺🇸 - 192.96.204.250:443",
+        "🇺🇸 - 199.241.32.132:26978",
+        "🇺🇸 - 209.126.84.189:443",
         "🇺🇸 - 38.75.136.34:8080",
+        "🇺🇸 - 47.251.91.241:42899",
+        "🇺🇸 - 75.127.13.83:47974",
+        "🇺🇸 - dmitmalibu.szxcn.net:18829",
         "🇺🇸 - hohm.microsoft.com:443",
-        "🇺🇸 - lim1.svhamrah.shop:4471",
-        "🇺🇸 - v2ray.codefyinc.com:443",
+        "🇺🇸 - node-de-1.v2sv.top:990",
         "🇺🇸 - v2ray.online:443",
         "🏴 - 138.2.35.81:80",
         "🏴 - 138.2.39.67:80",
@@ -401,12 +500,12 @@
         "🏴 - 141.101.114.134:443",
         "🏴 - 141.101.115.32:443",
         "🏴 - 141.193.213.10:443",
+        "🏴 - 141.193.213.21:443",
         "🏴 - 146.190.202.9:57711",
         "🏴 - 159.223.32.230:8080",
         "🏴 - 162.159.128.7:443",
         "🏴 - 162.159.135.42:443",
         "🏴 - 172.233.229.91:14102",
-        "🏴 - 172.64.152.23:443",
         "🏴 - 172.66.44.197:443",
         "🏴 - 172.67.164.123:443",
         "🏴 - 172.67.164.125:443",
@@ -437,16 +536,23 @@
         "🏴 - 203.30.189.190:443",
         "🏴 - 203.30.191.193:443",
         "🏴 - 23.227.38.100:443",
+        "🏴 - 4D41-b510-Fc35f2D7ECd7.664.qzz.io:443",
+        "🏴 - 5.188.4.103:11205",
+        "🏴 - 52.195.170.6:491",
         "🏴 - 68.183.129.197:8080",
-        "🏴 - c7.620720.xyz:8443",
+        "🏴 - 92.223.62.214:11201",
         "🏴 - get.tech:80",
+        "🏴 - hgtrojan.zabc.net:2083",
+        "🏴 - mianfeijiedianscp.buzz:443",
         "🏴 - news.microsoft.com:443",
         "🏴 - node1.nanonet.host:22539",
-        "🏴 - tuntro003.instconn.com:443",
+        "🏴 - seoul03.zgjok.com:443",
+        "🏴 - sy4.620720.xyz:443",
+        "🏴 - t1.620720.xyz:8443",
         "🏴 - uicdn.cf:80",
         "🏴 - vjp1.0bad.com:443",
-        "🏴 - vsg1.0bad.com:443",
         "🏴 - www.calmlunch.com:443",
+        "🏴 - www.gossipglove.com:443",
         "🏴 - www.multiplydose.com:443",
         "💙 Telegram: @BreakRealFree"
       ],
@@ -464,21 +570,26 @@
     {
       "network": "tcp",
       "security": "auto",
-      "server": "141.193.213.21",
-      "server_port": 443,
-      "tag": "RELAY-141.193.213.21-0063 | 0.0MB",
-      "tls": {
-        "enabled": true
-      },
+      "server": "uicdn.cf",
+      "server_port": 80,
+      "tag": "RELAY-104.16.210.157-0234 | 0.0MB",
       "transport": {
         "headers": {
-          "Host": "fr1.trump2023.org"
+          "Host": "us-lb.sshkit.org"
         },
         "path": "/",
         "type": "ws"
       },
       "type": "vmess",
-      "uuid": "2b214122-1906-428a-bbb7-a039cbb7cd5c"
+      "uuid": "6fea1649-425b-4092-bf53-29792152c925"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "190.103.176.32",
+      "server_port": 989,
+      "tag": "🇦🇷 - 190.103.176.32:989",
+      "type": "shadowsocks"
     },
     {
       "network": "tcp",
@@ -530,18 +641,6 @@
       },
       "type": "vmess",
       "uuid": "c8bec899-5435-4f59-a406-9837090efecb"
-    },
-    {
-      "security": "",
-      "server": "15.235.41.200",
-      "server_port": 80,
-      "tag": "🇨🇦 - 15.235.41.200:80",
-      "transport": {
-        "path": "/IOebhLMhl1CTbFHbL95myfRX2",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "58fe1542-5290-40ad-815a-77707a81afe5"
     },
     {
       "method": "chacha20-ietf-poly1305",
@@ -680,6 +779,63 @@
       "type": "shadowsocks"
     },
     {
+      "method": "chacha20-ietf-poly1305",
+      "password": "4f032d993dfec318",
+      "server": "141.95.104.145",
+      "server_port": 11201,
+      "tag": "🇩🇪 - 141.95.104.145:11201",
+      "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "57.129.53.181",
+      "server_port": 23576,
+      "tag": "🇩🇪 - 57.129.53.181:23576",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        },
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "e0e4014bb22f7329",
+      "server": "57.129.95.78",
+      "server_port": 11201,
+      "tag": "🇩🇪 - 57.129.95.78:11201",
+      "type": "shadowsocks"
+    },
+    {
+      "security": "auto",
+      "server": "82.198.246.97",
+      "server_port": 180,
+      "tag": "🇩🇪 - 82.198.246.97:180",
+      "type": "vmess",
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    },
+    {
+      "password": "dongtaiwang.com",
+      "server": "89.144.35.25",
+      "server_port": 33550,
+      "tag": "🇩🇪 - 89.144.35.25:33550",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "apple.com"
+      },
+      "type": "hysteria2"
+    },
+    {
       "network": "tcp",
       "security": "auto",
       "server": "cvywfavasdc.cymlr.xyz",
@@ -699,15 +855,96 @@
       "uuid": "23f4bc80-3b0a-4aa3-cbe5-b8be4e8c32fc"
     },
     {
-      "password": "nodes-b211f28a",
-      "server": "node-fr-1.v2sv.top",
-      "server_port": 2083,
-      "tag": "🇫🇷 - node-fr-1.v2sv.top:2083",
+      "password": "xtA6WF92Itmhm9jfvXUH1MDVL",
+      "server": "free-de-3.undef.network",
+      "server_port": 443,
+      "tag": "🇩🇪 - free-de-3.undef.network:443",
       "tls": {
         "enabled": true,
-        "server_name": "node-fr-1.v2sv.top"
+        "server_name": "free-de-3.undef.network"
+      },
+      "transport": {
+        "path": "/f2fc2a1f",
+        "type": "ws"
       },
       "type": "trojan"
+    },
+    {
+      "security": "",
+      "server": "mv71.multipubg.com",
+      "server_port": 80,
+      "tag": "🇩🇪 - mv71.multipubg.com:80",
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "eaec8713-fc4d-465c-a7e6-e5ba034e3263"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "jeoaR1Npe2doOh4vpjdnAQ",
+      "server": "xcel999z.pet0er23mh21qq.com",
+      "server_port": 1080,
+      "tag": "🇩🇪 - xcel999z.pet0er23mh21qq.com:1080",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "185.193.49.88",
+      "server_port": 989,
+      "tag": "🇪🇪 - 185.193.49.88:989",
+      "type": "shadowsocks"
+    },
+    {
+      "flow": "xtls-rprx-vision",
+      "server": "78.153.139.68",
+      "server_port": 8443,
+      "tag": "🇫🇮 - 78.153.139.68:8443",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4",
+          "short_id": "58c512b4422e2517"
+        },
+        "server_name": "images.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "type": "vless",
+      "uuid": "fd8972d7-cf5e-11f0-9970-45e1d80c4039"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "5568e4d946b62245",
+      "server": "135.125.245.131",
+      "server_port": 19700,
+      "tag": "🇫🇷 - 135.125.245.131:19700",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "431e88b038422867",
+      "server": "141.95.102.29",
+      "server_port": 11201,
+      "tag": "🇫🇷 - 141.95.102.29:11201",
+      "type": "shadowsocks"
+    },
+    {
+      "security": "",
+      "server": "mv7.multipubg.com",
+      "server_port": 80,
+      "tag": "🇫🇷 - mv7.multipubg.com:80",
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "eaec8713-fc4d-465c-a7e6-e5ba034e3263"
     },
     {
       "method": "aes-128-gcm",
@@ -825,15 +1062,11 @@
       "type": "trojan"
     },
     {
-      "password": "869e9086806483ca4744a4cb0f3d6e16",
-      "server": "203.198.122.227",
-      "server_port": 443,
-      "tag": "🇭🇰 - 203.198.122.227:443",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nintendogames.net"
-      },
-      "type": "trojan"
+      "server": "43.161.253.78",
+      "server_port": 9527,
+      "tag": "🇭🇰 - 43.161.253.78:9527",
+      "type": "vless",
+      "uuid": "d4a23188-85b0-4b46-b84b-f1d36d66c03e"
     },
     {
       "password": "869e9086806483ca4744a4cb0f3d6e16",
@@ -847,11 +1080,23 @@
       "type": "trojan"
     },
     {
+      "password": "BxceQaOe",
+      "server": "58.152.25.236",
+      "server_port": 443,
+      "tag": "🇭🇰 - 58.152.25.236:443",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "t.me/ripaojiedian"
+      },
+      "type": "trojan"
+    },
+    {
       "alter_id": 2,
       "security": "auto",
-      "server": "hkt.gotochinatown.net",
+      "server": "65f41879-t70f40-t7n4ch-1rfon.hkt.gotochinatown.net",
       "server_port": 80,
-      "tag": "🇭🇰 - hkt.gotochinatown.net:80",
+      "tag": "🇭🇰 - 65f41879-t70f40-t7n4ch-1rfon.hkt.gotochinatown.net:80",
       "transport": {
         "path": "/",
         "type": "ws"
@@ -861,25 +1106,78 @@
     },
     {
       "security": "",
-      "server": "n1747624267.4u9ma.icu",
+      "server": "n1761214911.74qxv.top",
       "server_port": 443,
-      "tag": "🇭🇰 - n1747624267.4u9ma.icu:443",
+      "tag": "🇭🇰 - n1761214911.74qxv.top:443",
       "tls": {
         "enabled": true,
-        "server_name": "n1747624267.4u9ma.icu"
+        "server_name": "n1761214911.74qxv.top"
       },
       "transport": {
         "path": "/",
         "type": "ws"
       },
       "type": "vmess",
-      "uuid": "8c5d150c-b046-4440-8230-e84506a065a3"
+      "uuid": "372c1939-299d-4946-9633-5ffa971f8b67"
+    },
+    {
+      "password": "30077070-596e-48ea-9400-14c8ed07bd97",
+      "server": "tuntro000.instconn.com",
+      "server_port": 443,
+      "tag": "🇭🇰 - tuntro000.instconn.com:443",
+      "tls": {
+        "enabled": true,
+        "server_name": "hkip5.686911.xyz"
+      },
+      "type": "trojan"
+    },
+    {
+      "alter_id": 2,
+      "security": "",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "tag": "🇭🇰 - v10.hdacd.com:30807",
+      "type": "vmess",
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    },
+    {
+      "password": "nodes-b211f28a",
+      "server": "node-id-1.v2sv.top",
+      "server_port": 2083,
+      "tag": "🇮🇩 - node-id-1.v2sv.top:2083",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-id-1.v2sv.top"
+      },
+      "type": "trojan"
     },
     {
       "password": "869e9086806483ca4744a4cb0f3d6e16",
       "server": "153.121.51.29",
-      "server_port": 4006,
-      "tag": "🇯🇵 - 153.121.51.29:4006",
+      "server_port": 1933,
+      "tag": "🇯🇵 - 153.121.51.29:1933",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "869e9086806483ca4744a4cb0f3d6e16",
+      "server": "160.16.105.192",
+      "server_port": 1933,
+      "tag": "🇯🇵 - 160.16.105.192:1933",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "869e9086806483ca4744a4cb0f3d6e16",
+      "server": "160.16.106.99",
+      "server_port": 544,
+      "tag": "🇯🇵 - 160.16.106.99:544",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net"
@@ -922,6 +1220,17 @@
     {
       "password": "869e9086806483ca4744a4cb0f3d6e16",
       "server": "160.16.132.38",
+      "server_port": 3423,
+      "tag": "🇯🇵 - 160.16.132.38:3423",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "869e9086806483ca4744a4cb0f3d6e16",
+      "server": "160.16.132.38",
       "server_port": 4006,
       "tag": "🇯🇵 - 160.16.132.38:4006",
       "tls": {
@@ -946,6 +1255,17 @@
       "server": "160.16.150.76",
       "server_port": 3901,
       "tag": "🇯🇵 - 160.16.150.76:3901",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "869e9086806483ca4744a4cb0f3d6e16",
+      "server": "160.16.70.180",
+      "server_port": 3901,
+      "tag": "🇯🇵 - 160.16.70.180:3901",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net"
@@ -990,6 +1310,17 @@
       "server": "160.16.81.84",
       "server_port": 5076,
       "tag": "🇯🇵 - 160.16.81.84:5076",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "869e9086806483ca4744a4cb0f3d6e16",
+      "server": "160.16.85.33",
+      "server_port": 5076,
+      "tag": "🇯🇵 - 160.16.85.33:5076",
       "tls": {
         "enabled": true,
         "server_name": "www.nintendogames.net"
@@ -1097,6 +1428,27 @@
       "uuid": "2ab56f70-39e3-4422-bb2e-dbfe59cb01f8"
     },
     {
+      "flow": "xtls-rprx-vision",
+      "server": "5.253.41.52",
+      "server_port": 8443,
+      "tag": "🇯🇵 - 5.253.41.52:8443",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY",
+          "short_id": "7cad5040"
+        },
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "309fa273-6579-4cb2-9143-7cad50401eba"
+    },
+    {
       "method": "chacha20-ietf-poly1305",
       "network": "tcp",
       "password": "G!yBwPWH3Vao",
@@ -1124,11 +1476,59 @@
       "type": "shadowsocks"
     },
     {
+      "security": "",
+      "server": "n1753598448.74qxv.top",
+      "server_port": 443,
+      "tag": "🇯🇵 - n1753598448.74qxv.top:443",
+      "tls": {
+        "enabled": true,
+        "server_name": "n1753598448.74qxv.top"
+      },
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "3cd6f849-078e-4da9-8080-a2791b51b766"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "yODLXVLz2FWNTFeSSng3Fm",
+      "server": "136.244.100.113",
+      "server_port": 443,
+      "tag": "🇳🇱 - 136.244.100.113:443",
+      "type": "shadowsocks"
+    },
+    {
       "method": "chacha20-ietf-poly1305",
       "password": "QCXDxuDlTTMD7jtgHUjIoj",
+      "server": "193.29.139.199",
+      "server_port": 8080,
+      "tag": "🇳🇱 - 193.29.139.199:8080",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "1RWwXhwfAB5gAEozU4G2Pg",
+      "server": "45.87.175.188",
+      "server_port": 8080,
+      "tag": "🇳🇱 - 45.87.175.188:8080",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "4a2rfixophdjffa8KVA4Aa",
       "server": "45.87.175.192",
       "server_port": 8080,
       "tag": "🇳🇱 - 45.87.175.192:8080",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "79.127.227.53",
+      "server_port": 989,
+      "tag": "🇳🇱 - 79.127.227.53:989",
       "type": "shadowsocks"
     },
     {
@@ -1146,6 +1546,22 @@
     },
     {
       "method": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ",
+      "server": "82.38.31.217",
+      "server_port": 8080,
+      "tag": "🇳🇱 - 82.38.31.217:8080",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+      "server": "82.38.31.82",
+      "server_port": 8080,
+      "tag": "🇳🇱 - 82.38.31.82:8080",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
       "password": "1RWwXhwfAB5gAEozU4G2Pg",
       "server": "beesyar.org",
       "server_port": 8080,
@@ -1154,11 +1570,22 @@
     },
     {
       "method": "chacha20-ietf-poly1305",
-      "password": "cvII85TrW6n0OGyfpHVS1u",
-      "server": "beesyar.org",
-      "server_port": 8080,
-      "tag": "🇳🇱 NL 2",
+      "password": "595HLF3fHUuw0McM51tpvPygSIB1uf4D",
+      "server": "107.174.114.71",
+      "server_port": 443,
+      "tag": "🇳🇴 - 107.174.114.71:443",
       "type": "shadowsocks"
+    },
+    {
+      "password": "a5inYFE=JGV89+hjxIqgDp1tcWBd6",
+      "server": "80.173.230.196",
+      "server_port": 26279,
+      "tag": "🇳🇴 - 80.173.230.196:26279",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      },
+      "type": "trojan"
     },
     {
       "password": "wp9IsiY82uQhcmgNC1eoBM",
@@ -1167,9 +1594,46 @@
       "tag": "🇳🇴 - 80.173.231.254:12420",
       "tls": {
         "enabled": true,
+        "insecure": true,
         "server_name": "www.semanticstaplegun.click"
       },
       "type": "trojan"
+    },
+    {
+      "password": "tSk5LQoJr7F.WnRsUM4hT",
+      "server": "45.15.140.107",
+      "server_port": 19106,
+      "tag": "🇳🇿 - 45.15.140.107:19106",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "binaryboots.algorithmblanket.click"
+      },
+      "type": "trojan"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "47509ba3679b9df9",
+      "server": "154.205.145.37",
+      "server_port": 11201,
+      "tag": "🇵🇰 - 154.205.145.37:11201",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "aes-256-cfb",
+      "password": "fG2artUmHfNT2cX7",
+      "server": "217.30.10.18",
+      "server_port": 9018,
+      "tag": "🇵🇱 - 217.30.10.18:9018",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "nxgsmHkP3JU7hbQkJfxgpXh5tlvXe1en",
+      "server": "45.83.142.237",
+      "server_port": 443,
+      "tag": "🇵🇹 - 45.83.142.237:443",
+      "type": "shadowsocks"
     },
     {
       "network": "tcp",
@@ -1183,6 +1647,22 @@
       },
       "type": "vmess",
       "uuid": "7f579426-5a20-4cf6-cc54-943568ccf148"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "638bb05eab35adec",
+      "server": "163.171.207.11",
+      "server_port": 19688,
+      "tag": "🇸🇦 - 163.171.207.11:19688",
+      "type": "shadowsocks"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "652e423c559eefd4",
+      "server": "156.244.19.94",
+      "server_port": 11201,
+      "tag": "🇸🇨 - 156.244.19.94:11201",
+      "type": "shadowsocks"
     },
     {
       "alter_id": 4,
@@ -1239,6 +1719,14 @@
       },
       "type": "vmess",
       "uuid": "6fea1649-425b-4092-bf53-29792152c925"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "42d2b47181a32de7",
+      "server": "154.26.132.38",
+      "server_port": 16922,
+      "tag": "🇸🇬 - 154.26.132.38:16922",
+      "type": "shadowsocks"
     },
     {
       "network": "tcp",
@@ -1786,6 +2274,47 @@
       "type": "shadowsocks"
     },
     {
+      "method": "aes-256-cfb",
+      "password": "f8f7aCzcPKbsF8p3",
+      "server": "223.165.4.173",
+      "server_port": 989,
+      "tag": "🇹🇼 - 223.165.4.173:989",
+      "type": "shadowsocks"
+    },
+    {
+      "password": "3e7e8f27-3963-44f1-bad7-dc8b88206429",
+      "server": "green2.cdntencentmusic.com",
+      "server_port": 31101,
+      "tag": "🇹🇼 - green2.cdntencentmusic.com:31101",
+      "tls": {
+        "enabled": true,
+        "server_name": "green2.cdntencentmusic.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "49f42d5b-7c92-4f26-aeb6-89b9dd7fa0a5",
+      "server": "green2.cdntencentmusic.com",
+      "server_port": 31102,
+      "tag": "🇹🇼 - green2.cdntencentmusic.com:31102",
+      "tls": {
+        "enabled": true,
+        "server_name": "green2.cdntencentmusic.com"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "271f1b33-fe68-4a72-ada3-9e789edd9966",
+      "server": "green2.cdntencentmusic.com",
+      "server_port": 31103,
+      "tag": "🇹🇼 - green2.cdntencentmusic.com:31103",
+      "tls": {
+        "enabled": true,
+        "server_name": "green2.cdntencentmusic.com"
+      },
+      "type": "trojan"
+    },
+    {
       "network": "tcp",
       "security": "auto",
       "server": "136.175.178.176mgmg.xhtk.cc",
@@ -1850,12 +2379,73 @@
       "uuid": "aba50dd4-5484-3b05-b14a-4661caf862d5"
     },
     {
+      "flow": "xtls-rprx-vision",
+      "server": "199.241.32.132",
+      "server_port": 26978,
+      "tag": "🇺🇸 - 199.241.32.132:26978",
+      "tls": {
+        "enabled": true,
+        "reality": {
+          "enabled": true,
+          "public_key": "n2w4hj7Q7wN6P21LSJJwIPitfYZbwWh5a2seJHH58SE",
+          "short_id": "28bf"
+        },
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "type": "vless",
+      "uuid": "9042affd-0ad3-4014-adbc-e52f00891ea2"
+    },
+    {
+      "security": "",
+      "server": "209.126.84.189",
+      "server_port": 443,
+      "tag": "🇺🇸 - 209.126.84.189:443",
+      "transport": {
+        "path": "/vmessws",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7"
+    },
+    {
       "method": "aes-256-gcm",
       "network": "tcp",
       "password": "KixLvKzwjekG00rm",
       "server": "38.75.136.34",
       "server_port": 8080,
       "tag": "🇺🇸 - 38.75.136.34:8080",
+      "type": "shadowsocks"
+    },
+    {
+      "security": "",
+      "server": "47.251.91.241",
+      "server_port": 42899,
+      "tag": "🇺🇸 - 47.251.91.241:42899",
+      "type": "vmess",
+      "uuid": "0925b355-2bcd-4eae-9720-d2709e4f7e36"
+    },
+    {
+      "password": "2c833c5d-cbcc-4afb-89ba-d17dc39db6f0",
+      "server": "75.127.13.83",
+      "server_port": 47974,
+      "tag": "🇺🇸 - 75.127.13.83:47974",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "www.bing.com"
+      },
+      "type": "hysteria2"
+    },
+    {
+      "method": "aes-128-gcm",
+      "password": "fa593414-7a76-4975-909b-7a7c46be123b",
+      "server": "dmitmalibu.szxcn.net",
+      "server_port": 18829,
+      "tag": "🇺🇸 - dmitmalibu.szxcn.net:18829",
       "type": "shadowsocks"
     },
     {
@@ -1878,28 +2468,12 @@
       "uuid": "4612618c-24cd-4379-9924-cfdf3d61fa5a"
     },
     {
-      "server": "lim1.svhamrah.shop",
-      "server_port": 4471,
-      "tag": "🇺🇸 - lim1.svhamrah.shop:4471",
-      "transport": {
-        "host": "Excoino.com",
-        "method": "get",
-        "type": "http"
-      },
-      "type": "vless",
-      "uuid": "70c6ad4e-f1dc-4e5f-bf26-c93828de9dca"
-    },
-    {
-      "security": "",
-      "server": "v2ray.codefyinc.com",
-      "server_port": 443,
-      "tag": "🇺🇸 - v2ray.codefyinc.com:443",
-      "transport": {
-        "path": "/vmessws",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7"
+      "method": "chacha20-ietf-poly1305",
+      "password": "nodes-b211f28a",
+      "server": "node-de-1.v2sv.top",
+      "server_port": 990,
+      "tag": "🇺🇸 - node-de-1.v2sv.top:990",
+      "type": "shadowsocks"
     },
     {
       "network": "tcp",
@@ -1932,6 +2506,44 @@
       "transport": {
         "headers": {
           "Host": "LosAngeles.v2ray.online"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "2F094845-E2BD-EBF7-DEB7-995992436FAF"
+    },
+    {
+      "network": "tcp",
+      "security": "auto",
+      "server": "vsg1.0bad.com",
+      "server_port": 443,
+      "tag": "🇺🇸US-172.234.24.211-0051 | 0.0MB",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "headers": {
+          "Host": "vsg1.0bad.com"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "927094d3-d678-4763-8591-e240d0bcae87"
+    },
+    {
+      "network": "tcp",
+      "security": "auto",
+      "server": "v2ray.online",
+      "server_port": 443,
+      "tag": "🇺🇸US-92.112.198.89-0028 | 0.0MB",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "headers": {
+          "Host": "Phoenix.v2ray.online"
         },
         "path": "/",
         "type": "ws"
@@ -2073,6 +2685,25 @@
     {
       "network": "tcp",
       "security": "auto",
+      "server": "141.193.213.21",
+      "server_port": 443,
+      "tag": "🏴 - 141.193.213.21:443",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "headers": {
+          "Host": "fr1.trump2023.org"
+        },
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "2b214122-1906-428a-bbb7-a039cbb7cd5c"
+    },
+    {
+      "network": "tcp",
+      "security": "auto",
       "server": "146.190.202.9",
       "server_port": 57711,
       "tag": "🏴 - 146.190.202.9:57711",
@@ -2144,20 +2775,6 @@
       "tag": "🏴 - 172.233.229.91:14102",
       "type": "vmess",
       "uuid": "27ba87fc-583f-4763-9060-83cf0b9264db"
-    },
-    {
-      "server": "172.64.152.23",
-      "server_port": 443,
-      "tag": "🏴 - 172.64.152.23:443",
-      "tls": {
-        "enabled": true,
-        "server_name": "GrCxHxTj0.HaTmAnBiYaInJaHa.cOm"
-      },
-      "transport": {
-        "type": "grpc"
-      },
-      "type": "vless",
-      "uuid": "ffcfecc9-6713-4b14-886c-d18003909e06"
     },
     {
       "network": "tcp",
@@ -2721,6 +3338,40 @@
       "uuid": "7b1b2fa3-e361-48cc-b73d-2c9636c76f4b"
     },
     {
+      "security": "",
+      "server": "4D41-b510-Fc35f2D7ECd7.664.qzz.io",
+      "server_port": 443,
+      "tag": "🏴 - 4D41-b510-Fc35f2D7ECd7.664.qzz.io:443",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/pyyY4ZVTyJV3vr9noOhn",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "0507fbcd-b983-43a7-8e1d-2c561960ad4f"
+    },
+    {
+      "method": "chacha20-ietf-poly1305",
+      "password": "a7c205642b302c20",
+      "server": "5.188.4.103",
+      "server_port": 11205,
+      "tag": "🏴 - 5.188.4.103:11205",
+      "type": "shadowsocks"
+    },
+    {
+      "password": "869e9086806483ca4744a4cb0f3d6e16",
+      "server": "52.195.170.6",
+      "server_port": 491,
+      "tag": "🏴 - 52.195.170.6:491",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.nintendogames.net"
+      },
+      "type": "trojan"
+    },
+    {
       "network": "tcp",
       "security": "auto",
       "server": "68.183.129.197",
@@ -2737,20 +3388,12 @@
       "uuid": "157ab24c-2f02-44d2-b211-6d70612c9f64"
     },
     {
-      "security": "",
-      "server": "c7.620720.xyz",
-      "server_port": 8443,
-      "tag": "🏴 - c7.620720.xyz:8443",
-      "tls": {
-        "enabled": true,
-        "server_name": "c7.620720.xyz"
-      },
-      "transport": {
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "516d8a7a-3f0b-41d3-bad0-246116381516"
+      "method": "chacha20-ietf-poly1305",
+      "password": "6134494027689bbb",
+      "server": "92.223.62.214",
+      "server_port": 11201,
+      "tag": "🏴 - 92.223.62.214:11201",
+      "type": "shadowsocks"
     },
     {
       "network": "tcp",
@@ -2767,6 +3410,36 @@
       },
       "type": "vmess",
       "uuid": "8763e625-929a-43da-b7bf-7e7bc2e57615"
+    },
+    {
+      "security": "",
+      "server": "hgtrojan.zabc.net",
+      "server_port": 2083,
+      "tag": "🏴 - hgtrojan.zabc.net:2083",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/e6395c20",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "e6395c20-4571-4b34-d6b1-55a5d36e49ea"
+    },
+    {
+      "server": "mianfeijiedianscp.buzz",
+      "server_port": 443,
+      "tag": "🏴 - mianfeijiedianscp.buzz:443",
+      "tls": {
+        "enabled": true,
+        "server_name": "mianfeijiedianscp.buzz"
+      },
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vless",
+      "uuid": "0b3ad86e-1818-49bb-949d-4e85d137a16d"
     },
     {
       "network": "tcp",
@@ -2799,15 +3472,50 @@
       "uuid": "d6d7e024-0a49-483d-bcd7-048c4d30eca6"
     },
     {
-      "password": "30077070-596e-48ea-9400-14c8ed07bd97",
-      "server": "tuntro003.instconn.com",
+      "security": "",
+      "server": "seoul03.zgjok.com",
       "server_port": 443,
-      "tag": "🏴 - tuntro003.instconn.com:443",
+      "tag": "🏴 - seoul03.zgjok.com:443",
       "tls": {
         "enabled": true,
-        "server_name": "login-staticjpc.jasmine-douyin.top"
+        "server_name": "seoul03.zgjok.com"
       },
-      "type": "trojan"
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "72a0dac4-9689-4a57-b164-5c65bfa94772"
+    },
+    {
+      "security": "",
+      "server": "sy4.620720.xyz",
+      "server_port": 443,
+      "tag": "🏴 - sy4.620720.xyz:443",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "516d8a7a-3f0b-41d3-bad0-246116381516"
+    },
+    {
+      "security": "",
+      "server": "t1.620720.xyz",
+      "server_port": 8443,
+      "tag": "🏴 - t1.620720.xyz:8443",
+      "tls": {
+        "enabled": true
+      },
+      "transport": {
+        "path": "/",
+        "type": "ws"
+      },
+      "type": "vmess",
+      "uuid": "516d8a7a-3f0b-41d3-bad0-246116381516"
     },
     {
       "network": "tcp",
@@ -2845,25 +3553,6 @@
       "uuid": "927094d3-d678-4763-8591-e240d0bcae87"
     },
     {
-      "network": "tcp",
-      "security": "auto",
-      "server": "vsg1.0bad.com",
-      "server_port": 443,
-      "tag": "🏴 - vsg1.0bad.com:443",
-      "tls": {
-        "enabled": true
-      },
-      "transport": {
-        "headers": {
-          "Host": "vsg1.0bad.com"
-        },
-        "path": "/",
-        "type": "ws"
-      },
-      "type": "vmess",
-      "uuid": "927094d3-d678-4763-8591-e240d0bcae87"
-    },
-    {
       "password": "humanity",
       "server": "www.calmlunch.com",
       "server_port": 443,
@@ -2881,12 +3570,35 @@
     },
     {
       "password": "humanity",
+      "server": "www.gossipglove.com",
+      "server_port": 443,
+      "tag": "🏴 - www.gossipglove.com:443",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.gossipglove.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "path": "/assignment",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "humanity",
       "server": "www.multiplydose.com",
       "server_port": 443,
       "tag": "🏴 - www.multiplydose.com:443",
       "tls": {
         "enabled": true,
-        "server_name": "www.multiplydose.com"
+        "server_name": "www.multiplydose.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "path": "/assignment",
