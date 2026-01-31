@@ -100,8 +100,10 @@
       "type": "direct"
     },
     {
+      "server": "localhost",
+      "server_port": 9050,
       "tag": "💙 Telegram: @BreakRealFree",
-      "type": "http"
+      "type": "socks"
     }
   ],
   "route": {
