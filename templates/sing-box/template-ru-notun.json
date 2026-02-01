@@ -89,37 +89,37 @@
         "download_detour": "direct",
         "tag": "reject",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/reject.srs"
+        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/reject.srs"
       },
       {
         "download_detour": "direct",
         "tag": "geosite-nsfw",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-nsfw.srs"
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-nsfw.srs"
       },
       {
         "download_detour": "direct",
         "tag": "proxy",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/proxy.srs"
+        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/proxy.srs"
       },
       {
         "download_detour": "direct",
         "tag": "direct",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/demarcush/breakfree@master/release/rule-sets/direct.srs"
+        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/direct.srs"
       },
       {
         "download_detour": "direct",
         "tag": "geoip-ru",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geoip-ru.srs"
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geoip-ru.srs"
       },
       {
         "download_detour": "direct",
         "tag": "geosite-category-ru",
         "type": "remote",
-        "url": "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set/geosite-category-ru.srs"
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-category-ru.srs"
       }
     ],
     "rules": [
