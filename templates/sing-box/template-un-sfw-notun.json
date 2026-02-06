@@ -3,24 +3,11 @@
     "independent_cache": true,
     "rules": [
       {
-        "mode": "and",
-        "rules": [
-          {
-            "invert": true,
-            "protocol": [
-              "ssh",
-              "rdp"
-            ]
-          },
-          {
-            "query_type": [
-              "A",
-              "AAAA"
-            ]
-          }
+        "query_type": [
+          "A",
+          "AAAA"
         ],
-        "server": "fakeip",
-        "type": "logical"
+        "server": "fakeip"
       }
     ],
     "servers": [
