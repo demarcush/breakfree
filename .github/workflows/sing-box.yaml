@@ -41,8 +41,8 @@ jobs:
       - name: Collect final.json
         run: sleep 20s; curl -fsSL http://127.0.0.1:8080/final | jq -S > .github/final.json || echo "CURL FAILED!"
 
-      - name: Proxy tagging
-        run: python .github/tagging.py
+      #- name: Proxy tagging
+        #run: python .github/tagging.py
 
       - name: Merging with Templates
         run: bash .github/merge.sh
