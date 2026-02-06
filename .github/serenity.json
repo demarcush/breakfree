@@ -15,7 +15,7 @@
     },
     {
       "name": "mhdi",
-      "url": "https://sub.xeton.dev/sub?target=singbox&fdn=true&list=true&url=https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/refs/heads/main/sub/mixbase64"
+      "url": "https://sub.xeton.dev/sub?target=singbox&fdn=true&list=true&url=https://cdn.jsdelivr.net/gh/MhdiTaheri/V2rayCollector@refs/heads/main/sub/mixbase64"
     },
     {
       "name": "final",
@@ -23,7 +23,9 @@
       "process": {
         "filter": [
           "IL",
-          "🇮🇱"
+          "VN",
+          "🇮🇱",
+          "🇻🇳"
         ],
         "filter_type": [
           "http",

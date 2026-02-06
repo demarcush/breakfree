@@ -27,8 +27,7 @@
         "tag": "fakeip",
         "type": "fakeip"
       }
-    ],
-    "strategy": "prefer_ipv4"
+    ]
   },
   "experimental": {
     "cache_file": {
