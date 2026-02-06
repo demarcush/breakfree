@@ -14,24 +14,16 @@
       "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
     },
     {
+      "name": "mhdi",
+      "url": "https://sub.xeton.dev/sub?target=singbox&fdn=true&list=true&url=https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector/refs/heads/main/sub/mixbase64"
+    },
+    {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
       "process": {
         "filter": [
-          "AE",
-          "BH",
           "IL",
-          "RU",
-          "TR",
-          "VE",
-          "VN",
-          "🇦🇪",
-          "🇧🇭",
-          "🇮🇱",
-          "🇷🇺",
-          "🇹🇷",
-          "🇻🇪",
-          "🇻🇳"
+          "🇮🇱"
         ],
         "filter_type": [
           "http",
@@ -54,7 +46,8 @@
       "template": "breakfree",
       "subscription": [
         "eternity",
-        "collector"
+        "collector",
+        "mhdi"
       ]
     },
     {
