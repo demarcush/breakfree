@@ -56,8 +56,8 @@ jobs:
           for i in release/rule-sets/*.json; do sing-box rule-set upgrade -w ${i} && sing-box rule-set format -w ${i} && sing-box rule-set compile ${i} || echo "Failed formating/compiling ${i}..."; done
         #run: bash .github/rule-sets.sh
 
-      - name: Remove duplicate tags
-        run: for i in release/sing-box/*.json; do bash .github/tag-dedup.sh ${i} || echo "Failed deduping ${i}..."; done
+      #- name: Remove duplicate tags
+        #run: for i in release/sing-box/*.json; do bash .github/tag-dedup.sh ${i} || echo "Failed deduping ${i}..."; done
 
       - name: Commit
         run: |
