@@ -1,23 +1,47 @@
 {
   "dns": {
+    "independent_cache": true,
     "rules": [
       {
-        "outbound": "any",
-        "server": "local"
+        "mode": "and",
+        "rules": [
+          {
+            "invert": true,
+            "protocol": [
+              "ssh",
+              "rdp"
+            ]
+          },
+          {
+            "query_type": [
+              "A",
+              "AAAA"
+            ]
+          }
+        ],
+        "server": "fakeip",
+        "type": "logical"
       }
     ],
     "servers": [
       {
-        "address": "https://1.1.1.2/dns-query",
         "detour": "default",
-        "tag": "remote"
+        "server": "1.1.1.2",
+        "tag": "remote",
+        "type": "https"
       },
       {
-        "address": "local",
-        "tag": "local"
+        "tag": "local",
+        "type": "local"
+      },
+      {
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18",
+        "tag": "fakeip",
+        "type": "fakeip"
       }
     ],
-    "strategy": "ipv4_only"
+    "strategy": "prefer_ipv4"
   },
   "experimental": {
     "cache_file": {
@@ -79,13 +103,13 @@
       "type": "selector"
     },
     {
-      "interval": "15m",
+      "interval": "15m0s",
       "outbounds": [
         "💙 Telegram: @BreakRealFree"
       ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://www.youtube.com/generate_204"
+      "url": "https://www.youtube.com"
     },
     {
       "interrupt_exist_connections": true,
@@ -108,6 +132,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
+    "default_domain_resolver": "local",
     "rule_set": [
       {
         "download_detour": "direct",
@@ -170,9 +195,7 @@
       },
       {
         "outbound": "default",
-        "rule_set": [
-          "proxy"
-        ]
+        "rule_set": "proxy"
       },
       {
         "outbound": "direct",
