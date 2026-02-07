@@ -366,6 +366,7 @@
         "🇺🇸 US 17",
         "🇺🇸 US 18",
         "🇺🇸 US 19",
+        "🇺🇸 US 20",
         "🇺🇸 US 21",
         "🇺🇸 US 22",
         "🇺🇸 US 24",
@@ -3552,6 +3553,21 @@
       "tag": "🇺🇸 US 19",
       "tls": {
         "alpn": "http/1.1",
+        "enabled": true,
+        "server_name": "yyyyu.taiwan2026.indevs.in"
+      },
+      "transport": {
+        "path": "/cSIyXrtyqeOFepMpfNkCk8",
+        "type": "ws"
+      },
+      "type": "trojan"
+    },
+    {
+      "password": "fc3704d6-8e5e-443a-bd5b-20ec7cfbe990",
+      "server": "yyyyu.taiwan2026.indevs.in",
+      "server_port": 443,
+      "tag": "🇺🇸 US 20",
+      "tls": {
         "enabled": true,
         "server_name": "yyyyu.taiwan2026.indevs.in"
       },
