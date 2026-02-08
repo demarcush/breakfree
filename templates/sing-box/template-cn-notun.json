@@ -12,7 +12,6 @@
     ],
     "servers": [
       {
-        "detour": "default",
         "server": "1.1.1.2",
         "tag": "remote",
         "type": "https"
@@ -65,13 +64,12 @@
       "type": "selector"
     },
     {
-      "interval": "15m0s",
       "outbounds": [
         "💙 Telegram: @BreakRealFree"
       ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://www.youtube.com"
+      "url": "https://www.youtube.com/generate_204"
     },
     {
       "interrupt_exist_connections": true,
@@ -140,6 +138,10 @@
       {
         "action": "hijack-dns",
         "protocol": "dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
       },
       {
         "outbound": "direct",
