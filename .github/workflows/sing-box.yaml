@@ -1,0 +1,70 @@
+name: Sing-box node collection
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  collect_sing-box:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install geoip2 requests
+
+      - name: Install Serenity and Sing-box
+        run: |
+          sudo curl -fsSL https://deb.sagernet.org/gpg.key -o /etc/apt/keyrings/sagernet.asc
+          sudo chmod a+r /etc/apt/keyrings/sagernet.asc
+          echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/sagernet.asc] https://deb.sagernet.org/ * *" | \
+          sudo tee /etc/apt/sources.list.d/sagernet.list > /dev/null
+          sudo apt-get update
+          sudo apt-get install -y serenity sing-box
+
+      - name: Force download latest GeoIP DB
+        run: |
+          mkdir -p .github
+          rm -f .github/geoip.db
+          curl -fsSL "https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@release/geoip.db" \
+            -o .github/geoip.db
+          echo "Downloaded GeoIP DB. Size: $(wc -c < .github/geoip.db) bytes"
+
+      - name: Run Node Collection using Serenity
+        run: nohup serenity run -c .github/serenity.json &
+
+      - name: Collect final.json
+        run: |
+          sleep 20s; curl -fsSL http://127.0.0.1:8080/final | jq -S > .github/final.json || echo "CURL FAILED!"
+          sed -i "s|chacha20-poly1305|chacha20-ietf-poly1305|g" .github/final.json
+
+      #- name: Proxy tagging
+        #run: python .github/tagging.py
+
+      - name: Merging with Templates
+        run: bash .github/merge.sh
+
+      #- name: Testing Outputs using Sing-box
+        #run: for i in release/sing-box/*.json; do sing-box check -c ${i} && echo "${i} is OK!"; done
+
+      - name: Update Rule-Sets
+        run: |
+          cd release/rule-sets; bash ../../.github/rule-sets-merger.sh; cd -
+          for i in release/rule-sets/*.json; do sing-box rule-set upgrade -w ${i} && sing-box rule-set format -w ${i} && sing-box rule-set compile ${i} || echo "Failed formating/compiling ${i}..."; done
+        #run: bash .github/rule-sets.sh
+
+      #- name: Remove duplicate tags
+        #run: for i in release/sing-box/*.json; do bash .github/tag-dedup.sh ${i} || echo "Failed deduping ${i}..."; done
+
+      - name: Commit
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git commit -m "actions: aggregate on $(date -I)" || echo "no changes to commit..."
+          git push

@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "process_name": [
+        "conjure-client",
+        "conjure-client.exe",
+        "geoclue",
+        "geoclue.exe",
+        "i2pd",
+        "i2pd.exe",
+        "lyrebird",
+        "lyrebird.exe",
+        "onionshare",
+        "onionshare-cli",
+        "onionshare-cli.exe",
+        "onionshare.exe",
+        "qbittorrent",
+        "qbittorrent-nox",
+        "qbittorrent-nox.exe",
+        "qbittorrent.exe",
+        "snowflake-client",
+        "snowflake-client.exe",
+        "tor",
+        "tor.exe",
+        "webtunnel-client",
+        "webtunnel-client.exe"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "beacondb.net",
+        "kinguploadf2m15.info",
+        "ntfy.sh",
+        "position.xyz",
+        "push.apple.com",
+        "services.mozilla.com",
+        "sjdcbjddbcsjhbsbjhcjbsdjshcdcjbsdsj.buzz",
+        "sootoncdn.com",
+        "unifiedpush.kde.org"
+      ]
+    }
+  ]
+}

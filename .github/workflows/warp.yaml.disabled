@@ -1,0 +1,86 @@
+name: Renew Warp Keys and Endpoints
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+jobs:
+  renew-warp-keys:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Go (required for wgcf)
+        uses: actions/setup-go@v4
+        with:
+          go-version: 'stable'
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y jq curl
+
+      - name: Install wgcf
+        run: |
+          export WGCF_VER=2.2.25
+          curl -sSL -o wgcf "https://github.com/ViRb3/wgcf/releases/download/v${WGCF_VER}/wgcf_${WGCF_VER}_linux_amd64"
+          chmod +x wgcf
+          mkdir -p ~/.local/bin
+          mv wgcf ~/.local/bin
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Generate new Warp keys
+        run: |
+          # Register a new Warp account and generate keys
+          wgcf register --accept-tos --config key-0.toml
+          wgcf register --accept-tos --config key-1.toml
+          wgcf generate -p profile-0.conf --config key-0.toml
+          wgcf generate -p profile-1.conf --config key-1.toml
+          echo "Key 0 status: "
+          wgcf status --config key-0.toml
+          echo "Key 1 status: "
+          wgcf status --config key-1.toml
+
+      - name: Extract private and public keys
+        id: extract_keys
+        run: |
+          # Extract private and public keys
+          PRIVATE_KEY_0=$(grep -oP 'PrivateKey\s*=\s*\K[^ ]+' profile-0.conf)
+          PRIVATE_KEY_1=$(grep -oP 'PrivateKey\s*=\s*\K[^ ]+' profile-1.conf)
+          PUBLIC_KEY=$(grep -oP 'PublicKey\s*=\s*\K[^ ]+' profile-0.conf)
+          echo "Private Key 0: $PRIVATE_KEY_0"
+          echo "Private Key 1: $PRIVATE_KEY_1"
+          echo "Public Key: $PUBLIC_KEY"
+          echo "::set-output name=private_key_0::$PRIVATE_KEY_0"
+          echo "::set-output name=private_key_1::$PRIVATE_KEY_1"
+          echo "::set-output name=public_key::$PUBLIC_KEY"
+
+      - name: Update Sing-Box Configuration
+        run: |
+          # Replace with your script to update the Sing-Box config
+          for i in templates/*.json
+          do
+            python .github/warp-singbox-config.py ${i} \
+            "${{ steps.extract_keys.outputs.private_key_0 }}" \
+            "${{ steps.extract_keys.outputs.private_key_1 }}"
+
+            ipv6=$(dig +short engage.cloudflareclient.com AAAA | head -n1)
+            ipv4=$(dig +short engage.cloudflareclient.com A | head -n1)
+            jq --arg ipv6 "$ipv6" --arg ipv4 "$ipv4" '
+            .endpoints[0].peers[0].address = $ipv6 |
+            .endpoints[0].peers[1].address = $ipv4 |
+            .endpoints[1].peers[0].address = $ipv6 |
+            .endpoints[1].peers[1].address = $ipv4
+            ' ${i} > temp.json && mv temp.json ${i}
+          done
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "Github Actions"
+          git config --local user.email "actions@github.com"
+          git add templates
+          git commit -m "Update Sing-Box config with new Warp keys" || echo "Warp: no changes"
+          git push

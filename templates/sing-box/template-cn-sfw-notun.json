@@ -1,0 +1,180 @@
+{
+  "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
+    "independent_cache": true,
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "local"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip"
+      }
+    ],
+    "servers": [
+      {
+        "address": "https://1.1.1.2/dns-query",
+        "tag": "remote"
+      },
+      {
+        "address": "8.8.8.8",
+        "detour": "direct",
+        "tag": "local"
+      },
+      {
+        "address": "fakeip",
+        "tag": "fakeip"
+      }
+    ]
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true,
+      "store_rdrc": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "xd",
+      "external_ui_download_detour": "direct",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
+    }
+  },
+  "inbounds": [
+    {
+      "listen": "::",
+      "listen_port": 7890,
+      "set_system_proxy": true,
+      "type": "mixed"
+    }
+  ],
+  "log": {
+    "level": "fatal"
+  },
+  "outbounds": [
+    {
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "auto",
+        "manual",
+        "direct"
+      ],
+      "tag": "default",
+      "type": "selector"
+    },
+    {
+      "outbounds": [
+        "💙 Telegram: @BreakRealFree"
+      ],
+      "tag": "auto",
+      "type": "urltest",
+      "url": "https://www.youtube.com/generate_204"
+    },
+    {
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "💙 Telegram: @BreakRealFree"
+      ],
+      "tag": "manual",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "server": "127.0.0.1",
+      "server_port": 9050,
+      "tag": "💙 Telegram: @BreakRealFree",
+      "type": "socks"
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rule_set": [
+      {
+        "download_detour": "direct",
+        "tag": "reject",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/reject.srs"
+      },
+      {
+        "download_detour": "direct",
+        "tag": "geosite-nsfw",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-nsfw.srs"
+      },
+      {
+        "download_detour": "direct",
+        "tag": "proxy",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/proxy.srs"
+      },
+      {
+        "download_detour": "direct",
+        "tag": "direct",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/direct.srs"
+      },
+      {
+        "download_detour": "direct",
+        "tag": "geoip-cn",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geoip-cn.srs"
+      },
+      {
+        "download_detour": "direct",
+        "tag": "geosite-cn",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-cn.srs"
+      }
+    ],
+    "rules": [
+      {
+        "action": "sniff"
+      },
+      {
+        "action": "hijack-dns",
+        "protocol": "dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "outbound": "direct",
+        "protocol": [
+          "bittorrent",
+          "ntp"
+        ]
+      },
+      {
+        "action": "reject",
+        "rule_set": [
+          "reject",
+          "geosite-nsfw"
+        ]
+      },
+      {
+        "outbound": "default",
+        "rule_set": "proxy"
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "direct",
+          "geoip-cn",
+          "geosite-cn"
+        ]
+      }
+    ]
+  }
+}

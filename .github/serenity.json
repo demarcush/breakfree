@@ -1,0 +1,59 @@
+{
+  "log": {
+    "level": "debug"
+  },
+  "listen": "127.0.0.1:8080",
+  "cache_file": ".github/serenity.db",
+  "subscriptions": [
+    {
+      "name": "collector",
+      "url": "https://cdn.jsdelivr.net/gh/Mahdi0024/ProxyCollector@master/sub/singbox.json"
+    },
+    {
+      "name": "eternity",
+      "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
+    },
+    {
+      "name": "final",
+      "url": "http://127.0.0.1:8080/servers",
+      "process": {
+        "filter": [
+          "IL",
+          "🇮🇱"
+        ],
+        "filter_type": [
+          "http",
+          "shadowsocksr",
+          "socks"
+        ],
+        "remove": true,
+        "rewrite_multiplex": {
+          "enabled": true,
+          "protocol": "smux",
+          "padding": true
+        }
+      },
+      "deduplication": true
+    }
+  ],
+  "templates": [
+    {
+      "name": "breakfree"
+    }
+  ],
+  "profiles": [
+    {
+      "name": "servers",
+      "template": "breakfree",
+      "subscription": [
+        "collector",
+        "eternity"
+      ]
+    },
+    {
+      "name": "final",
+      "template": "breakfree",
+      "subscription": "final"
+    }
+  ]
+}
