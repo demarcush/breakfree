@@ -15,10 +15,13 @@
         "connectivitycheck.gstatic.com",
         "cp.cloudflare.com",
         "detectportal.firefox.com",
+        "ipv6check-http.steamserver.net",
+        "ipv6check-udp.steamserver.net",
         "msftconnecttest.com",
         "msftncsi.com",
         "network-test.debian.org",
-        "networkcheck.kde.org"
+        "networkcheck.kde.org",
+        "test.steampowered.com"
       ]
     }
   ]
