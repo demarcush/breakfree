@@ -1,15 +1,13 @@
 {
+  "certificate": {
+    "store": "mozilla"
+  },
   "dns": {
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.0/15",
-      "inet6_range": "fc00::/18"
-    },
     "independent_cache": true,
     "rules": [
       {
-        "outbound": "any",
-        "server": "local"
+        "ip_accept_any": true,
+        "server": "hosts"
       },
       {
         "query_type": [
@@ -21,17 +19,24 @@
     ],
     "servers": [
       {
-        "address": "https://1.1.1.2/dns-query",
-        "tag": "remote"
+        "detour": "default",
+        "server": "1.1.1.2",
+        "tag": "remote",
+        "type": "tcp"
       },
       {
-        "address": "8.8.8.8",
-        "detour": "direct",
-        "tag": "local"
+        "tag": "local",
+        "type": "local"
       },
       {
-        "address": "fakeip",
-        "tag": "fakeip"
+        "tag": "hosts",
+        "type": "hosts"
+      },
+      {
+        "inet4_range": "198.18.0.0/15",
+        "inet6_range": "fc00::/18",
+        "tag": "fakeip",
+        "type": "fakeip"
       }
     ]
   },
@@ -43,9 +48,9 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "xd",
+      "external_ui": "dash",
       "external_ui_download_detour": "direct",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
+      "external_ui_download_url": "https://github.com/SagerNet/sing-box-dashboard/archive/gh-pages.zip"
     }
   },
   "inbounds": [
@@ -71,6 +76,7 @@
       "type": "selector"
     },
     {
+      "interval": "5m",
       "outbounds": [
         "💙 Telegram: @BreakRealFree"
       ],
@@ -99,6 +105,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
+    "default_domain_resolver": "local",
     "rule_set": [
       {
         "download_detour": "direct",
