@@ -10,6 +10,14 @@
         "server": "hosts"
       },
       {
+        "rule_set": [
+          "direct",
+          "geoip-ru",
+          "geosite-category-ru"
+        ],
+        "server": "local"
+      },
+      {
         "query_type": [
           "A",
           "AAAA"
@@ -48,9 +56,9 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "dash",
+      "external_ui": "xd",
       "external_ui_download_detour": "direct",
-      "external_ui_download_url": "https://github.com/SagerNet/sing-box-dashboard/archive/gh-pages.zip"
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
     }
   },
   "inbounds": [
@@ -84,7 +92,7 @@
     }
   ],
   "log": {
-    "level": "fatal"
+    "level": "error"
   },
   "outbounds": [
     {
@@ -98,7 +106,6 @@
       "type": "selector"
     },
     {
-      "interval": "5m",
       "outbounds": [
         "💙 Telegram: @BreakRealFree"
       ],

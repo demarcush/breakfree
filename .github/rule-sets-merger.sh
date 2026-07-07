@@ -19,7 +19,7 @@
 set -eu
 
 # Configuration
-REJECT_RULESETS=("geoip-malware" "geoip-phishing" "geosite-category-ads-all" "geosite-cryptominers" "geosite-malware" "geosite-phishing")
+REJECT_RULESETS=("geoip-malware" "geoip-phishing" "geosite-category-ads-all" "geosite-category-consent-management" "geosite-cryptominers" "geosite-malware" "geosite-phishing")
 PROXY_RULESETS=()
 DIRECT_RULESETS=("geoip-private" "geosite-connectivity-check" "geosite-private")
 BASE_URL="https://cdn.jsdelivr.net/gh/chocolate4u/Iran-sing-box-rules@rule-set"
