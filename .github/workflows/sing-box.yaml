@@ -42,6 +42,7 @@ jobs:
         run: |
           sleep 20s; curl -fsSL http://127.0.0.1:8080 | jq -S > .github/final.json || echo "CURL FAILED!"
           sed -i "s|chacha20-poly1305|chacha20-ietf-poly1305|g" .github/final.json
+          sed -i "s|2022-blake3-chacha20-ietf-poly1305|2022-blake3-chacha20-poly1305|g" .github/final.json
 
       #- name: Proxy tagging
         #run: python .github/tagging.py
