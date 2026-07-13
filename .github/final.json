@@ -5516,7 +5516,7 @@
       "type": "shadowsocks"
     },
     {
-      "method": "2022-blake3-chacha20-ietf-poly1305",
+      "method": "2022-blake3-chacha20-poly1305",
       "password": "iFxltqscJVLJdHunZXPCmb4ToHN7LhkoeYwpQcU/Pbo=",
       "server": "193.151.128.97:443",
       "server_port": 443,
