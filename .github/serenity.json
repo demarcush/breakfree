@@ -14,6 +14,10 @@
       "url": "https://cdn.jsdelivr.net/gh/mahdibland/V2RayAggregator@master/Eternity.yml"
     },
     {
+      "name": "psg",
+      "url": "https://cdn.jsdelivr.net/gh/itsyebekhe/PSG@main/subscriptions/xray/mix.b64"
+    },
+    {
       "name": "final",
       "url": "http://127.0.0.1:8080/servers",
       "process": {
@@ -26,12 +30,7 @@
           "shadowsocksr",
           "socks"
         ],
-        "remove": true,
-        "rewrite_multiplex": {
-          "enabled": true,
-          "protocol": "smux",
-          "padding": true
-        }
+        "remove": true
       },
       "deduplication": true
     }
@@ -47,7 +46,8 @@
       "template": "breakfree",
       "subscription": [
         "collector",
-        "eternity"
+        "eternity",
+        "psg"
       ]
     },
     {

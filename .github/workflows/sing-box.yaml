@@ -40,7 +40,7 @@ jobs:
 
       - name: Collect final.json
         run: |
-          sleep 20s; curl -fsSL http://127.0.0.1:8080/final | jq -S > .github/final.json || echo "CURL FAILED!"
+          sleep 20s; curl -fsSL http://127.0.0.1:8080 | jq -S > .github/final.json || echo "CURL FAILED!"
           sed -i "s|chacha20-poly1305|chacha20-ietf-poly1305|g" .github/final.json
 
       #- name: Proxy tagging

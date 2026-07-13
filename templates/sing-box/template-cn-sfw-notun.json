@@ -10,14 +10,6 @@
         "server": "hosts"
       },
       {
-        "rule_set": [
-          "direct",
-          "geoip-cn",
-          "geosite-cn"
-        ],
-        "server": "local"
-      },
-      {
         "query_type": [
           "A",
           "AAAA"
@@ -89,7 +81,7 @@
       ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://www.youtube.com/generate_204"
+      "url": "https://www.google.com/generate_204"
     },
     {
       "interrupt_exist_connections": true,
