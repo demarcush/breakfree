@@ -1836,7 +1836,7 @@
         "🇩🇪DE-145.239.1.100-0083 | 0.0MB",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇳🇱 NL | SS | @outlinereleasedkey #1 [fast]",
-        "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
+        "🇯🇵 JP | SS | @outlinereleasedkey #1 [medium]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @outline_ir #2 [fast]",
@@ -23725,7 +23725,7 @@
       "password": "shadowsocks",
       "server": "149.22.87.240:443",
       "server_port": 443,
-      "tag": "🇯🇵 JP | SS | @outlinereleasedkey #1 [fast]",
+      "tag": "🇯🇵 JP | SS | @outlinereleasedkey #1 [medium]",
       "type": "shadowsocks"
     },
     {
