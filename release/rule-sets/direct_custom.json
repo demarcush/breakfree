@@ -3,6 +3,8 @@
   "rules": [
     {
       "process_name": [
+        "aether",
+        "aether.exe",
         "geoclue",
         "geoclue.exe",
         "i2pd",

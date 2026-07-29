@@ -65,7 +65,8 @@
         "org.proninyaroslav.libretorrent",
         "org.torproject.android",
         "org.torproject.torbrowser",
-        "pan.alexander.tordnscrypt.stable"
+        "pan.alexander.tordnscrypt.stable",
+        "studio.cluvex.aether"
       ],
       "platform": {
         "http_proxy": {
@@ -99,7 +100,8 @@
     },
     {
       "outbounds": [
-        "💙 Telegram: @BreakRealFree"
+        "💙 Telegram: @BreakRealFree",
+        "tor"
       ],
       "tag": "auto",
       "type": "urltest",
@@ -108,7 +110,8 @@
     {
       "interrupt_exist_connections": true,
       "outbounds": [
-        "💙 Telegram: @BreakRealFree"
+        "💙 Telegram: @BreakRealFree",
+        "tor"
       ],
       "tag": "manual",
       "type": "selector"
@@ -119,8 +122,14 @@
     },
     {
       "server": "127.0.0.1",
-      "server_port": 9050,
+      "server_port": 1819,
       "tag": "💙 Telegram: @BreakRealFree",
+      "type": "socks"
+    },
+    {
+      "server": "127.0.0.1",
+      "server_port": 9050,
+      "tag": "tor",
       "type": "socks"
     }
   ],
@@ -183,6 +192,9 @@
           "bittorrent",
           "ntp"
         ]
+      },
+      {
+        "action": "resolve"
       },
       {
         "action": "reject",
