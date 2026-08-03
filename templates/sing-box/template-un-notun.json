@@ -82,7 +82,7 @@
       ],
       "tag": "auto",
       "type": "urltest",
-      "url": "https://www.google.com/generate_204"
+      "url": "https://www.youtube.com/generate_204"
     },
     {
       "interrupt_exist_connections": true,
@@ -128,12 +128,6 @@
       },
       {
         "download_detour": "direct",
-        "tag": "proxy",
-        "type": "remote",
-        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/proxy.srs"
-      },
-      {
-        "download_detour": "direct",
         "tag": "direct",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/direct.srs"
@@ -159,15 +153,8 @@
         ]
       },
       {
-        "action": "resolve"
-      },
-      {
         "action": "reject",
         "rule_set": "reject"
-      },
-      {
-        "outbound": "default",
-        "rule_set": "proxy"
       },
       {
         "outbound": "direct",
