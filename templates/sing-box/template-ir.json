@@ -1,50 +1,25 @@
 {
+  "$schema": "https://sing-box.sagernet.org/schema.json",
   "certificate": {
     "store": "mozilla"
   },
   "dns": {
-    "independent_cache": true,
-    "rules": [
-      {
-        "ip_accept_any": true,
-        "server": "hosts"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fakeip"
-      }
-    ],
     "servers": [
       {
         "detour": "default",
-        "server": "1.1.1.2",
+        "server": "94.140.14.14",
         "tag": "remote",
         "type": "tcp"
       },
       {
         "tag": "local",
         "type": "local"
-      },
-      {
-        "tag": "hosts",
-        "type": "hosts"
-      },
-      {
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18",
-        "tag": "fakeip",
-        "type": "fakeip"
       }
     ]
   },
   "experimental": {
     "cache_file": {
-      "enabled": true,
-      "store_fakeip": true,
-      "store_rdrc": true
+      "enabled": true
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
@@ -65,16 +40,9 @@
         "com.termux",
         "org.proninyaroslav.libretorrent",
         "org.torproject.android",
-        "org.torproject.torbrowser",
-        "pan.alexander.tordnscrypt.stable"
+        "org.torproject.torbrowser"
       ],
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "localhost",
-          "server_port": 7890
-        }
-      },
+      "stack": "gvisor",
       "strict_route": true,
       "type": "tun"
     },
@@ -85,7 +53,7 @@
     }
   ],
   "log": {
-    "level": "error"
+    "level": "warn"
   },
   "outbounds": [
     {
@@ -139,24 +107,6 @@
     "rule_set": [
       {
         "download_detour": "direct",
-        "tag": "reject",
-        "type": "remote",
-        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/reject.srs"
-      },
-      {
-        "download_detour": "direct",
-        "tag": "geosite-nsfw",
-        "type": "remote",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-nsfw.srs"
-      },
-      {
-        "download_detour": "direct",
-        "tag": "direct",
-        "type": "remote",
-        "url": "https://raw.githubusercontent.com/demarcush/breakfree/refs/heads/master/release/rule-sets/direct.srs"
-      },
-      {
-        "download_detour": "direct",
         "tag": "geoip-ir",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geoip-ir.srs"
@@ -166,6 +116,12 @@
         "tag": "geosite-ir",
         "type": "remote",
         "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-ir.srs"
+      },
+      {
+        "download_detour": "direct",
+        "tag": "geosite-private",
+        "type": "remote",
+        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-private.srs"
       }
     ],
     "rules": [
@@ -175,6 +131,19 @@
       {
         "action": "hijack-dns",
         "protocol": "dns"
+      },
+      {
+        "outbound": "direct",
+        "process_name": [
+          "aether",
+          "aether.exe",
+          "geoclue",
+          "geoclue.exe",
+          "lyrebird",
+          "lyrebird.exe",
+          "tor",
+          "tor.exe"
+        ]
       },
       {
         "ip_is_private": true,
@@ -188,15 +157,11 @@
         ]
       },
       {
-        "action": "reject",
-        "rule_set": "reject"
-      },
-      {
         "outbound": "direct",
         "rule_set": [
-          "direct",
           "geoip-ir",
-          "geosite-ir"
+          "geosite-ir",
+          "geosite-private"
         ]
       }
     ]
