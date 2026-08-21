@@ -7,9 +7,9 @@
     "servers": [
       {
         "detour": "default",
-        "server": "49.12.222.213",
+        "server": "94.140.14.14",
         "tag": "remote",
-        "type": "tcp"
+        "type": "https"
       },
       {
         "tag": "local",
@@ -38,6 +38,11 @@
   ],
   "log": {
     "level": "warn"
+  },
+  "ntp": {
+    "enabled": true,
+    "server": "time.windows.com",
+    "server_port": 123
   },
   "outbounds": [
     {
