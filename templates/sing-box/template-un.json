@@ -4,52 +4,42 @@
     "store": "mozilla"
   },
   "dns": {
-    "independent_cache": true,
+    "cache_capacity": 8192,
+    "optimistic": true,
     "rules": [
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fakeip"
+        "rule_set": "geosite-private",
+        "server": "local"
       }
     ],
     "servers": [
       {
         "detour": "default",
-        "server": "1.1.1.2",
+        "server": "94.140.14.14",
         "tag": "remote",
         "type": "https"
       },
       {
         "tag": "local",
         "type": "local"
-      },
-      {
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18",
-        "tag": "fakeip",
-        "type": "fakeip"
       }
-    ]
+    ],
+    "strategy": "ipv4_only"
   },
   "experimental": {
     "cache_file": {
-      "enabled": true
-    },
-    "clash_api": {
-      "external_controller": "127.0.0.1:9090",
-      "external_ui": "xd",
-      "external_ui_download_detour": "direct",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/gh-pages.zip"
+      "enabled": true,
+      "store_dns": true
     }
   },
+  "http_clients": [
+    {
+      "tag": "default"
+    }
+  ],
   "inbounds": [
     {
-      "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
+      "address": "172.19.0.1/30",
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
@@ -127,31 +117,14 @@
     "default_domain_resolver": "local",
     "rule_set": [
       {
-        "download_detour": "direct",
-        "tag": "geosite-category-ads-all",
-        "type": "remote",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-category-ads-all.srs"
-      },
-      {
-        "download_detour": "direct",
-        "tag": "geosite-nsfw",
-        "type": "remote",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-nsfw.srs"
-      },
-      {
-        "download_detour": "direct",
         "tag": "geosite-private",
         "type": "remote",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/refs/heads/rule-set/geosite-private.srs"
+        "url": "https://cdn.jsdelivr.net/gh/Chocolate4U/Iran-sing-box-rules@refs/heads/rule-set/geosite-private.srs"
       }
     ],
     "rules": [
       {
         "action": "sniff"
-      },
-      {
-        "action": "hijack-dns",
-        "protocol": "dns"
       },
       {
         "ip_is_private": true,
@@ -178,17 +151,18 @@
         ]
       },
       {
-        "action": "reject",
-        "rule_set": [
-          "geosite-category-ads-all"
-        ]
-      },
-      {
         "outbound": "direct",
         "rule_set": [
           "geosite-private"
         ]
       }
     ]
-  }
+  },
+  "services": [
+    {
+      "dashboard": true,
+      "listen_port": 9090,
+      "type": "api"
+    }
+  ]
 }
