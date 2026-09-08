@@ -43,7 +43,7 @@
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
-        "com.termux",
+        "org.bepass.oblivion",
         "org.proninyaroslav.libretorrent",
         "org.torproject.android",
         "org.torproject.torbrowser"
@@ -60,11 +60,6 @@
   ],
   "log": {
     "level": "warn"
-  },
-  "ntp": {
-    "enabled": true,
-    "server": "time.windows.com",
-    "server_port": 123
   },
   "outbounds": [
     {

@@ -48,11 +48,6 @@
   "log": {
     "level": "warn"
   },
-  "ntp": {
-    "enabled": true,
-    "server": "time.windows.com",
-    "server_port": 123
-  },
   "outbounds": [
     {
       "interrupt_exist_connections": true,
