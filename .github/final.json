@@ -434,11 +434,11 @@
         "🇨🇳CN-183.245.146.20-0230 | 0.0MB",
         "🇳🇱 NL | SS | @orange_vpns #1 [fast]",
         "🇳🇱 NL | SS | @easy_free_vpn #1 [fast]",
-        "🇳🇱 NL | SS | @prrofile_purple #1 [medium]",
+        "🇳🇱 NL | SS | @prrofile_purple #1 [fast]",
         "🇬🇧 GB | SS | @father_vpn #1 [fast]",
         "🇬🇧 GB | SS | @outlinereleasedkey #1 [fast]",
         "🇫🇷 FR | SS | @outlinereleasedkey #1 [fast]",
-        "🇬🇧 GB | SS | @outlinereleasedkey #2 [medium]",
+        "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
         "🇿🇦 ZA | SS | @beshkan #1 [medium]",
         "🇦🇪 AE | SS | @free4allvpn #1 [fast]",
         "🇬🇧 GB | SS | @free4allvpn #1 [fast]",
@@ -447,14 +447,12 @@
         "🇰🇿 KZ | SS | @configv2rayforfree #1 [medium]",
         "🇨🇦 CA | SS | @outline_ir #1 [fast]",
         "🇬🇧 GB | SS | @NamiraConfigs #1 [fast]",
-        "🇰🇷 KR | SS | @NamiraConfigs #1 [medium]",
         "🇺🇸 US | SS | @NamiraConfigs #1 [fast]",
         "🇨🇦 CA | SS | @NamiraConfigs #1 [fast]",
-        "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
+        "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
         "🇺🇸 US | SS | @netfreedom0 #1 [fast]",
         "🇳🇱 NL | SS | @netfreedom0 #1 [fast]",
         "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
-        "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
         "🇬🇧 GB | SS | @proxy48 #1 [fast]",
         "🇦🇪 AE | SS | @manstervpn #1 [medium]"
       ],
@@ -4183,7 +4181,7 @@
       "password": "wwzVn2ZnHfqYa6l8EWh3eY",
       "server": "92.112.126.90:443",
       "server_port": 443,
-      "tag": "🇳🇱 NL | SS | @prrofile_purple #1 [medium]",
+      "tag": "🇳🇱 NL | SS | @prrofile_purple #1 [fast]",
       "type": "shadowsocks"
     },
     {
@@ -4215,7 +4213,7 @@
       "password": "LXchLsIwtCeUAUgu",
       "server": "149.102.149.207:80",
       "server_port": 80,
-      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [medium]",
+      "tag": "🇬🇧 GB | SS | @outlinereleasedkey #2 [fast]",
       "type": "shadowsocks"
     },
     {
@@ -4284,14 +4282,6 @@
     },
     {
       "method": "aes-256-gcm",
-      "password": "TEzjfAYq2IjtuoS",
-      "server": "141.164.45.187:6679",
-      "server_port": 6679,
-      "tag": "🇰🇷 KR | SS | @NamiraConfigs #1 [medium]",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-gcm",
       "password": "faBAoD54k87UJG7",
       "server": "15.204.247.124:2375",
       "server_port": 2375,
@@ -4311,7 +4301,7 @@
       "password": "3rfnj11q5xvg72y1",
       "server": "tt.hsrdnr.ir:2044",
       "server_port": 2044,
-      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [medium]",
+      "tag": "🇮🇷 IR | SS | @sobi_vpn #1 [fast]",
       "type": "shadowsocks"
     },
     {
@@ -4336,14 +4326,6 @@
       "server": "195.238.126.20:9008",
       "server_port": 9008,
       "tag": "🇱🇹 LT | SS | @netfreedom0 #1 [fast]",
-      "type": "shadowsocks"
-    },
-    {
-      "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK",
-      "server": "91.201.65.122:9092",
-      "server_port": 9092,
-      "tag": "🇮🇹 IT | SS | @netfreedom0 #1 [fast]",
       "type": "shadowsocks"
     },
     {
