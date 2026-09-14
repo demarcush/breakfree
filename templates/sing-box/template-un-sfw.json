@@ -51,17 +51,26 @@
       "auto_route": true,
       "exclude_package": [
         "com.android.captiveportallogin",
+        "com.chiller3.basicsync",
+        "com.termux",
         "org.bepass.oblivion",
         "org.proninyaroslav.libretorrent",
         "org.torproject.android",
         "org.torproject.torbrowser"
       ],
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      },
       "stack": "gvisor",
       "strict_route": true,
       "type": "tun"
     },
     {
-      "listen": "::",
+      "listen": "127.0.0.1",
       "listen_port": 7890,
       "type": "mixed"
     }
@@ -99,6 +108,7 @@
       "type": "selector"
     },
     {
+      "domain_resolver": "local",
       "tag": "direct",
       "type": "direct"
     },

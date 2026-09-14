@@ -44,7 +44,7 @@
   ],
   "inbounds": [
     {
-      "listen": "::",
+      "listen": "127.0.0.1",
       "listen_port": 7890,
       "set_system_proxy": true,
       "type": "mixed"
@@ -83,6 +83,7 @@
       "type": "selector"
     },
     {
+      "domain_resolver": "local",
       "tag": "direct",
       "type": "direct"
     },
